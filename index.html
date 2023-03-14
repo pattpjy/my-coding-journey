@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+    {% include navbar.html %}
+    <div class="banner">
+      <div class="left-banner"></div>
+      <div class="right-banner">
+        <div class="typing-container">
+          <h2>Hello, I am <span class="typing-text"> a developer!</span></h2>
+        </div>
+        <button>More</button>
+      </div>
+    </div>
+    <div class="group-sections">
+      <section id="about">
+        <h3>About Me</h3>
+        <div class="about">
+          <img class="about-img" src="./asset/MD and Me.jpeg" />
+          <p>
+            After several years of economics data analysis and financial audit,
+            I found myself an opportunity able to run my own catering company.
+            While working as a small business owner, I honed my skill of
+            problem-solving, optimized business operations, and continuous
+            learning. My passion involves helping small businesses be able to
+            focus on the thing they love and be able to compete and to be
+            successful through the use of technology."
+          </p>
+        </div>
+      </section>
+      <section id="blog">
+        <h3>My blog</h3>
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <img src="{{post.banner_image}}" style="width: 150px;"/>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>        
+      </section>
+      <section id="proj">
+        <h3>My Projects</h3>
+      </section>
+
+      <section id="tech">
+        <h3>Tech I Know</h3>
+        <div class="cards-group">
+          <ul class="tech-card">
+            <h3>Front-End</h3>
+            <li>VANILLA JS</li>
+            <li>REACT</li>
+            <li>CSS</li>
+            <li>MOCHA CHAI</li>
+            <li>CYPRESS</li>
+          </ul>
+           <div class="cards-group">
+          <ul class="tech-card">
+            <h3>GRAPHIC</h3>
+            <li>ILLUSTRATOR</li>
+            <li>PHOTOSHOP</li>
+            <li>MIRO</li>
+          </ul>
+         <ul class="tech-card">
+            <h3>BACK END</h3>
+            <li>Express</li>
+            <li>PostGres</li>
+            <li>TablePlus</li>
+          </ul>
+         
+        </div>
+      </section>
+    </div>
+    <script src="./index.js"></script>
+  <!-- </body>
+</html> -->
