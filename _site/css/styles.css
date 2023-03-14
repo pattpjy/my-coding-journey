@@ -6,13 +6,14 @@ body {
 
 .nav-bar {
   display: flex;
-  background-color: rgba(247, 236, 198, 0.8);
+  background-color: rgba(247, 236, 198, 0.3);
   flex-direction: row;
   justify-content: space-between;
   position: sticky;
   top: 0;
   width: 100%;
 }
+
 .banner {
   display: flex;
   flex-direction: row;
@@ -71,7 +72,7 @@ body {
 #proj,
 #blog,
 #tech {
-  height: 30em;
+  height: 40em;
   border: #1a1a1a solid 2px;
   text-align: center;
   margin: 2em 0 2em 0;
@@ -136,16 +137,25 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.about-img {
+.about-img,
+.about-me {
+  margin: 0 4em 0 4em;
   display: block;
   max-width: 25em;
   width: auto;
   height: auto;
 }
 
+.about-img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .about {
   display: flex;
   flex-direction: row;
+  margin-top: 3em;
+  align-items: center;
+  justify-content: center;
 }
 .cards-group {
   display: flex;
@@ -158,4 +168,8 @@ button:focus-visible {
   margin: 0 3em 0 3em;
   min-width: 15em;
   min-height: 20em;
+}
+
+i {
+  margin: 0 1em 0 1em;
 }

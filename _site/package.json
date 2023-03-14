@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "jekyll serve"
+  },
   "dependencies": {
     "mermaid": "^10.0.2"
   }
