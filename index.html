@@ -8,7 +8,7 @@ layout: default
     <div class="typing-container">
       <h2>Hello, I am <span class="typing-text"> a developer!</span></h2>
     </div>
-    <button>More</button>
+    <button onclick="window.location.href='/#proj'">More</button>
   </div>
   <div class="right-banner"></div>
 </div>
@@ -48,8 +48,12 @@ layout: default
         />
         <div>
           <a href="{{ post.url }}">
-            <h2>{{ post.title }}</h2>
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>{{
+              post.title }}
+            </h2>
           </a>
+
           <p>{{ post.date}}</p>
         </div>
       </li>

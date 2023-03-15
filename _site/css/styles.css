@@ -70,7 +70,6 @@ body {
 
 .group-sections {
   background-color: #fdffff;
-  border: solid 2px black;
 }
 
 #about,
@@ -196,9 +195,13 @@ button:focus-visible {
   border-radius: 50%;
   border: 4px solid white;
   left: 50%;
-  margin-left: -44px;
+  margin-left: -45px;
   top: -12%;
   background: #838828;
+}
+.rectangle:hover,
+.rectangle:hover .circle {
+  background-color: #fdc600;
 }
 
 i {
