@@ -1,7 +1,4 @@
----
-title: "My PERN Understanding"
-date: 2023-02-26
----
+add frontmatter
 
 ## Why we choose PERN Stack
 
