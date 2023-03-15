@@ -6,12 +6,13 @@ body {
 
 .nav-bar {
   display: flex;
-  background-color: rgba(247, 236, 198, 0.3);
+  background-color: rgba(253, 255, 255);
   flex-direction: row;
   justify-content: space-between;
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 10;
 }
 
 .banner {
@@ -26,26 +27,29 @@ body {
   height: 50em;
   width: 100%;
 }
+
 .left-banner,
 .right-banner {
   width: 50%;
 }
 
-.right-banner {
-  background-color: rgba(67, 92, 74, 0.9);
+.left-banner {
+  background-color: rgba(65, 113, 11, 0.9);
+  text-align: end;
+  padding: 1em;
 }
 
 .typing-container {
   width: 100%;
-  text-align: left;
+  text-align: right;
   display: flex;
-  justify-content: left;
-  color: whitesmoke;
+  justify-content: right;
+  color: #fdffff;
   font-size: 2rem;
 }
 
 .typing-text {
-  color: white;
+  color: #fdffff;
 }
 
 .typing-text::after {
@@ -65,42 +69,34 @@ body {
 }
 
 .group-sections {
-  background-color: #ffffff;
+  background-color: #fdffff;
   border: solid 2px black;
 }
+
 #about,
 #proj,
 #blog,
 #tech {
-  height: 40em;
-  border: #1a1a1a solid 2px;
+  min-height: fit-content;
   text-align: center;
   margin: 2em 0 2em 0;
+  padding: 2em;
 }
 
 a {
+  color: black;
   font-weight: 900;
-  color: #072d52;
   text-decoration: inherit;
 }
 
 a:hover {
-  color: #4f5060;
+  color: #fdc600;
+  border-bottom: #4f5060 solid 2px;
 }
 
 .header .nav-list {
   display: flex;
   width: 28em;
-}
-
-.logo {
-  font-size: larger;
-  margin: 0;
-  padding: 1em 0 0 1em;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #072d52);
 }
 
 ul {
@@ -129,9 +125,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border: #303036 2px solid;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -139,14 +137,16 @@ button:focus-visible {
 
 .about-img,
 .about-me {
-  margin: 0 4em 0 4em;
+  margin: 0 4em 2em 4em;
   display: block;
   max-width: 25em;
   width: auto;
   height: auto;
 }
 
+.proj-card,
 .about-img {
+  min-width: 15em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -157,19 +157,93 @@ button:focus-visible {
   align-items: center;
   justify-content: center;
 }
+
 .cards-group {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin: 2em;
+  background-color: rgba(253, 255, 255, 0.2);
 }
-.tech-card {
-  border: solid 2px gray;
-  margin: 0 3em 0 3em;
-  min-width: 15em;
-  min-height: 20em;
+
+.tech {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.fa-regular,
+.fa-solid {
+  font-size: 40px;
+}
+
+.rectangle {
+  display: block;
+  min-width: 12em;
+  background: #838828;
+  position: relative;
+  margin: 10em 2em 0 2em;
+  padding: 3em;
+}
+
+.circle {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 4px solid white;
+  left: 50%;
+  margin-left: -44px;
+  top: -12%;
+  background: #838828;
 }
 
 i {
   margin: 0 1em 0 1em;
+  vertical-align: middle;
+}
+
+.fa-database,
+.fa-pen-nib,
+.fa-rectangle-code {
+  position: relative;
+  margin: 0.5em;
+  color: white;
+}
+.blog-card {
+  border: 2px whitesmoke solid;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.blog-card:hover {
+  background-color: darkgrey;
+}
+.blog-img {
+  margin: 1em;
+}
+
+#proj {
+  background-color: lightcyan;
+  background-image: url("../asset/virginia-lackinger-JV0y2YgXJcY-unsplash.jpg");
+  background-size: cover;
+  object-fit: cover;
+}
+.proj-card {
+  border: solid 2px white;
+  margin: 3em;
+  min-height: 12em;
+  min-width: 12em;
+  background-color: rgba(249, 249, 249, 0.9);
+}
+
+.h2-light {
+  color: rgba(253, 255, 255, 1);
+  text-shadow: gray 2px 3px;
 }
