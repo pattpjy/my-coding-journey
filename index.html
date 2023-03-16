@@ -47,7 +47,8 @@ layout: default
           style="width: 250px"
         />
         <div>
-          <a class="a-blog" href="/{{post.url}}">
+          <a class="a-blog" href="{{post.url | prepend: site.baseurl }}">
+
             <h2>
               <span><i class="fa-duotone fa-bread-slice"></i></span>{{
               post.title }}
