@@ -46,14 +46,14 @@ a {
 }
 
 .right-banner {
-  width: 40%;
+  width: 60%;
 }
 
 .left-banner {
   background-color: rgba(253, 255, 255, 0.8);
   text-align: end;
-  padding: 1em;
-  width: 60%;
+  padding: 2em;
+  width: 40%;
 }
 
 .typing-container {
@@ -300,9 +300,46 @@ button:focus-visible {
 .proj-card {
   border: solid 2px white;
   margin: 3em;
-  min-height: 12em;
-  min-width: 12em;
+  height: 20em;
+  width: 20em;
   background-color: rgba(249, 249, 249, 0.9);
+  transition: 2s ease-in-out;
+}
+
+#proj > div > div:nth-child(1):hover {
+  background-image: url("../asset/cookAhead.png");
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+  transition: 1s;
+  transform: rotate(360deg);
+}
+
+#proj > div > div:nth-child(2):hover {
+  background-color: #4f5060;
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+  transition: 1s;
+  transform: rotate(360deg);
+}
+
+#proj > div > div:nth-child(3):hover {
+  background-color: #4f5060;
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+  transition: 1s;
+  transform: rotate(360deg);
+}
+
+#proj > div > div:nth-child(4):hover {
+  background-color: #4f5060;
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+  transition: 1s;
+  transform: rotate(360deg);
 }
 
 .h2-light {
