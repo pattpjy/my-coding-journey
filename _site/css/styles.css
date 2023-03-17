@@ -113,7 +113,6 @@ a {
   color: var(--c);
   font-size: 16px;
   border: 0.3em solid var(--c);
-  border-radius: 0.5em;
   width: 12em;
   height: 3em;
   text-transform: uppercase;
@@ -164,15 +163,8 @@ a {
   --n: 4;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-li {
+.rectangular > li {
   font-size: large;
-  list-style-type: none;
 }
 
 h1 {
@@ -248,6 +240,7 @@ button:focus-visible {
 
 .rectangle {
   display: block;
+  list-style-type: none;
   min-width: 12em;
   background: #838828;
   position: relative;

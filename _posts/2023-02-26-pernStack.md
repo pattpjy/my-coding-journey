@@ -13,15 +13,15 @@ My FE team was tasked with creating a simple full-stack application. We decided 
 It is because our knowledge of Javascript would cover three out of four technologies in the stack. The combination of these technologies allowed us to build a full-stack web application with CRUD operations.
 
 PERN is an acronym for Postgres, Express, React, and Node.
-[![](https://mermaid.ink/img/pako:eNpNTU1LxDAQ_SthTgrd0iRN0w2yh0WvIuhJchnadD9okpKkuGvpfzeriDKHeW_exyzQ-d6AgmH0H90RQyJve-2CwS6V50geNpsdebpMwcSYuXZ_-E7DP0E78pybbhDuf2IvPqZD1rW7DRRgTbB46vO3JduJhnQ01mhQGfZmwHlMGrRbsxXn5F-vrgOVwmwKmKcek3k84SGgBTXgGPN1Qvfuvf01ZQpqgQsoyUveUCmYYFII3vICrqBqVm4lk4wyUefNmVgL-PwuqMqGVU3D2i2tWdVWlK5fdjZYXA?type=png)](https://mermaid.live/edit#pako:eNpNTU1LxDAQ_SthTgrd0iRN0w2yh0WvIuhJchnadD9okpKkuGvpfzeriDKHeW_exyzQ-d6AgmH0H90RQyJve-2CwS6V50geNpsdebpMwcSYuXZ_-E7DP0E78pybbhDuf2IvPqZD1rW7DRRgTbB46vO3JduJhnQ01mhQGfZmwHlMGrRbsxXn5F-vrgOVwmwKmKcek3k84SGgBTXgGPN1Qvfuvf01ZQpqgQsoyUveUCmYYFII3vICrqBqVm4lk4wyUefNmVgL-PwuqMqGVU3D2i2tWdVWlK5fdjZYXA)
+[![](https://mermaid.ink/img/pako:eNpNTU1LxDAQ_SthTgrd0k42STeIB9GriHqSXEKb7q40SUlT3LX0vzuriDKHeW_exyzQxs6Bhn6IH-3Bpsxe70x4drbN5fvEbjabW_ZwGpObJuIm_OErA_8EE9gjNV0gXP_EnuKU96SbcBkowLvk7bGjbwvZmYF8cN4Z0AQ719t5yAZMWMlq5xxfzqEFndPsCpjHzmZ3f7T7ZD3o3g4TXUcb3mL0vyaioBc4gVa85LJWAgUqIXjDCziD3mK5U6iwRrGlzVGsBXx-F1SlxEpKbGRTIe7qRq1fVe1YTQ?type=png)](https://mermaid.live/edit#pako:eNpNTU1LxDAQ_SthTgrd0k42STeIB9GriHqSXEKb7q40SUlT3LX0vzuriDKHeW_exyzQxs6Bhn6IH-3Bpsxe70x4drbN5fvEbjabW_ZwGpObJuIm_OErA_8EE9gjNV0gXP_EnuKU96SbcBkowLvk7bGjbwvZmYF8cN4Z0AQ719t5yAZMWMlq5xxfzqEFndPsCpjHzmZ3f7T7ZD3o3g4TXUcb3mL0vyaioBc4gVa85LJWAgUqIXjDCziD3mK5U6iwRrGlzVGsBXx-F1SlxEpKbGRTIe7qRq1fVe1YTQ)
 
-Postgres - It is an object-relational database management system that uses the SQL language. We choose Postgres because it was easy to pick up.
+- Postgres - It is an object-relational database management system that uses the SQL language. We chose Postgres because our team members have some exposure to the relational database and also Postgres was easy to pick up.
 
-Express - It is a back-end framework for Node.js used for building web applications and especially APIs. We decided to go with Express because it is a javascript framework, the documentation looked fairly straightforward, and because of the support, we have within Turing.
+- Express - It is a back-end framework for Node.js used for building web applications, and especially APIs. We decided to go with Express because it is a javascript framework, the documentation looked fairly straightforward, and because of the support, we have within Turing.
 
-React - A Front end Framework taught at Turing. One of the requirements for the project is to use react framework. Couples of benefits are Virtual DOM in ReactJS makes the user experience better and developers work faster. React allows its components to be reused saving time and effort.
+- React - A Front end Framework taught at Turing. One of the requirements for the project is to use react framework. Couples of benefits are Virtual DOM in React makes the user experience better and developers work faster. React allows its components to be reused which saves time and effort.
 
-Node.js - A Javascript runtime environment for developing server-side and networking applications.
+- Node.js - A Javascript runtime environment for developing server-side and networking applications.
 
 ### How we go about setting up a workflow
 
