@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-16T23:26:42-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Coding Journey Blog</title><author><name>Patt Sookmark</name></author><entry><title type="html">MVC MVP</title><link href="http://localhost:4000/2023/03/10/MVC_MVP.html" rel="alternate" type="text/html" title="MVC MVP" /><published>2023-03-10T00:00:00-07:00</published><updated>2023-03-10T00:00:00-07:00</updated><id>http://localhost:4000/2023/03/10/MVC_MVP</id><content type="html" xml:base="http://localhost:4000/2023/03/10/MVC_MVP.html"><![CDATA[<h2 id="understanding-mvc">Understanding MVC</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-16T23:44:49-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Coding Journey Blog</title><author><name>Patt Sookmark</name></author><entry><title type="html">1st Full Stack Webapp with PERN Stack</title><link href="http://localhost:4000/2023/03/16/Pern_Stack.html" rel="alternate" type="text/html" title="1st Full Stack Webapp with PERN Stack" /><published>2023-03-16T00:00:00-06:00</published><updated>2023-03-16T00:00:00-06:00</updated><id>http://localhost:4000/2023/03/16/Pern_Stack</id><content type="html" xml:base="http://localhost:4000/2023/03/16/Pern_Stack.html"><![CDATA[<h2 id="the-teams-first-full-stack-application-journey">The team’s first full-stack application journey</h2>
+
+<p>My FE team was tasked with creating a simple full-stack application. We decided to use Postgres, Express, React, and Node (PERN stack)</p>
+
+<h2 id="why-we-choose-pern-stack">Why we choose PERN Stack</h2>
+
+<p>It is because our knowledge of Javascript would cover three out of four technologies in the stack. The combination of these technologies allowed us to build a full-stack web application with CRUD operations.</p>
+
+<p>PERN is an acronym for Postgres, Express, React, and Node.
+<a href="https://mermaid.live/edit#pako:eNpNTU1LxDAQ_SthTgrd0k42STeIB9GriHqSXEKb7q40SUlT3LX0vzuriDKHeW_exyzQxs6Bhn6IH-3Bpsxe70x4drbN5fvEbjabW_ZwGpObJuIm_OErA_8EE9gjNV0gXP_EnuKU96SbcBkowLvk7bGjbwvZmYF8cN4Z0AQ719t5yAZMWMlq5xxfzqEFndPsCpjHzmZ3f7T7ZD3o3g4TXUcb3mL0vyaioBc4gVa85LJWAgUqIXjDCziD3mK5U6iwRrGlzVGsBXx-F1SlxEpKbGRTIe7qRq1fVe1YTQ"><img src="https://mermaid.ink/img/pako:eNpNTU1LxDAQ_SthTgrd0k42STeIB9GriHqSXEKb7q40SUlT3LX0vzuriDKHeW_exyzQxs6Bhn6IH-3Bpsxe70x4drbN5fvEbjabW_ZwGpObJuIm_OErA_8EE9gjNV0gXP_EnuKU96SbcBkowLvk7bGjbwvZmYF8cN4Z0AQ719t5yAZMWMlq5xxfzqEFndPsCpjHzmZ3f7T7ZD3o3g4TXUcb3mL0vyaioBc4gVa85LJWAgUqIXjDCziD3mK5U6iwRrGlzVGsBXx-F1SlxEpKbGRTIe7qRq1fVe1YTQ?type=png" alt="" /></a></p>
+
+<ul>
+  <li>
+    <p>Postgres - It is an object-relational database management system that uses the SQL language. We chose Postgres because our team members have some exposure to the relational database and also Postgres was easy to pick up.</p>
+  </li>
+  <li>
+    <p>Express - It is a back-end framework for Node.js used for building web applications, and especially APIs. We decided to go with Express because it is a javascript framework, the documentation looked fairly straightforward, and because of the support, we have within Turing.</p>
+  </li>
+  <li>
+    <p>React - A Front end Framework taught at Turing. One of the requirements for the project is to use react framework. Couples of benefits are Virtual DOM in React makes the user experience better and developers work faster. React allows its components to be reused which saves time and effort.</p>
+  </li>
+  <li>
+    <p>Node.js - A Javascript runtime environment for developing server-side and networking applications.</p>
+  </li>
+</ul>
+
+<h3 id="how-we-go-about-setting-up-a-workflow">How we go about setting up a workflow</h3>
+
+<p>We approach our workflow from the FE perspective where we consider the user story first to design how our data table is going to be. First, we wrote the MVP UI, and create the server using Express. Then, we connect the express server to Postgres. Once the two frameworks re connected, we seed our mock data to the database, and voila. Time to deploy!</p>
+
+<h3 id="what-else-we-added-to-our-pern-stack-to-make-it-work">What else we added to our PERN stack to make it work</h3>
+
+<p>We used Knex to create the schema and write queries for Postgres. We used Docker Compose for local development with the database and Table Plus for interacting with the data.</p>
+
+<h3 id="lessons-learned-from-the-project">Lessons learned from the project!</h3>
+
+<ul>
+  <li>
+    <p><strong>Opt for a library than writing code from scratch</strong></p>
+
+    <p>In our UI, we wanted to have a robust filter function that can filter multiple keywords and also has interactive features. As this function evolved, the code got messier and buggier to a point that we decided to use a filter library instead. Our reasoning was, we wanted to get to the core of the project, which was building a backend. Using a library not only saved us time but also created a more stable feature.</p>
+  </li>
+  <li>
+    <p><strong>Changing MVP decision</strong></p>
+
+    <p>As the deadline approached, we had to trim down our MVP to the most basic feature value and forgo some of the design elements we set up at the beginning to be able to deliver a usable product.</p>
+  </li>
+  <li>
+    <p><strong>Asking for help</strong></p>
+
+    <p>We were having difficulty with different versions of Postgres and the Knex documentation that was provided to us. With the help of a Mod4 student, we were introduced to backend tools: Docker Compose and TablePlus. These tools make working with Postgres easier and make a change to data much more simple.</p>
+  </li>
+</ul>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[The team’s first full-stack application journey]]></summary></entry><entry><title type="html">MVC MVP</title><link href="http://localhost:4000/2023/03/10/MVC_MVP.html" rel="alternate" type="text/html" title="MVC MVP" /><published>2023-03-10T00:00:00-07:00</published><updated>2023-03-10T00:00:00-07:00</updated><id>http://localhost:4000/2023/03/10/MVC_MVP</id><content type="html" xml:base="http://localhost:4000/2023/03/10/MVC_MVP.html"><![CDATA[<h2 id="understanding-mvc">Understanding MVC</h2>
 
 <p>I was introduced to MVC pattern during the beginning of Turing, a 7-months online, computer programming course, while the focus was to write everything only in vanilla JavaScript. MVC is an acronym for Model View Controller where, Model represents the business logic or what makes the application, View is what user interact with and Controller is the bridge between the Model and View.</p>
 
