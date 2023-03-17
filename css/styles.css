@@ -22,6 +22,7 @@ a {
 
 .nav-bar {
   display: flex;
+  flex-wrap: wrap;
   background-color: rgba(65, 113, 11, 0.9);
   flex-direction: row;
   justify-content: space-between;
@@ -108,11 +109,14 @@ a {
   width: 45em;
 }
 
+.nav-list > li > a {
+  color: #fdffff;
+}
 .nav-list > li {
-  --c: rgba(253, 198, 0, 0.8);
+  --c: rgba(253, 198, 0, 1);
   color: var(--c);
   font-size: 16px;
-  border: 0.3em solid var(--c);
+  border-bottom: 0.3em solid var(--c);
   width: 12em;
   height: 3em;
   text-transform: uppercase;
@@ -304,4 +308,9 @@ button:focus-visible {
 .h2-light {
   color: rgba(253, 255, 255, 1);
   text-shadow: gray 2px 3px;
+}
+
+.blog-content {
+  margin: auto;
+  width: 66%;
 }
