@@ -1,3 +1,9 @@
+---
+title: Code In Public - Thai Word Game
+layout: post
+banner_image: https://images.unsplash.com/photo-1611996575749-79a3a250f948?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80
+---
+
 # Thai Word Game Phase I
 
 My first language is Thai, and I want to create a simple webapp word game to play with my four years old. I watched my daughter played with a stuffed animal that when she press a button, it'd say random words and she'd keep repeating them over and over. I though it would be fun to create a similar UI web application that my daughter can simply press a button tha play words in Thai that she can repeat.
