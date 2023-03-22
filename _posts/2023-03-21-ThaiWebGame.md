@@ -22,5 +22,3 @@ I am very excited to see this app in action that led me to breaking task down in
 ![Breaking down work](../../../asset/ThWorkBreakDown.png)
 
 The next step is to write user story, creating React architecture and backend server and database. My intend is to build this application in public. Stay tune for more post!
-
-"This is a my new idea for an app that I intent to build in public, It's an app to help my 3 year old learn Thai! follow along as I build it!
