@@ -12,13 +12,13 @@ My first language is Thai, and I want to create a simple webapp word game to pla
 
 [UI Wire Frame](https://excalidraw.com/#json=SOM85H-29YGUNFU6atZI6,AfqFty9PlsO5-V41baM6qA)
 
-![UI-WireFrame IMG](../../../asset/ThInitWireFrame.png)
+<img class="blog-img" src="../../../asset/ThInitWireFrame.png">
 
 Because it will be for a small child, the image and buttons would be fairly large. The layout will be simple with minimal color contrast and easy to understand images.
 
 #### Task 2 Breaking work down : color blocks
 
 I am very excited to see this app in action that led me to breaking task down in the way that I can deliver value quickly. For the app to be able to have the most basic function, I need to create the component in the red area first. The red box include the UI components and the backend server with single table to support the minimum required data.  
-![Breaking down work](../../../asset/ThWorkBreakDown.png)
+<img class="blog-img" src='../../../asset/ThWorkBreakDown.png'>
 
 The next step is to write user story, creating React architecture and backend server and database. My intend is to build this application in public. Stay tune for more post!

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-22T09:50:38-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Coding Journey Blog</title><author><name>Patt Sookmark</name></author><entry><title type="html">Code In Public - Thai Word Game</title><link href="http://localhost:4000/2023/03/21/ThaiWebGame.html" rel="alternate" type="text/html" title="Code In Public - Thai Word Game" /><published>2023-03-21T00:00:00-06:00</published><updated>2023-03-21T00:00:00-06:00</updated><id>http://localhost:4000/2023/03/21/ThaiWebGame</id><content type="html" xml:base="http://localhost:4000/2023/03/21/ThaiWebGame.html"><![CDATA[<h1 id="thai-word-game-phase-i">Thai Word Game Phase I</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-26T20:42:11-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Coding Journey Blog</title><author><name>Patt Sookmark</name></author><entry><title type="html">Code In Public - Thai Word Game</title><link href="http://localhost:4000/2023/03/21/ThaiWebGame.html" rel="alternate" type="text/html" title="Code In Public - Thai Word Game" /><published>2023-03-21T00:00:00-06:00</published><updated>2023-03-21T00:00:00-06:00</updated><id>http://localhost:4000/2023/03/21/ThaiWebGame</id><content type="html" xml:base="http://localhost:4000/2023/03/21/ThaiWebGame.html"><![CDATA[<h1 id="thai-word-game-phase-i">Thai Word Game Phase I</h1>
 
 <p>My first language is Thai, and I want to create a simple webapp word game to play with my four years old. I watched my daughter played with a stuffed animal that when she press a button, it’d say random words and she’d keep repeating them over and over. I though it would be fun to create a similar UI web application that my daughter can simply press a button tha play words in Thai that she can repeat.</p>
 
@@ -6,18 +6,16 @@
 
 <p><a href="https://excalidraw.com/#json=SOM85H-29YGUNFU6atZI6,AfqFty9PlsO5-V41baM6qA">UI Wire Frame</a></p>
 
-<p><img src="../../../asset/ThInitWireFrame.png" alt="UI-WireFrame IMG" /></p>
+<p><img class="blog-img" src="../../../asset/ThInitWireFrame.png" /></p>
 
 <p>Because it will be for a small child, the image and buttons would be fairly large. The layout will be simple with minimal color contrast and easy to understand images.</p>
 
 <h4 id="task-2-breaking-work-down--color-blocks">Task 2 Breaking work down : color blocks</h4>
 
 <p>I am very excited to see this app in action that led me to breaking task down in the way that I can deliver value quickly. For the app to be able to have the most basic function, I need to create the component in the red area first. The red box include the UI components and the backend server with single table to support the minimum required data.<br />
-<img src="../../../asset/ThWorkBreakDown.png" alt="Breaking down work" /></p>
+<img class="blog-img" src="../../../asset/ThWorkBreakDown.png" /></p>
 
-<p>The next step is to write user story, creating React architecture and backend server and database. My intend is to build this application in public. Stay tune for more post!</p>
-
-<p>“This is a my new idea for an app that I intent to build in public, It’s an app to help my 3 year old learn Thai! follow along as I build it!</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[Thai Word Game Phase I]]></summary></entry><entry><title type="html">1st Full Stack Webapp with PERN Stack</title><link href="http://localhost:4000/2023/03/16/Pern_Stack.html" rel="alternate" type="text/html" title="1st Full Stack Webapp with PERN Stack" /><published>2023-03-16T00:00:00-06:00</published><updated>2023-03-16T00:00:00-06:00</updated><id>http://localhost:4000/2023/03/16/Pern_Stack</id><content type="html" xml:base="http://localhost:4000/2023/03/16/Pern_Stack.html"><![CDATA[<h2 id="the-teams-first-full-stack-application-journey">The team’s first full-stack application journey</h2>
+<p>The next step is to write user story, creating React architecture and backend server and database. My intend is to build this application in public. Stay tune for more post!</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[Thai Word Game Phase I]]></summary></entry><entry><title type="html">1st Full Stack Webapp with PERN Stack</title><link href="http://localhost:4000/2023/03/16/Pern_Stack.html" rel="alternate" type="text/html" title="1st Full Stack Webapp with PERN Stack" /><published>2023-03-16T00:00:00-06:00</published><updated>2023-03-16T00:00:00-06:00</updated><id>http://localhost:4000/2023/03/16/Pern_Stack</id><content type="html" xml:base="http://localhost:4000/2023/03/16/Pern_Stack.html"><![CDATA[<h2 id="the-teams-first-full-stack-application-journey">The team’s first full-stack application journey</h2>
 
 <p>My FE team was tasked with creating a simple full-stack application. We decided to use Postgres, Express, React, and Node (PERN stack)</p>
 

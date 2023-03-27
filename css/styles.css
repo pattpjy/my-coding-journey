@@ -100,6 +100,7 @@ a {
   margin: 2em 0 2em 0;
   padding: 2em;
 }
+
 .nav-list:hover,
 .nav-list {
   list-style-type: none;
@@ -289,6 +290,7 @@ button:focus-visible {
 }
 .blog-img {
   margin: 1em;
+  max-width: 30em;
 }
 
 #proj {
@@ -350,4 +352,14 @@ button:focus-visible {
 .blog-content {
   margin: auto;
   width: 66%;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-list {
+    list-style-type: table;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
 }
