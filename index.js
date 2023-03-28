@@ -1,6 +1,6 @@
-var typingElement = document.querySelector(".typing-text");
-var typeArray = ["Patt", "a developer", "a creator", "a mom"];
-var index = 0,
+const typingElement = document.querySelector(".typing-text");
+const typeArray = ["Patt", "a developer", "a creator", "a mom"];
+const index = 0,
   isAdding = true,
   typeIndex = 0;
 
