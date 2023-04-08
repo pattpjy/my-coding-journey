@@ -269,6 +269,16 @@ button:focus-visible {
   background-color: #fdc600;
 }
 
+.linkedin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fa-linkedin-infa-brands.fa-linkedin-in.fa-xl {
+  margin: 1em;
+}
+.fa-linkedin-in,
 .fa-circle-xmark,
 .fa-burger,
 .fa-database,
@@ -387,5 +397,9 @@ button:focus-visible {
   .blog-img {
     margin: 0.5em;
     max-width: 10em;
+  }
+  li.blog-card {
+    display: flex;
+    flex-direction: column;
   }
 }
