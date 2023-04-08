@@ -398,4 +398,8 @@ button:focus-visible {
     margin: 0.5em;
     max-width: 10em;
   }
+  li.blog-card {
+    display: flex;
+    flex-direction: column;
+  }
 }
