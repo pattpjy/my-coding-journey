@@ -204,7 +204,7 @@ button:focus-visible {
   display: block;
   max-width: 25em;
   width: auto;
-  height: auto;
+  /* height: auto; */
 }
 
 .proj-card,
@@ -269,6 +269,8 @@ button:focus-visible {
   background-color: #fdc600;
 }
 
+.fa-circle-xmark,
+.fa-burger,
 .fa-database,
 .fa-pen-nib,
 .fa-rectangle-code {
@@ -354,12 +356,36 @@ button:focus-visible {
   width: 66%;
 }
 
+.fa-solid.fa-burger {
+  display: none;
+}
+
+.fa-solid.fa-circle-xmark {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   .nav-list {
-    list-style-type: table;
-    padding: 0;
+    display: none;
+  }
+
+  .fa-solid.fa-burger {
+    display: block;
+  }
+  .fa-solid.fa-circle-xmark {
+    display: none;
+  }
+  .left-banner {
+    width: 100%;
+  }
+  .right-banner {
+    display: none;
+  }
+  .cards-group {
     margin: 0;
-    display: flex;
-    flex-direction: column;
+  }
+  .blog-img {
+    margin: 0.5em;
+    max-width: 10em;
   }
 }

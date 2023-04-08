@@ -1,8 +1,12 @@
-var typingElement = document.querySelector(".typing-text");
-var typeArray = ["Patt", "a developer", "a creator", "a mom"];
-var index = 0,
-  isAdding = true,
-  typeIndex = 0;
+const typingElement = document.querySelector(".typing-text");
+const typeArray = ["Patt", "a developer", "a creator", "a mom"];
+let index = 0;
+const navList = document.querySelector(".nav-list");
+const navListLi = document.querySelector("body > div.nav-bar > div > ul > li");
+const burger = document.querySelector(".fa-solid.fa-burger");
+const closeBTN = document.querySelector(".fa-solid.fa-circle-xmark");
+
+(isAdding = true), (typeIndex = 0);
 
 function playAnim() {
   setTimeout(
@@ -48,6 +52,23 @@ function playAnim() {
     */
     isAdding ? 120 : 60
   );
+}
+
+function openBurger() {
+  navList.style.display = "flex";
+  navList.style.flexDirection = "column";
+  navList.style.listStyleType = "table";
+  navList.style.padding = 0;
+  navList.style.margin = 0;
+  navListLi.style.margin = 0;
+  burger.style.display = "none";
+  closeBTN.style.display = "block";
+}
+
+function closeBurger() {
+  burger.style.display = "block";
+  closeBTN.style.display = "none";
+  navList.style.display = "none";
 }
 
 // Start typing text
