@@ -378,6 +378,10 @@ button:focus-visible {
   .nav-list {
     display: none;
   }
+  .nav-list:hover,
+  .nav-list {
+    width: auto;
+  }
 
   .fa-solid.fa-burger {
     display: block;
@@ -401,5 +405,13 @@ button:focus-visible {
   li.blog-card {
     display: flex;
     flex-direction: column;
+  }
+  .banner {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .about-me {
+    margin: 0;
   }
 }
