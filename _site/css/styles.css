@@ -330,7 +330,7 @@ button:focus-visible {
 }
 
 #proj > div > div:nth-child(2):hover {
-  background-color: #4f5060;
+  background-image: url("../asset/playpal.png");
   background-position: center;
   background-size: cover;
   color: transparent;
@@ -339,7 +339,7 @@ button:focus-visible {
 }
 
 #proj > div > div:nth-child(3):hover {
-  background-color: #4f5060;
+  background-image: url("../asset/fitLit.png");
   background-position: center;
   background-size: cover;
   color: transparent;
@@ -348,7 +348,7 @@ button:focus-visible {
 }
 
 #proj > div > div:nth-child(4):hover {
-  background-color: #4f5060;
+  background-image: url("../asset/closet-collection.png");
   background-position: center;
   background-size: cover;
   color: transparent;

@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "jekyll serve"
+    "start": "jekyll serve",
+    "build": "bundler install"
   },
   "dependencies": {
     "mermaid": "^10.0.2"
