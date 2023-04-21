@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio Presentation</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Varela%20Round"
+    />
+  </head>
+  <body>
+    
+<div class="nav-bar">
+  <a class="linkedin" href="https://www.linkedin.com/in/pattsookmark/"> <i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+  <div class="header">
+    <ul class="nav-list">
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#about"> About </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="#blog"> Blog </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="#proj"> Proj </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="#tech"> Tech </a>
+    </ul>
+    <i class="fa-solid fa-burger" onclick="openBurger()"></i>
+    <i class="fa-solid fa-circle-xmark" onclick="closeBurger()"></i>
+  </div>
+</div>
+
+<div class="blog-content">
+  <h1>Projects Details</h1>
+  <h2 id="projects-journal-and-reflection">Projects Journal and reflection</h2>
+
+<h3 id="cookahead">CookAhead</h3>
+
+<p>Multi-page application that consumes Restful API. It was built with React and React router while utilizing Reach hook pattern. This app also used parser library to parse the nested HTML tag to React element. The application design with mobile first mindset and use media query to manage css for different screen size. Cypress is used to perform e2e testing.
+<a href="http://cook-ahead.vercel.app">Live Site</a> <a href="https://github.com/pattpjy/cookAhead">Github</a></p>
+
+<h3 id="fitlit">FitLit</h3>
+
+<p>We created a fitness tracking application using vanilla javascript. We used a local server and incorporated fetch request to GET and POST data. Error handling was added to both fetch GET and POST requests to catch errors that may occur from either request. Features added allows users to see all data displayed in a visually pleasing manner using charts from chart.js. We utilized dayjs to format and standardize dates. We utilized recursion to construct a weeks worth of data if there are gaps in the data’s date. We added a helper function file to house functions that are use multiple times throughout the project to keep our code DRY.
+<a href="https://github.com/pattpjy/FitLit">Github</a></p>
+
+<h3 id="playpal">PlayPal</h3>
+
+<p>Full stack application using PERN Stack
+This is an on-going project!
+<a href="https://play-pals.vercel.app">Live Site</a> <a href="https://github.com/ElBrewster/PlayPal">Github</a></p>
+
+<h3 id="closet-collection">Closet Collection</h3>
+
+<p>Full stack application with a collaboration of frontend and backend team to create closet organization application. This application has been nominate among 10 teams to participate in final cohort competition
+<a href="http://closet-manager-fe.vercel.app">Live Site</a> <a href="https://github.com/pattpjy/closet-manager-fe-Copy">Github</a></p>
+
+<h3 id="news-reader">News Reader</h3>
+
+<p>Single Page evolved to multi-page application with the purpose of solidify understanding of useLocation and useParem hook.</p>
+
+</div>
+
+  </body>
+  <script
+    src="https://kit.fontawesome.com/103e31ca68.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
