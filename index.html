@@ -9,7 +9,7 @@ layout: default
       <h2>Hello, I am <span class="typing-text"> a developer!</span></h2>
       <img />
     </div>
-    <button onclick="window.location.href='/#proj'">More</button>
+    <a onclick="window.location.href='/#proj'">More</a>
   </div>
   <div class="right-banner"></div>
 </div>
@@ -28,7 +28,7 @@ layout: default
           problem-solving, optimized business operations, and continuous
           learning. My passion involves helping small businesses be able to
           focus on the thing they love and be able to compete and to be
-          successful through the use of technology."
+          successful through the use of technology.
           <br />
           <br />
           <i class="fa-brands fa-linkedin-in fa-xl"></i>
@@ -63,51 +63,72 @@ layout: default
     <a class="a-blog" href="">
       <h2 class="h2-light">PROJECTS</h2>
     </a>
+
     <div class="cards-group">
-      <div class="proj-card">
-        <h2>Cook Ahead</h2>
-        <p>Solo Project</p>
-        <p>
-          Coming up with meal ideas and making decisions for the family meal
-          plans is hard. Cook Ahead is a web application that helps users create
-          a list of meal ideas.
-        </p>
-        <img />
+      <div class="proj1"><a class="modal-btn" data-micromodal-trigger="modal-1" href="javascript:;">Closet Collection</a> </div>
+      <div class="micromodal" id="modal-1" aria-hidden="true">
+        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="micromodal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-1-title"
+          >
+            <button aria-label="Close modal" data-micromodal-close>X</button>
+            <p>Closet Collection is your ultimate solution to organize your wardrobe. With this app, you can easily manage your clothing collection, take photos of your clothing items, create custom lists for trips or general organization, and categorize your wardrobe by color, season, and clothing type for easy filtering. You can add notes to your clothing items, such as if you have lent an item to a friend or if it is at the dry cleaners. In addition, you can create personalized lists for events or trips, and add items to the list as packing reminders. Finally, if you ever need to make changes, you can easily delete items from your closet or from a list. Say goodbye to cluttered closets and disorganized trips, and say hello to the perfect wardrobe management tool with Closet Collection.</p>
+          </div>
+        </div>
       </div>
-      <div class="proj-card">
-        <h2>PlayPal</h2>
-        <p>Team</p>
-        <p>
-          the perfect app for first time moms who are struggling to come up with
-          ideas on safe, fun, and stimulating activities for their child.
-          PlayPal gives a list of activities with that can be filtered through
-          to give you ideas for inside or outside play. The activities are also
-          separated by gross and fine motor skills.
-        </p>
+      <div class="proj2"><a class="modal-btn" data-micromodal-trigger="modal-2" href="javascript:;">FitLit</a> </div>
+      <div class="micromodal" id="modal-2" aria-hidden="true">
+        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="micromodal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-2-title"
+          >
+            <button aria-label="Close modal" data-micromodal-close>X</button>
+            <p>FitLit is a fitness tracking application that allows users to keep track of their sleep, hydration, and activity data. The application uses a local server and fetch requests to GET and POST data. Error handling has been added to both requests to catch any errors that may occur.
+
+              The application features data visualization using charts from chart.js, presenting all data in a visually pleasing manner. Dayjs has been used to format and standardize dates. Users can add new data for the current day, and once submitted, the charts will update and populate with the latest data. Recursion has been utilized to construct a weeks worth of data if there are gaps in the data' date.
+              
+              A helper function file has been added to house functions that are used multiple times throughout the project, keeping the code DRY. The application also features a calendar that allows users to manipulate dates and view a wide variety of information from different dates. Users can view their personal information inside an information section.</p>
+            <p>Tech Used: Vanilla JS, Mocha, Chai, Git, GitHub, CSS, DayJS, ChartJS</p>
+          </div>
+        </div>
       </div>
-      <div class="proj-card">
-        <h2>FitLit</h2>
-        <p>Team</p>
-        <p>
-          a fitness tracking application that allows a user to see the
-          information on their sleep, hydration and activity. Features added
-          allows users to see all data displayed in a visually pleasing manner
-          using charts from chart.js. We utilized dayjs to format and
-          standardize dates. The user can add new data for current day. After
-          the user submits data the charts will update and populate with latest
-          data.
-        </p>
+      <div class="proj3"><a class="modal-btn" data-micromodal-trigger="modal-3" href="javascript:;">PlayPal</a> </div>
+      <div class="micromodal" id="modal-3" aria-hidden="true">
+        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="micromodal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-3-title"
+          >
+            <button aria-label="Close modal" data-micromodal-close>X</button>
+            <p>PlayPal is an innovative mobile application designed to assist first-time mothers who are seeking ideas for safe, enjoyable, and stimulating activities for their children. This app provides a list of activities that can be filtered according to the location of the activity, whether it is an indoor or outdoor activity, and the gross and fine motor skills that the activity promotes.</p>
+
+             <p> PlayPal’s UI is built using React and React Router with styling done using Module CSS. The backend service is created using Express and Postgres. We use Docker to create the Postgres database and write queries to the database using Knex. TablePlus is used to interact with the data in the database. The backend is deployed using Heroku and the frontend UI is deployed using Vercel.</p>
+             <p>Tech Used: React, React Router, selectJS Library, Cypress, Git, GitHub, Vercel, Postgres, ExpressJS, NodeJS, Docker</p>
+          </div>
+        </div>
       </div>
-      <div class="proj-card">
-        <h2>Closet Collection</h2>
-        <p>Team</p>
-        <p>
-          your ultimate solution to organize your wardrobe. With this app, you
-          can easily manage your clothing collection, take photos of your
-          clothing items, create custom lists for trips or general organization,
-          and categorize your wardrobe by color, season, and clothing type for
-          easy filtering.
-        </p>
+      <div class="proj4"><a class="modal-btn" data-micromodal-trigger="modal-4" href="javascript:;">Cook Ahead</a> </div>
+      <div class="micromodal" id="modal-4" aria-hidden="true">
+        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="micromodal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-4-title"
+          >
+            <button aria-label="Close modal" data-micromodal-close>X</button>
+            <p>Coming up with meals ideas and making decisions for the family meal plans is hard. Cook Ahead is a meal planning application built with React and React Router. It allows users to generate a list of meal ideas and manage the meal plan by adding and deleting ideas. The application is tested using Cypress for end-to-end testing, and version control is managed with Git and GitHub. Postman is used to test API calls, and the application is deployed with Vercel.It features a responsive layout design with the use of media queries, ensuring optimal user experience across various devices.</p>
+            <p>Tech Used: React, React Router, HTML Tag Parser Library, Cypress, Git, GitHub, Vercel, CSS</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -147,6 +168,7 @@ layout: default
     </div>
   </section>
 </div>
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js""></script>
 <script src="./index.js"></script>
 <!-- </body>
 </html> -->

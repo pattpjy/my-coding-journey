@@ -1,3 +1,5 @@
+// import MicroModal from "micromodal";
+
 const typingElement = document.querySelector(".typing-text");
 const typeArray = ["Patt", "a developer", "a creator", "a mom"];
 
@@ -5,6 +7,9 @@ const navList = document.querySelector(".nav-list");
 const navListLi = document.querySelector("body > div.nav-bar > div > ul > li");
 const burger = document.querySelector(".fa-solid.fa-burger");
 const closeBTN = document.querySelector(".fa-solid.fa-circle-xmark");
+const modal = document.querySelector("#modal");
+const showProj = document.querySelector(".proj-card");
+
 let index = 0,
   isAdding = true,
   typeIndex = 0;
@@ -74,3 +79,7 @@ function closeBurger() {
 
 // Start typing text
 playAnim();
+
+MicroModal.init({
+  disableScroll: true,
+});

@@ -4,6 +4,7 @@
     "build": "bundler install"
   },
   "dependencies": {
-    "mermaid": "^10.0.2"
+    "mermaid": "^10.0.2",
+    "micromodal": "^0.4.10"
   }
 }
