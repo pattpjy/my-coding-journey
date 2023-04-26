@@ -227,7 +227,8 @@ button:focus-visible {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 2em;
+  margin: 1em;
+  padding: 2em;
   background-color: rgba(253, 255, 255, 0.2);
 }
 
@@ -320,42 +321,44 @@ button:focus-visible {
   transition: 2s ease-in-out;
 }
 
-#proj > div > div:nth-child(1):hover {
-  background-image: url("../asset/cookAhead.png");
+.proj4,
+.proj3,
+.proj2,
+.proj1 {
+  width: 200px;
+  height: 200px;
+  margin: 0 10px 0 10px;
+  background-repeat: no-repeat;
+
   background-position: center;
   background-size: cover;
   color: transparent;
-  transition: 1s;
-  transform: rotate(360deg);
 }
-
-#proj > div > div:nth-child(2):hover {
-  background-image: url("../asset/playpal.png");
-  background-position: center;
-  background-size: cover;
-  color: transparent;
-  transition: 1s;
-  transform: rotate(360deg);
+.modal-btn {
+  display: block;
+  position: relative;
+  z-index: 0;
+  width: 5em;
+  height: 2em;
+  padding: 1em;
+  margin: auto;
+  top: 5em;
+  background-color: rgba(249, 249, 249, 0.9);
+  border: solid 2px rgba(169, 169, 169, 0.9);
+  border-radius: 1em;
 }
-
-#proj > div > div:nth-child(3):hover {
-  background-image: url("../asset/fitLit.png");
-  background-position: center;
-  background-size: cover;
-  color: transparent;
-  transition: 1s;
-  transform: rotate(360deg);
-}
-
-#proj > div > div:nth-child(4):hover {
+.proj1 {
   background-image: url("../asset/closet-collection.png");
-  background-position: center;
-  background-size: cover;
-  color: transparent;
-  transition: 1s;
-  transform: rotate(360deg);
 }
-
+.proj2 {
+  background-image: url("../asset/fitLit.png");
+}
+.proj3 {
+  background-image: url("../asset/playpal.png");
+}
+.proj4 {
+  background-image: url("../asset/cookAhead.png");
+}
 .h2-light {
   color: rgba(253, 255, 255, 1);
   text-shadow: gray 2px 3px;
@@ -413,5 +416,75 @@ button:focus-visible {
   }
   .about-me {
     margin: 0;
+  }
+}
+
+/*--------modal--------*/
+body {
+  /* make page scrollable to test disableScroll works */
+  height: 2000px;
+}
+
+.micromodal {
+  display: none;
+}
+
+.micromodal.is-open {
+  display: block;
+}
+
+.micromodal__overlay {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.micromodal__container {
+  position: absolute;
+  box-sizing: border-box;
+  /* z-index: 10; */
+  overflow-y: auto;
+  max-width: 500px;
+  max-height: 100vh;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.micromodal[aria-hidden="false"] .micromodal__overlay {
+  animation: microModalFadeIn 0.2s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal[aria-hidden="false"] .micromodal__container {
+  animation: microModalSlideIn 0.2s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.micromodal .micromodal__container,
+.micromodal .micromodal__overlay {
+  will-change: transform;
+}
+
+@keyframes microModalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes microModalSlideIn {
+  from {
+    transform: translateY(15%);
+  }
+  to {
+    transform: translateY(0);
   }
 }
