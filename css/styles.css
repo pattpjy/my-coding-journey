@@ -320,7 +320,7 @@ button:focus-visible {
   background-color: rgba(249, 249, 249, 0.9);
   transition: 2s ease-in-out;
 }
-
+.proj5,
 .proj4,
 .proj3,
 .proj2,
@@ -358,6 +358,9 @@ button:focus-visible {
 }
 .proj4 {
   background-image: url("../asset/cookAhead.png");
+}
+.proj5 {
+  background-image: url("../asset/news_reader.png");
 }
 .h2-light {
   color: rgba(253, 255, 255, 1);
