@@ -320,6 +320,8 @@ button:focus-visible {
   background-color: rgba(249, 249, 249, 0.9);
   transition: 2s ease-in-out;
 }
+
+.proj6,
 .proj5,
 .proj4,
 .proj3,
@@ -329,7 +331,7 @@ button:focus-visible {
   height: 200px;
   margin: 0 10px 0 10px;
   background-repeat: no-repeat;
-
+  border: 2px solid rgba(169, 169, 169);
   background-position: center;
   background-size: cover;
   color: transparent;
@@ -347,6 +349,10 @@ button:focus-visible {
   border: solid 2px rgba(169, 169, 169, 0.9);
   border-radius: 1em;
 }
+.modal-btn:hover {
+  background-color: rgb(133, 138, 40, 0.9);
+}
+
 .proj1 {
   background-image: url("../asset/closet-collection.png");
 }
@@ -361,6 +367,9 @@ button:focus-visible {
 }
 .proj5 {
   background-image: url("../asset/news_reader.png");
+}
+.proj6 {
+  background-image: url("../asset/gitWatch.png");
 }
 .h2-light {
   color: rgba(253, 255, 255, 1);
