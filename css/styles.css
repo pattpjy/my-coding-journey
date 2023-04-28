@@ -9,15 +9,17 @@ i {
   vertical-align: middle;
 }
 
-a {
+a,
+.nav-link,
+.a-blog {
   color: black;
   font-weight: 900;
-  text-decoration: inherit;
+  text-decoration: none;
 }
 
+a,
 .a-blog:hover {
   color: #fdc600;
-  border-bottom: #4f5060 solid 2px;
 }
 
 .nav-bar {
