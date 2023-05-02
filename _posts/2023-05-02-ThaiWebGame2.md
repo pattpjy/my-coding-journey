@@ -34,3 +34,5 @@ To add an audio file to our web app, my choices are either the HTML audio tag or
 <br>
 <br>
 I have now completed Phase I of the project and will be moving on to Phase II, which involves the creation of the server and database. Please stay tuned for more updates.
+
+[Github](https://github.com/pattpjy/word-game)
