@@ -434,10 +434,6 @@ button:focus-visible {
 }
 
 /*--------modal--------*/
-body {
-  /* make page scrollable to test disableScroll works */
-  height: 2000px;
-}
 
 .micromodal {
   display: none;

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio Presentation</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Varela%20Round"
+    />
+  </head>
+  <body>
+    
+<div class="nav-bar">
+  <a class="linkedin" href="https://www.linkedin.com/in/pattsookmark/"> <i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+  <div class="header">
+    <ul class="nav-list">
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#about"> About </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="#blog"> Blog </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="#proj"> Proj </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="#tech"> Tech </a>
+    </ul>
+    <i class="fa-solid fa-burger" onclick="openBurger()"></i>
+    <i class="fa-solid fa-circle-xmark" onclick="closeBurger()"></i>
+  </div>
+</div>
+
+<div class="blog-content">
+  <h1>Code In Public - Thai Word Game II</h1>
+  <h1 id="reflection">»Reflection«</h1>
+
+<h2 id="start-the-project-by-using-nextjs">Start the project by using Next.JS</h2>
+
+<p>Next.js is a popular React framework that makes it easy for developers to build server-side rendered web applications. In this blog, I’ll discuss how I use Next.JS in my word game application.</p>
+
+<h2 id="why-nextjs">Why Next.js?</h2>
+
+<p>One of the main reasons why I’m using Next.js for this project is to learn about server-side components. With server-side rendering, the performance of the word game is improved by pre-rendering pages that speeds up the load time from the server and sending them to the client.</p>
+
+<h2 id="creating-routes-with-nextjs">Creating Routes with Next.js</h2>
+
+<p>Next.js has a directory-based routing system that makes it easy to create and manage routes. I can create a new page by creating a new file in the “pages” directory. For example, if I want to create a “home” page, I can create a file called “index.js” in the “pages” directory. Similarly, to create a “contact” page, I can create a file called “contact.js” in the “pages” directory.</p>
+
+<h2 id="adding-images-in-nextjs">Adding Images in Next.js</h2>
+
+<p>Next.js uses the “next/image” component to optimize images for performance. This component automatically resizes and optimizes images based on the device size and screen resolution.
+To use the “next/image” component, I need to provide an image URL and configure its properties. The image URL can be either an absolute URL or a relative path to the image file in our project.
+Next.js also provides a configuration object that can be uses to customize the image properties. I can configure properties such as the image size, quality, and layout.</p>
+
+<h2 id="creating-sample-audio-files">Creating Sample Audio Files</h2>
+
+<p>For this project, I create a couple sample audio files using QuickTime and GarageBand. I can create a new audio file in GarageBand, make some edits, and export it as an MP3 or M4A file. MP3 is a more widely used format, but M4A is a higher quality format that is compatible with Apple devices.</p>
+
+<h2 id="handling-audio-files-in-nextjs">Handling Audio Files in Next.js</h2>
+
+<p>To add an audio file to our web app, my choices are either the HTML audio tag or the JavaScript audio constructor. The HTML audio tag is easier to use, but the JavaScript audio constructor gives me more control over the audio playback. Because I will be rendering and referencing multiples audio file on the same page, I decided to use constructor over html tag.
+<br />
+<br />
+I have now completed Phase I of the project and will be moving on to Phase II, which involves the creation of the server and database. Please stay tuned for more updates.</p>
+
+</div>
+
+  </body>
+  <script
+    src="https://kit.fontawesome.com/103e31ca68.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-04-28T10:38:33-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Coding Journey Blog</title><author><name>Patt Sookmark</name></author><entry><title type="html">GraphQL vs Rest</title><link href="http://localhost:4000/2023/04/26/GraphQL-vs-Rest.html" rel="alternate" type="text/html" title="GraphQL vs Rest" /><published>2023-04-26T00:00:00-06:00</published><updated>2023-04-26T00:00:00-06:00</updated><id>http://localhost:4000/2023/04/26/GraphQL%20vs%20Rest</id><content type="html" xml:base="http://localhost:4000/2023/04/26/GraphQL-vs-Rest.html"><![CDATA[<p>I recently worked on a small project that involved consuming GitHub’s GraphQL API to display specific users’ public repositories. This project was a great opportunity for me to learn about GraphQL and how it differs from REST API. In this reflection blog, I will share my experience of using GraphQL API and the challenges I faced during the project.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-02T15:22:36-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Coding Journey Blog</title><author><name>Patt Sookmark</name></author><entry><title type="html">Code In Public - Thai Word Game II</title><link href="http://localhost:4000/2023/05/02/ThaiWebGame2.html" rel="alternate" type="text/html" title="Code In Public - Thai Word Game II" /><published>2023-05-02T00:00:00-06:00</published><updated>2023-05-02T00:00:00-06:00</updated><id>http://localhost:4000/2023/05/02/ThaiWebGame2</id><content type="html" xml:base="http://localhost:4000/2023/05/02/ThaiWebGame2.html"><![CDATA[<h1 id="reflection">»Reflection«</h1>
+
+<h2 id="start-the-project-by-using-nextjs">Start the project by using Next.JS</h2>
+
+<p>Next.js is a popular React framework that makes it easy for developers to build server-side rendered web applications. In this blog, I’ll discuss how I use Next.JS in my word game application.</p>
+
+<h2 id="why-nextjs">Why Next.js?</h2>
+
+<p>One of the main reasons why I’m using Next.js for this project is to learn about server-side components. With server-side rendering, the performance of the word game is improved by pre-rendering pages that speeds up the load time from the server and sending them to the client.</p>
+
+<h2 id="creating-routes-with-nextjs">Creating Routes with Next.js</h2>
+
+<p>Next.js has a directory-based routing system that makes it easy to create and manage routes. I can create a new page by creating a new file in the “pages” directory. For example, if I want to create a “home” page, I can create a file called “index.js” in the “pages” directory. Similarly, to create a “contact” page, I can create a file called “contact.js” in the “pages” directory.</p>
+
+<h2 id="adding-images-in-nextjs">Adding Images in Next.js</h2>
+
+<p>Next.js uses the “next/image” component to optimize images for performance. This component automatically resizes and optimizes images based on the device size and screen resolution.
+To use the “next/image” component, I need to provide an image URL and configure its properties. The image URL can be either an absolute URL or a relative path to the image file in our project.
+Next.js also provides a configuration object that can be uses to customize the image properties. I can configure properties such as the image size, quality, and layout.</p>
+
+<h2 id="creating-sample-audio-files">Creating Sample Audio Files</h2>
+
+<p>For this project, I create a couple sample audio files using QuickTime and GarageBand. I can create a new audio file in GarageBand, make some edits, and export it as an MP3 or M4A file. MP3 is a more widely used format, but M4A is a higher quality format that is compatible with Apple devices.</p>
+
+<h2 id="handling-audio-files-in-nextjs">Handling Audio Files in Next.js</h2>
+
+<p>To add an audio file to our web app, my choices are either the HTML audio tag or the JavaScript audio constructor. The HTML audio tag is easier to use, but the JavaScript audio constructor gives me more control over the audio playback. Because I will be rendering and referencing multiples audio file on the same page, I decided to use constructor over html tag.
+<br />
+<br />
+I have now completed Phase I of the project and will be moving on to Phase II, which involves the creation of the server and database. Please stay tuned for more updates.</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[»Reflection«]]></summary></entry><entry><title type="html">GraphQL vs Rest</title><link href="http://localhost:4000/2023/04/26/GraphQL-vs-Rest.html" rel="alternate" type="text/html" title="GraphQL vs Rest" /><published>2023-04-26T00:00:00-06:00</published><updated>2023-04-26T00:00:00-06:00</updated><id>http://localhost:4000/2023/04/26/GraphQL%20vs%20Rest</id><content type="html" xml:base="http://localhost:4000/2023/04/26/GraphQL-vs-Rest.html"><![CDATA[<p>I recently worked on a small project that involved consuming GitHub’s GraphQL API to display specific users’ public repositories. This project was a great opportunity for me to learn about GraphQL and how it differs from REST API. In this reflection blog, I will share my experience of using GraphQL API and the challenges I faced during the project.</p>
 
 <p>One of the biggest challenges I faced while learning to use GitHub’s GraphQL explorer was understanding how the data was structured. It was a little overwhelming at first, but I overcame this challenge by watching a few YouTube videos and reading through other developers’ GitHub repositories. Once I got the hang of it, I found GraphQL to be quite powerful.</p>
 
