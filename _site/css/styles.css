@@ -8,7 +8,11 @@ i {
   margin: 0 1em 0 1em;
   vertical-align: middle;
 }
-
+.highlight {
+  background-color: #4f5060;
+  color: whitesmoke;
+  padding: 0.5em;
+}
 a,
 .nav-link,
 .a-blog {

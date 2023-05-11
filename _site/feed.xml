@@ -1,4 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-02T17:40:49-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Coding Journey Blog</title><author><name>Patt Sookmark</name></author><entry><title type="html">Code In Public - Thai Word Game II</title><link href="http://localhost:4000/2023/05/02/ThaiWebGame2.html" rel="alternate" type="text/html" title="Code In Public - Thai Word Game II" /><published>2023-05-02T00:00:00-06:00</published><updated>2023-05-02T00:00:00-06:00</updated><id>http://localhost:4000/2023/05/02/ThaiWebGame2</id><content type="html" xml:base="http://localhost:4000/2023/05/02/ThaiWebGame2.html"><![CDATA[<h1 id="reflection">»Reflection«</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-11T16:32:04-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Coding Journey Blog</title><author><name>Patt Sookmark</name></author><entry><title type="html">A Beginner’s Guide to Understanding Node Modules in Node.js</title><link href="http://localhost:4000/2023/05/11/NodeModule.html" rel="alternate" type="text/html" title="A Beginner’s Guide to Understanding Node Modules in Node.js" /><published>2023-05-11T00:00:00-06:00</published><updated>2023-05-11T00:00:00-06:00</updated><id>http://localhost:4000/2023/05/11/NodeModule</id><content type="html" xml:base="http://localhost:4000/2023/05/11/NodeModule.html"><![CDATA[<p>Node.js is a popular platform for building server-side applications using JavaScript. One of its key features is its module system, which allows developers to organize their code into reusable and maintainable pieces. In this blog post, we’ll explore what Node modules are, how they work, and the different types of modules.</p>
+
+<h2 id="introduction-to-node-modules">Introduction to Node Modules</h2>
+
+<p>Node modules are essentially JavaScript files that encapsulate a set of related functionality. Each module can expose functions, classes, objects, or variables that can be imported and used in other modules or scripts. This modularity makes it easier to organize, maintain, and scale Node.js applications.</p>
+
+<h3 id="types-of-node-modules">Types of Node Modules</h3>
+
+<p>There are two types of Node modules: core modules and user-defined modules.</p>
+
+<p>Core modules are modules that are built into Node.js itself. These modules can be accessed without any additional installation or setup.</p>
+
+<p>User-defined modules, on the other hand, are modules created by developers for their specific use case. These modules can be shared and reused across multiple projects. User-defined modules can be downloaded and installed using the Node Package Manager (NPM).</p>
+
+<h3 id="creating-a-node-module">Creating a Node Module</h3>
+
+<p>To create a Node module, you need to follow a few steps:</p>
+
+<ol>
+  <li>Create a new JavaScript file with the code you want to encapsulate.</li>
+  <li>Export the functions, classes, objects, or variables you want to make available to other modules.</li>
+  <li>Import the module in another JavaScript file using the ‘require’ function.</li>
+</ol>
+
+<p>Here’s an example of how to create a simple Node module:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// sampleModule.js
+const add = (a, b) =&gt; {
+  return a + b;
+}
+
+module.exports = {
+  add: add
+};
+</code></pre></div></div>
+
+<p>In the code above, we define a function ‘add’ and export it using the ‘module.exports’ object. This allows us to import the module and use the ‘add’ function in another JavaScript file:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// index.js
+const sampleModule = require('./sampleModule');
+
+console.log(sampleModule.add(2, 3)); // Output: 5
+
+</code></pre></div></div>
+
+<p>In this code, we import the ‘sampleModule’ and use the ‘add’ function to add two numbers.</p>
+
+<h3 id="commonjs-modules">CommonJS Modules</h3>
+
+<p>In CommonJS modules, the <code class="language-plaintext highlighter-rouge">require</code> function is used to import modules, and the <code class="language-plaintext highlighter-rouge">exports</code> object is used to define what is exported from a module. When you need to access functionality from other modules, <code class="language-plaintext highlighter-rouge">require</code> comes to the rescue, and <code class="language-plaintext highlighter-rouge">exports</code> lets you share your own code with the world.</p>
+
+<p>Here’s an example of CommonJS modules:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// math.js
+exports.add = (a, b) =&gt; a + b;
+
+// index.js
+const math = require('./math');
+console.log(math.add(2, 3)); // Output: 5
+
+</code></pre></div></div>
+
+<p>In this example, the <code class="language-plaintext highlighter-rouge">add</code> function is exported from the <code class="language-plaintext highlighter-rouge">math</code> module using the <code class="language-plaintext highlighter-rouge">exports</code> object. Then, in the <code class="language-plaintext highlighter-rouge">index.js</code> file, we use <code class="language-plaintext highlighter-rouge">require</code> to import the <code class="language-plaintext highlighter-rouge">math</code> module and access the <code class="language-plaintext highlighter-rouge">add</code> function.</p>
+
+<h3 id="es-modules">ES Modules</h3>
+
+<p>ES modules offer a modern approach to module management. Discover the power of <code class="language-plaintext highlighter-rouge">import</code> and <code class="language-plaintext highlighter-rouge">export</code>statements in Node.js, and learn how they surpass the capabilities of CommonJS modules. We’ll delve into the nuances of default exports and named exports, and discuss the interplay between ES modules and CommonJS modules. Unleash the full potential of ES modules and take your code organization to the next level.</p>
+
+<p>Here’s an example of ES modules:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// math.js
+export const add = (a, b) =&gt; a + b;
+
+// index.js
+import { add } from './math';
+console.log(add(2, 3)); // Output: 5
+
+</code></pre></div></div>
+
+<p>In this example, the <code class="language-plaintext highlighter-rouge">add</code> function is exported using the <code class="language-plaintext highlighter-rouge">export</code> statement, and then it’s imported using the <code class="language-plaintext highlighter-rouge">import</code> statement in the <code class="language-plaintext highlighter-rouge">index.js</code> file</p>
+
+<p>🎉 🎉 🪄 🪄 🪄 🪄 🪄 🪄🎉 🎉
+Congratulations on mastering the art of Node modules! Armed with a deep understanding of <code class="language-plaintext highlighter-rouge">require</code>, <code class="language-plaintext highlighter-rouge">exports</code>,<code class="language-plaintext highlighter-rouge">export</code>, and <code class="language-plaintext highlighter-rouge">import</code>, you possess the tools to transform your codebase into a well-structured, maintainable masterpiece. Embrace the magic of Node modules in your projects, and experience the joy of clean, efficient coding.</p>
+
+<p>Remember, your coding journey is an adventure, and Node modules are your trusty companions. May your modules always be organized, your bugs scarce, and your coding endeavors filled with endless creativity and success. Happy coding!</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[Node.js is a popular platform for building server-side applications using JavaScript. One of its key features is its module system, which allows developers to organize their code into reusable and maintainable pieces. In this blog post, we’ll explore what Node modules are, how they work, and the different types of modules.]]></summary></entry><entry><title type="html">Code In Public - Thai Word Game II</title><link href="http://localhost:4000/2023/05/02/ThaiWebGame2.html" rel="alternate" type="text/html" title="Code In Public - Thai Word Game II" /><published>2023-05-02T00:00:00-06:00</published><updated>2023-05-02T00:00:00-06:00</updated><id>http://localhost:4000/2023/05/02/ThaiWebGame2</id><content type="html" xml:base="http://localhost:4000/2023/05/02/ThaiWebGame2.html"><![CDATA[<h1 id="reflection">»Reflection«</h1>
 
 <h2 id="start-the-project-by-using-nextjs">Start the project by using Next.JS</h2>
 
