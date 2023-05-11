@@ -1,7 +1,7 @@
 ---
 title: A Beginner's Guide to Understanding Node Modules in Node.js
 layout: post
-banner_image: https://images.unsplash.com/photo-1611996575749-79a3a250f948?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80
+banner_image: https://images.unsplash.com/photo-1561736778-92e52a7769ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80
 ---
 
 Node.js is a popular platform for building server-side applications using JavaScript. One of its key features is its module system, which allows developers to organize their code into reusable and maintainable pieces. In this blog post, we'll explore what Node modules are, how they work, and the different types of modules.
