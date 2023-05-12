@@ -13,6 +13,10 @@ i {
   color: whitesmoke;
   padding: 0.5em;
 }
+.blog-banner {
+  width: 100%;
+  height: auto;
+}
 a,
 .nav-link,
 .a-blog {
@@ -181,6 +185,7 @@ a,
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center;
 }
 
 button {
@@ -224,6 +229,11 @@ button:focus-visible {
   flex-direction: row;
   margin-top: 3em;
   align-items: center;
+  justify-content: center;
+}
+.about-container {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -335,9 +345,9 @@ button:focus-visible {
 .proj1 {
   width: 200px;
   height: 200px;
-  margin: 0 10px 0 10px;
+  margin: 0 10px 10px 10px;
   background-repeat: no-repeat;
-  border: 2px solid rgba(169, 169, 169);
+  border: 5px solid rgba(169, 169, 169);
   background-position: center;
   background-size: cover;
   color: transparent;
@@ -384,7 +394,7 @@ button:focus-visible {
 
 .blog-content {
   margin: auto;
-  width: 66%;
+  width: 90%;
 }
 
 .fa-solid.fa-burger {
@@ -396,6 +406,11 @@ button:focus-visible {
 }
 
 @media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.875em;
+    text-align: center;
+  }
+
   .nav-list {
     display: none;
   }
