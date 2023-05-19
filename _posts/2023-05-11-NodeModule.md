@@ -1,7 +1,7 @@
 ---
 title: A Beginner's Guide to Understanding Node Modules in Node.js
 layout: post
-banner_image: asset/node-module-blog.png
+banner_image: asset/blog-node-module.png
 ---
 
 <img class="blog-banner" src="/asset/node-module-blog.png" alt="Node Module Banner">
