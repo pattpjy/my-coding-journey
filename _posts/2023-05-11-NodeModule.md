@@ -4,7 +4,7 @@ layout: post
 banner_image: asset/blog-node-module.png
 ---
 
-<img class="blog-banner" src="/asset/node-module-blog.png" alt="Node Module Banner">
+<img class="blog-banner" src="/asset/blog-node-module.png" alt="Node Module Banner">
 Node.js is a popular platform for building server-side applications using JavaScript. One of its key features is its module system, which allows developers to organize their code into reusable and maintainable pieces. In this blog post, we'll explore what Node modules are, how they work, and the different types of modules.
 
 ## Introduction to Node Modules

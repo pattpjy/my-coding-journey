@@ -7,11 +7,15 @@ banner_image: asset/blog-empathy-mapping.png
 <img class="blog-banner" src="/asset/blog-empathy-mapping.png" alt="Empathy Mapping Banner">
 You know what's cool? Empathy mapping. And guess what? It's not just for UX designers—it's also a game-changer for UI developers like you. Let me tell you why:
 
-1. User-Centered Design: Empathy mapping helps you design interfaces that users will adore. By understanding their needs, frustrations, and goals, you can create UIs that make their hearts skip a beat. Who doesn't want users to fall head over heels for their UI?
-2. Design Decision Making: Empathy mapping gives you the power to make smart design decisions. By diving into users' minds and behaviors, you can prioritize features, organize elements, and choose the right interactions. It's like having a crystal ball that shows you exactly what users want.
-3. Collaboration and Communication: Empathy mapping is often a collaborative process. And as a UI developer, knowing the ins and outs of empathy mapping allows you to actively contribute to discussions, share insights, and collaborate smoothly with the design team. It's all about teamwork, baby!
-4. Contextual Design: Understanding the context in which users will use your interface is crucial. Empathy mapping helps you grasp that context and design interfaces that feel like a natural extension of users' lives. It's like speaking their language and fitting right into their world.
-5. Iterative Design and Continuous Improvement: Empathy mapping is not a one-time thing. It's an ongoing process of learning and improving. As a UI developer, you can keep refining your designs based on user feedback and observations, making your UI a shining star in the ever-evolving world of UX.
+- **User-Centered Design** : Empathy mapping helps you design interfaces that users will adore. By understanding their needs, frustrations, and goals, you can create UIs that make their hearts skip a beat. Who doesn't want users to fall head over heels for their UI?
+
+- **Design Decision Making** : Empathy mapping gives you the power to make smart design decisions. By diving into users' minds and behaviors, you can prioritize features, organize elements, and choose the right interactions. It's like having a crystal ball that shows you exactly what users want.
+
+- **Collaboration and Communication** : Empathy mapping is often a collaborative process. And as a UI developer, knowing the ins and outs of empathy mapping allows you to actively contribute to discussions, share insights, and collaborate smoothly with the design team. It's all about teamwork!
+
+- **Contextual Design** : Understanding the context in which users will use your interface is crucial. Empathy mapping helps you grasp that context and design interfaces that feel like a natural extension of users' lives. It's like speaking their language and fitting right into their world.
+
+- **Iterative Design and Continuous Improvement**: Empathy mapping is not a one-time thing. It's an ongoing process of learning and improving. As a UI developer, you can keep refining your designs based on user feedback and observations, making your UI a shining star in the ever-evolving world of UX.
 
 So, my fellow UI developer, embrace empathy mapping! It's your secret weapon to creating user-centered UI designs that rock users' socks off. Let empathy guide your way, and you'll be a UI hero in no time.
 
