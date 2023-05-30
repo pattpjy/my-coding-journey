@@ -1,6 +1,7 @@
 ---
 title: "Understand the Power of Empathy Mapping: Designing Interfaces Users Will Love"
 layout: post
+author: "Patt Sookmark"
 banner_image: asset/blog-empathy-mapping.png
 ---
 
