@@ -1,3 +1,12 @@
+---
+title: "🔍 Improving Productivity and Motivation in Your Job Search: My Journey Through the CAMPS Model 🔑"
+layout: post
+author: "Patt Sookmark"
+banner_image: asset/blog-camp-model.png
+---
+
+<img class="blog-banner" src="/asset/blog-camp-model.png" alt="AWS and Ban
+
 A job search can be exciting yet daunting. 😮 But fear not! 🌟 I've discovered a game-changing approach to keep productivity high and motivation soaring during my own job search journey. 🚀 Let's explore the transformative power of the CAMPS model—Certainty, Autonomy, Mastery, Purpose, and Social Inclusion. Get ready to be inspired and equipped with the tools you need to succeed!
 
 💡 Section 1: Certainty 💡
