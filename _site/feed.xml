@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-19T15:33:53-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Coding Journey Blog</title><author><name>Patt Sookmark</name></author><entry><title type="html">Understand the Power of Empathy Mapping: Designing Interfaces Users Will Love</title><link href="http://localhost:4000/2023/05/19/Empathy-Mapping.html" rel="alternate" type="text/html" title="Understand the Power of Empathy Mapping: Designing Interfaces Users Will Love" /><published>2023-05-19T00:00:00-06:00</published><updated>2023-05-19T00:00:00-06:00</updated><id>http://localhost:4000/2023/05/19/Empathy-Mapping</id><content type="html" xml:base="http://localhost:4000/2023/05/19/Empathy-Mapping.html"><![CDATA[<p><img class="blog-banner" src="/asset/blog-empathy-mapping.png" alt="Empathy Mapping Banner" />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-05T14:28:58-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Coding Journey Blog</title><author><name>Patt Sookmark</name></author><entry><title type="html">🔍 Improving Productivity and Motivation in Your Job Search: My Journey Through the CAMPS Model 🔑</title><link href="http://localhost:4000/2023/06/05/camp-model.html" rel="alternate" type="text/html" title="🔍 Improving Productivity and Motivation in Your Job Search: My Journey Through the CAMPS Model 🔑" /><published>2023-06-05T00:00:00-06:00</published><updated>2023-06-05T00:00:00-06:00</updated><id>http://localhost:4000/2023/06/05/camp-model</id><content type="html" xml:base="http://localhost:4000/2023/06/05/camp-model.html"><![CDATA[<p><img class="blog-banner" src="/asset/blog-camps-model.png" alt="camps-model-banner" /></p>
+
+<p>A job search can be exciting yet daunting. 😮 But fear not! 🌟 I’ve discovered a game-changing approach to keep productivity high and motivation soaring during my own job search journey. 🚀 Let’s explore the transformative power of the CAMPS model—Certainty, Autonomy, Mastery, Purpose, and Social Inclusion. Get ready to be inspired and equipped with the tools you need to succeed!</p>
+
+<h3 id="-section-1-certainty-">💡 Section 1: Certainty 💡</h3>
+
+<p>🔍 Clarity is key. By defining my positioning—React, TypeScript, Express, Database, and project management—I gained a sense of certainty. 🎯 Armed with this focus, I confidently navigated the job market, making strategic decisions with purpose.</p>
+
+<h3 id="-section-2-autonomy-">💡 Section 2: Autonomy 💡</h3>
+
+<p>🌟 It’s time to take control! I embarked on my own project, Thai-Words Game, fueled by my passions and inspirations. 🎨 The freedom to choose projects that aligned with my interests and goals empowered me to own my job search journey. 🌟💻</p>
+
+<h3 id="-section-3-mastery-">💡 Section 3: Mastery 💡</h3>
+
+<p>🔥 Continuous growth is the name of the game! 📚 By setting clear objectives and results, I transformed each endeavor into a valuable opportunity for skill development. Mastering React, TypeScript, Express, and databases not only boosted my confidence but also showcased my capabilities.🚀📈</p>
+
+<h3 id="-section-4-purpose-">💡 Section 4: Purpose 💡</h3>
+
+<p>💪 Beyond technicalities, the purpose is our guiding light. I committed to coding in public, sharing my progress with the world. 🌍 By contributing to the coding community, I found meaning in my journey, leaving a lasting impact and inspiring others. 💻🌟</p>
+
+<h3 id="-section-5-social-inclusion-">💡 Section 5: Social Inclusion 💡</h3>
+
+<p>👥 No journey is complete without connections! 👥 I sought support through regular stand-ups with my buddy, engaging in meaningful conversations about progress and challenges. Additionally, a mentor reviewed my code, providing invaluable feedback. Together, let’s build a supportive network and foster a sense of belonging within the coding community! 👥💬</p>
+
+<h3 id="-conclusion-your-journey-awaits-">🌟 Conclusion: Your Journey Awaits! 🌟</h3>
+
+<p>🔓 By embracing the CAMPS model—Certainty, Autonomy, Mastery, Purpose, and Social Inclusion—I have gained productivity and motivation during my job search. 🌈 Let’s make your job search a success story! 💥Remember💥, your journey is unique and is not a competition! Adapt the CAMPS model to your needs and aspirations, and prepare for a transformative experience. 🌟🔓 Happy job searching🚀</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">My AWS and IAM Journey: Safeguarding My Word Game App’s Audio Files in S3</title><link href="http://localhost:4000/2023/05/30/AWS-IAM.html" rel="alternate" type="text/html" title="My AWS and IAM Journey: Safeguarding My Word Game App’s Audio Files in S3" /><published>2023-05-30T00:00:00-06:00</published><updated>2023-05-30T00:00:00-06:00</updated><id>http://localhost:4000/2023/05/30/AWS-IAM</id><content type="html" xml:base="http://localhost:4000/2023/05/30/AWS-IAM.html"><![CDATA[<p><img class="blog-banner" src="/asset/blog-AWS-IAM.png" alt="AWS and Banner" /></p>
+
+<p>Today, I embarked on a significant step in building my word game app by exploring Amazon Web Services (AWS) and its fascinating world of cloud computing. AWS offers a multitude of services, and one that particularly caught my attention is Amazon S3 (Simple Storage Service). With S3, I have the ability to securely store and manage my app’s audio files. How exciting!</p>
+
+<h2 id="amazon-web-services-aws"><strong>Amazon Web Services (AWS)</strong></h2>
+
+<p>AWS is a comprehensive and widely-used cloud computing platform that provides a range of services and tools to help businesses and developers build, deploy, and scale applications. One of the prominent services offered by AWS is Amazon S3, which is a scalable object storage service specifically designed for storing and retrieving data.</p>
+
+<p>With S3, I can create buckets (containers) to securely store my audio files. These files can be accessed programmatically or through a web interface, making it easy for me to integrate them into my word game app. S3 ensures durability, high availability, and performance, thereby ensuring that my audio files are always accessible.</p>
+
+<h2 id="identity-and-access-management-iam"><strong>Identity and Access Management (IAM)</strong></h2>
+
+<p>Let me tell you about IAM! IAM plays an essential role in AWS security as it enables me to manage access to resources. With IAM, I have the power to control who can access my resources and what they can do with them. IAM allows me to grant granular permissions to specific users or roles, ensuring that only authorized entities can access my audio files. For instance, I can create an IAM user for my word game app and assign appropriate permissions to read or write files in the S3 bucket. This way, I have fine-grained control over who can interact with my assets.</p>
+
+<p>IAM also offers features such as multi-factor authentication (MFA) and integration with AWS CloudTrail for auditing and logging user actions, thereby enhancing the security of my AWS resources.</p>
+
+<h2 id="best-practices-for-using-s3-and-iam-together"><strong>Best Practices for Using S3 and IAM Together</strong></h2>
+
+<p>To effectively and securely manage my audio files in S3 using IAM, it is important to consider the following best practices:</p>
+
+<ol>
+  <li><strong>Principle of Least Privilege</strong>: Follow the principle of least privilege and grant only the necessary permissions to the IAM users or roles. Limit access to the S3 bucket to prevent unauthorized actions.</li>
+  <li><strong>Separation of Environments</strong>: Use separate IAM roles or users for different environments (e.g., development, staging, production) to ensure isolation and minimize potential risks.</li>
+  <li><strong>Secure Access Keys</strong>: When using IAM access keys for programmatic access to S3, securely manage and rotate the access keys regularly. Avoid embedding access keys directly in code repositories or sharing them insecurely.</li>
+  <li><strong>Regular Auditing</strong>: Monitor and review IAM policies and access permissions periodically to ensure they align with the app’s requirements. Remove unnecessary permissions and accounts that are no longer needed.</li>
+  <li><strong>Enable MFA</strong>: Consider enabling multi-factor authentication (MFA) for IAM users, especially for privileged accounts, to provide an additional layer of security.</li>
+</ol>
+
+<p>Today’s journey into AWS and IAM has been enlightening. I am thrilled to apply this newfound knowledge to safeguard my word game app’s audio files in S3. AWS is a vast landscape, and I am eager to explore more of its services. Until next time!</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Understand the Power of Empathy Mapping: Designing Interfaces Users Will Love</title><link href="http://localhost:4000/2023/05/19/Empathy-Mapping.html" rel="alternate" type="text/html" title="Understand the Power of Empathy Mapping: Designing Interfaces Users Will Love" /><published>2023-05-19T00:00:00-06:00</published><updated>2023-05-19T00:00:00-06:00</updated><id>http://localhost:4000/2023/05/19/Empathy-Mapping</id><content type="html" xml:base="http://localhost:4000/2023/05/19/Empathy-Mapping.html"><![CDATA[<p><img class="blog-banner" src="/asset/blog-empathy-mapping.png" alt="Empathy Mapping Banner" />
 You know what’s cool? Empathy mapping. And guess what? It’s not just for UX designers—it’s also a game-changer for UI developers like you. Let me tell you why:</p>
 
 <ul>

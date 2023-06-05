@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio Presentation</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Varela%20Round"
+    />
+  </head>
+  <body>
+    
+<div class="nav-bar">
+  <a class="linkedin" href="https://www.linkedin.com/in/pattsookmark/"> <i class="fa-brands fa-linkedin-in fa-xl"></i></a>
+  <div class="header">
+    <ul class="nav-list">
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#about"> About </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#blog"> Blog </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="#proj"> Proj </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="#tech"> Tech </a>
+    </ul>
+    <i class="fa-solid fa-burger" onclick="openBurger()"></i>
+    <i class="fa-solid fa-circle-xmark" onclick="closeBurger()"></i>
+  </div>
+</div>
+
+<div class="blog-content"><p><img class="blog-banner" src="/asset/blog-AWS-IAM.png" alt="AWS and Banner" /></p>
+
+<p>Today, I embarked on a significant step in building my word game app by exploring Amazon Web Services (AWS) and its fascinating world of cloud computing. AWS offers a multitude of services, and one that particularly caught my attention is Amazon S3 (Simple Storage Service). With S3, I have the ability to securely store and manage my app’s audio files. How exciting!</p>
+
+<h2 id="amazon-web-services-aws"><strong>Amazon Web Services (AWS)</strong></h2>
+
+<p>AWS is a comprehensive and widely-used cloud computing platform that provides a range of services and tools to help businesses and developers build, deploy, and scale applications. One of the prominent services offered by AWS is Amazon S3, which is a scalable object storage service specifically designed for storing and retrieving data.</p>
+
+<p>With S3, I can create buckets (containers) to securely store my audio files. These files can be accessed programmatically or through a web interface, making it easy for me to integrate them into my word game app. S3 ensures durability, high availability, and performance, thereby ensuring that my audio files are always accessible.</p>
+
+<h2 id="identity-and-access-management-iam"><strong>Identity and Access Management (IAM)</strong></h2>
+
+<p>Let me tell you about IAM! IAM plays an essential role in AWS security as it enables me to manage access to resources. With IAM, I have the power to control who can access my resources and what they can do with them. IAM allows me to grant granular permissions to specific users or roles, ensuring that only authorized entities can access my audio files. For instance, I can create an IAM user for my word game app and assign appropriate permissions to read or write files in the S3 bucket. This way, I have fine-grained control over who can interact with my assets.</p>
+
+<p>IAM also offers features such as multi-factor authentication (MFA) and integration with AWS CloudTrail for auditing and logging user actions, thereby enhancing the security of my AWS resources.</p>
+
+<h2 id="best-practices-for-using-s3-and-iam-together"><strong>Best Practices for Using S3 and IAM Together</strong></h2>
+
+<p>To effectively and securely manage my audio files in S3 using IAM, it is important to consider the following best practices:</p>
+
+<ol>
+  <li><strong>Principle of Least Privilege</strong>: Follow the principle of least privilege and grant only the necessary permissions to the IAM users or roles. Limit access to the S3 bucket to prevent unauthorized actions.</li>
+  <li><strong>Separation of Environments</strong>: Use separate IAM roles or users for different environments (e.g., development, staging, production) to ensure isolation and minimize potential risks.</li>
+  <li><strong>Secure Access Keys</strong>: When using IAM access keys for programmatic access to S3, securely manage and rotate the access keys regularly. Avoid embedding access keys directly in code repositories or sharing them insecurely.</li>
+  <li><strong>Regular Auditing</strong>: Monitor and review IAM policies and access permissions periodically to ensure they align with the app’s requirements. Remove unnecessary permissions and accounts that are no longer needed.</li>
+  <li><strong>Enable MFA</strong>: Consider enabling multi-factor authentication (MFA) for IAM users, especially for privileged accounts, to provide an additional layer of security.</li>
+</ol>
+
+<p>Today’s journey into AWS and IAM has been enlightening. I am thrilled to apply this newfound knowledge to safeguard my word game app’s audio files in S3. AWS is a vast landscape, and I am eager to explore more of its services. Until next time!</p>
+</div>
+
+  </body>
+  <script
+    src="https://kit.fontawesome.com/103e31ca68.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
