@@ -3,10 +3,10 @@
 const typingElement = document.querySelector(".typing-text");
 const typeArray = ["Patt", "a developer", "a creator", "a mom"];
 
-const navList = document.querySelector(".nav-list");
+const navList = document.querySelector("#nav-list");
 const navListLi = document.querySelector("body > div.nav-bar > div > ul > li");
-const burger = document.querySelector(".fa-solid.fa-burger");
-const closeBTN = document.querySelector(".fa-solid.fa-circle-xmark");
+const burger = document.querySelector("#burger");
+const closeBTN = document.querySelector("#xmark");
 const modal = document.querySelector("#modal");
 const showProj = document.querySelector(".proj-card");
 
@@ -61,20 +61,16 @@ function playAnim() {
 }
 
 function openBurger() {
-  navList.style.display = "flex";
-  navList.style.flexDirection = "column";
-  navList.style.listStyleType = "table";
-  navList.style.padding = 0;
-  navList.style.margin = 0;
+  navList.classList.add("nav-list-extend");
+  burger.classList.add("burger-hide");
+  closeBTN.classList.add("xmark-hide");
   navListLi.style.margin = 0;
-  burger.style.display = "none";
-  closeBTN.style.display = "block";
 }
 
 function closeBurger() {
-  burger.style.display = "block";
-  closeBTN.style.display = "none";
-  navList.style.display = "none";
+  burger.classList.remove("burger-hide");
+  closeBTN.classList.remove("xmark-hide");
+  navList.classList.remove("nav-list-extend");
 }
 
 // Start typing text

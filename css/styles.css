@@ -112,7 +112,8 @@ a,
 }
 
 .nav-list:hover,
-.nav-list {
+.nav-list,
+.nav-list-extend {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -209,7 +210,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.about-img,
+/* .about-img, */
 .about-me {
   margin: 0 4em 2em 4em;
   display: block;
@@ -218,10 +219,11 @@ button:focus-visible {
   /* height: auto; */
 }
 
-.proj-card,
 .about-img {
-  min-width: 15em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 40%;
+  margin: auto;
+  object-fit: contain;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .about {
@@ -401,16 +403,29 @@ button:focus-visible {
   display: none;
 }
 
+.xmark-hide,
 .fa-solid.fa-circle-xmark {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
   h1 {
     font-size: 1.875em;
     text-align: center;
   }
-
+  .fa-solid.fa-burger.burger-hide {
+    display: none;
+  }
+  .fa-solid.fa-circle-xmark.xmark-hide {
+    display: block;
+  }
+  .nav-list.nav-list-extend {
+    display: flex;
+    flex-direction: column;
+    list-style-type: table;
+    padding: 0;
+    margin: 0;
+  }
   .nav-list {
     display: none;
   }
@@ -422,9 +437,7 @@ button:focus-visible {
   .fa-solid.fa-burger {
     display: block;
   }
-  .fa-solid.fa-circle-xmark {
-    display: none;
-  }
+
   .left-banner {
     width: 100%;
   }
@@ -450,8 +463,11 @@ button:focus-visible {
   .about-me {
     margin: 0;
   }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
-
 /*--------modal--------*/
 
 .micromodal {

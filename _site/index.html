@@ -17,7 +17,7 @@
 <div class="nav-bar">
   <a class="linkedin" href="https://www.linkedin.com/in/pattsookmark/"> <i class="fa-brands fa-linkedin-in fa-xl"></i></a>
   <div class="header">
-    <ul class="nav-list">
+    <ul class="nav-list" id="nav-list">
       <li>
         <span></span><span></span><span></span><span></span>
         <a class="nav-link" href="/">Home</a>
@@ -38,8 +38,8 @@
         <span></span><span></span><span></span><span></span>
         <a class="nav-link" href="#tech"> Tech </a>
     </ul>
-    <i class="fa-solid fa-burger" onclick="openBurger()"></i>
-    <i class="fa-solid fa-circle-xmark" onclick="closeBurger()"></i>
+    <i class="fa-solid fa-burger" id="burger" onclick="openBurger()"></i>
+    <i class="fa-solid fa-circle-xmark" id="xmark"onclick="closeBurger()"></i>
   </div>
 </div>
 
@@ -80,6 +80,36 @@
   <section id="blog">
     <h2>MY BLOGS</h2>
     <ul>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          src="asset/blog-express-template.png"
+          style="width: 250px"
+        />
+        <div>
+          <a class="a-blog" href="/2023/06/08/Thaiwordgame-pattern.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>Simplify Backend Development with Express TypeScript Boilerplate!
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          src="asset/blog-express-template.png"
+          style="width: 250px"
+        />
+        <div>
+          <a class="a-blog" href="/2023/06/07/express-template.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>Simplify Backend Development with Express TypeScript Boilerplate!
+            </h2>
+          </a>
+        </div>
+      </li>
       
       <li class="blog-card">
         <img

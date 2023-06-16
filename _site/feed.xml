@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-05T14:28:58-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Coding Journey Blog</title><author><name>Patt Sookmark</name></author><entry><title type="html">🔍 Improving Productivity and Motivation in Your Job Search: My Journey Through the CAMPS Model 🔑</title><link href="http://localhost:4000/2023/06/05/camp-model.html" rel="alternate" type="text/html" title="🔍 Improving Productivity and Motivation in Your Job Search: My Journey Through the CAMPS Model 🔑" /><published>2023-06-05T00:00:00-06:00</published><updated>2023-06-05T00:00:00-06:00</updated><id>http://localhost:4000/2023/06/05/camp-model</id><content type="html" xml:base="http://localhost:4000/2023/06/05/camp-model.html"><![CDATA[<p><img class="blog-banner" src="/asset/blog-camps-model.png" alt="camps-model-banner" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-16T09:43:45-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Coding Journey Blog</title><author><name>Patt Sookmark</name></author><entry><title type="html">Simplify Backend Development with Express TypeScript Boilerplate!</title><link href="http://localhost:4000/2023/06/08/Thaiwordgame-pattern.html" rel="alternate" type="text/html" title="Simplify Backend Development with Express TypeScript Boilerplate!" /><published>2023-06-08T00:00:00-06:00</published><updated>2023-06-08T00:00:00-06:00</updated><id>http://localhost:4000/2023/06/08/Thaiwordgame-pattern</id><content type="html" xml:base="http://localhost:4000/2023/06/08/Thaiwordgame-pattern.html"><![CDATA[]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Simplify Backend Development with Express TypeScript Boilerplate!</title><link href="http://localhost:4000/2023/06/07/express-template.html" rel="alternate" type="text/html" title="Simplify Backend Development with Express TypeScript Boilerplate!" /><published>2023-06-07T00:00:00-06:00</published><updated>2023-06-07T00:00:00-06:00</updated><id>http://localhost:4000/2023/06/07/express-template</id><content type="html" xml:base="http://localhost:4000/2023/06/07/express-template.html"><![CDATA[<p><img class="blog-banner" src="/asset/blog-express-template.png" alt="blog-express-template" /></p>
+
+<p>As a front-end developer venturing into the world of backend development, I understand the challenges of setting up a new server every time you want to test a new idea. That’s why I’m excited to share my solution: Express TypeScript Boilerplate, a game-changing template that simplifies the process of building Express servers using TypeScript.</p>
+
+<p>🔧 Key Features:</p>
+
+<ul>
+  <li>Express server with TypeScript</li>
+  <li>Local SQLite database</li>
+  <li>Knex query builder for development environment</li>
+  <li>CORS middleware for seamless cross-origin requests</li>
+</ul>
+
+<p>📦 Get Started:
+1️⃣ Clone the repository: <code class="language-plaintext highlighter-rouge">git clone &lt;https://github.com/your-username/express-typescript-boilerplate.git</code>&gt;
+2️⃣ Install dependencies: <code class="language-plaintext highlighter-rouge">npm install</code>
+3️⃣ Start the development server: <code class="language-plaintext highlighter-rouge">npm run dev</code>
+4️⃣ Access the server at: <code class="language-plaintext highlighter-rouge">http://localhost:3001</code></p>
+
+<p>🌐 GitHub Repository: <a href="https://github.com/your-username/express-typescript-boilerplate">Link to the repository</a></p>
+
+<p>With Express TypeScript Boilerplate, it streamlines the backend development process, allowing you to focus on bringing your ideas to life quickly and efficiently.</p>
+
+<p>👥 Join the community! I invite you to contribute, report bugs, and suggest new features. Check out the <code class="language-plaintext highlighter-rouge">CONTRIBUTING.md</code> file for guidelines on how to get involved.</p>
+
+<p>I created this template with fellow front-end developers turned backend enthusiasts in mind. Let’s simplify backend development together and unleash our creativity! 🎉</p>
+
+<p>#Express #TypeScript #Boilerplate #BackendDevelopment #juniorFrontendDeveloper</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">🔍 Improving Productivity and Motivation in Your Job Search: My Journey Through the CAMPS Model 🔑</title><link href="http://localhost:4000/2023/06/05/camp-model.html" rel="alternate" type="text/html" title="🔍 Improving Productivity and Motivation in Your Job Search: My Journey Through the CAMPS Model 🔑" /><published>2023-06-05T00:00:00-06:00</published><updated>2023-06-05T00:00:00-06:00</updated><id>http://localhost:4000/2023/06/05/camp-model</id><content type="html" xml:base="http://localhost:4000/2023/06/05/camp-model.html"><![CDATA[<p><img class="blog-banner" src="/asset/blog-camps-model.png" alt="camps-model-banner" /></p>
 
 <p>A job search can be exciting yet daunting. 😮 But fear not! 🌟 I’ve discovered a game-changing approach to keep productivity high and motivation soaring during my own job search journey. 🚀 Let’s explore the transformative power of the CAMPS model—Certainty, Autonomy, Mastery, Purpose, and Social Inclusion. Get ready to be inspired and equipped with the tools you need to succeed!</p>
 
@@ -270,77 +297,4 @@ This is an on-going project!
 <p>I am very excited to see this app in action that led me to break task down in the way that I can deliver value quickly. To be able to deliver the most basic functionality, I need to create the component in the red area first. The red box include the UI components and the backend server with single table to support the minimum required data.<br />
 <img class="blog-img" src="../../../asset/ThWorkBreakDown.png" /></p>
 
-<p>The next step is to write user story, creating React architecture and backend server and database. My intend is to build this application in public. Stay tune for more post!</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[Thai Word Game Phase I]]></summary></entry><entry><title type="html">1st Full Stack Webapp with PERN Stack</title><link href="http://localhost:4000/2023/03/16/Pern_Stack.html" rel="alternate" type="text/html" title="1st Full Stack Webapp with PERN Stack" /><published>2023-03-16T00:00:00-06:00</published><updated>2023-03-16T00:00:00-06:00</updated><id>http://localhost:4000/2023/03/16/Pern_Stack</id><content type="html" xml:base="http://localhost:4000/2023/03/16/Pern_Stack.html"><![CDATA[<h1>1st Full Stack Webapp with PERN Stack</h1>
-<h2 id="the-teams-first-full-stack-application-journey">The team’s first full-stack application journey</h2>
-
-<p>My FE team was tasked with creating a simple full-stack application. We decided to use Postgres, Express, React, and Node (PERN stack)</p>
-
-<h2 id="why-we-choose-pern-stack">Why we choose PERN Stack</h2>
-
-<p>It is because our knowledge of Javascript would cover three out of four technologies in the stack. The combination of these technologies allowed us to build a full-stack web application with CRUD operations.</p>
-
-<p>PERN is an acronym for Postgres, Express, React, and Node.
-<a href="https://mermaid.live/edit#pako:eNpNTU1LxDAQ_SthTgrd0k42STeIB9GriHqSXEKb7q40SUlT3LX0vzuriDKHeW_exyzQxs6Bhn6IH-3Bpsxe70x4drbN5fvEbjabW_ZwGpObJuIm_OErA_8EE9gjNV0gXP_EnuKU96SbcBkowLvk7bGjbwvZmYF8cN4Z0AQ719t5yAZMWMlq5xxfzqEFndPsCpjHzmZ3f7T7ZD3o3g4TXUcb3mL0vyaioBc4gVa85LJWAgUqIXjDCziD3mK5U6iwRrGlzVGsBXx-F1SlxEpKbGRTIe7qRq1fVe1YTQ"><img src="https://mermaid.ink/img/pako:eNpNTU1LxDAQ_SthTgrd0k42STeIB9GriHqSXEKb7q40SUlT3LX0vzuriDKHeW_exyzQxs6Bhn6IH-3Bpsxe70x4drbN5fvEbjabW_ZwGpObJuIm_OErA_8EE9gjNV0gXP_EnuKU96SbcBkowLvk7bGjbwvZmYF8cN4Z0AQ719t5yAZMWMlq5xxfzqEFndPsCpjHzmZ3f7T7ZD3o3g4TXUcb3mL0vyaioBc4gVa85LJWAgUqIXjDCziD3mK5U6iwRrGlzVGsBXx-F1SlxEpKbGRTIe7qRq1fVe1YTQ?type=png" alt="" /></a></p>
-
-<ul>
-  <li>
-    <p>Postgres - It is an object-relational database management system that uses the SQL language. We chose Postgres because our team members have some exposure to the relational database and also Postgres was easy to pick up.</p>
-  </li>
-  <li>
-    <p>Express - It is a back-end framework for Node.js used for building web applications, and especially APIs. We decided to go with Express because it is a javascript framework, the documentation looked fairly straightforward, and because of the support, we have within Turing.</p>
-  </li>
-  <li>
-    <p>React - A Front end Framework taught at Turing. One of the requirements for the project is to use react framework. Couples of benefits are Virtual DOM in React makes the user experience better and developers work faster. React allows its components to be reused which saves time and effort.</p>
-  </li>
-  <li>
-    <p>Node.js - A Javascript runtime environment for developing server-side and networking applications.</p>
-  </li>
-</ul>
-
-<h3 id="how-we-go-about-setting-up-a-workflow">How we go about setting up a workflow</h3>
-
-<p>We approach our workflow from the FE perspective where we consider the user story first to design how our data table is going to be. First, we wrote the MVP UI, and create the server using Express. Then, we connect the express server to Postgres. Once the two frameworks re connected, we seed our mock data to the database, and voila. Time to deploy!</p>
-
-<h3 id="what-else-we-added-to-our-pern-stack-to-make-it-work">What else we added to our PERN stack to make it work</h3>
-
-<p>We used Knex to create the schema and write queries for Postgres. We used Docker Compose for local development with the database and Table Plus for interacting with the data.</p>
-
-<h3 id="lessons-learned-from-the-project">Lessons learned from the project!</h3>
-
-<ul>
-  <li>
-    <p><strong>Opt for a library than writing code from scratch</strong></p>
-
-    <p>In our UI, we wanted to have a robust filter function that can filter multiple keywords and also has interactive features. As this function evolved, the code got messier and buggier to a point that we decided to use a filter library instead. Our reasoning was, we wanted to get to the core of the project, which was building a backend. Using a library not only saved us time but also created a more stable feature.</p>
-  </li>
-  <li>
-    <p><strong>Changing MVP decision</strong></p>
-
-    <p>As the deadline approached, we had to trim down our MVP to the most basic feature value and forgo some of the design elements we set up at the beginning to be able to deliver a usable product.</p>
-  </li>
-  <li>
-    <p><strong>Asking for help</strong></p>
-
-    <p>We were having difficulty with different versions of Postgres and the Knex documentation that was provided to us. With the help of a Mod4 student, we were introduced to backend tools: Docker Compose and TablePlus. These tools make working with Postgres easier and make a change to data much more simple.</p>
-  </li>
-</ul>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[1st Full Stack Webapp with PERN Stack The team’s first full-stack application journey]]></summary></entry><entry><title type="html">MVC MVP</title><link href="http://localhost:4000/2023/03/10/MVC_MVP.html" rel="alternate" type="text/html" title="MVC MVP" /><published>2023-03-10T00:00:00-07:00</published><updated>2023-03-10T00:00:00-07:00</updated><id>http://localhost:4000/2023/03/10/MVC_MVP</id><content type="html" xml:base="http://localhost:4000/2023/03/10/MVC_MVP.html"><![CDATA[<h2 id="understanding-mvc">Understanding MVC</h2>
-
-<p>I was introduced to MVC pattern during the beginning of Turing, a 7-months online, computer programming course, while the focus was to write everything only in vanilla JavaScript. MVC is an acronym for Model View Controller where, Model represents the business logic or what makes the application, View is what user interact with and Controller is the bridge between the Model and View.</p>
-
-<p>In addition to MVC pattern, I also employed Repository pattern for managing data within Model.A Repository mediates between the domain and data mapping layers, acting like an in-memory domain object collection. In my case, I use a class instance to construct a data object and repository to store a compilation of data.</p>
-
-<p><a href="https://mermaid.live/edit#pako:eNpFjL0KwzAMhF_FaE5ewJQObddO_Zm0CFtpArZcFJlQQt69Dh26HN9xx7dCKJHBw5DKEkZSc_cTymNmdX1_dM-JF5Q93WHv5yKmJSVWlD__tmszJRToILNmmmLTrijOIdjImRF8w8gD1WQIKFu7UrVy-0gAb1q5g_qOZHyZ6KWUwQ-UZt6-QP04nA"><img src="https://mermaid.ink/img/pako:eNpFjL0KwzAMhF_FaE5ewJQObddO_Zm0CFtpArZcFJlQQt69Dh26HN9xx7dCKJHBw5DKEkZSc_cTymNmdX1_dM-JF5Q93WHv5yKmJSVWlD__tmszJRToILNmmmLTrijOIdjImRF8w8gD1WQIKFu7UrVy-0gAb1q5g_qOZHyZ6KWUwQ-UZt6-QP04nA?type=png" alt="" /></a></p>
-
-<h2 id="how-i-use-mvc-in-my-project">How I use MVC in my project</h2>
-
-<p>I used the MVC pattern while building a trip-booking application called Travel Tracker. I found that because the Model returns the data, it allows the same component to be reused. This concept makes the code modular, which means the modification of a function doesn’t affect the entire model, since the model doesn’t depend on the views. The approach also limits the amount of code duplication since the View is separated from the data and business logic.</p>
-
-<p>On top of the MVC pattern, I also employed the Repository pattern for managing data within the Model. A repository mediates between the domain and data mapping layers, acting like an in-memory domain object collection. In my case, I use a class instance to construct a data object and repository to store a compilation of data. Using the repository pattern separates data access from business logic. Some of the benefits are centralization of the data access logic makes code easier to maintain. This approach allows business and data access logic to be tested separately, help reduce duplication of code, and lowers the chance of making programming errors.</p>
-
-<p><a href="https://mermaid.live/edit#pako:eNplUUFOwzAQ_Iq1J5BaHhBVSEAvHJAQrTjtxThbYuTYkb2mQlX_ju3ESRAnz45ndkb2BZRrCRo4GXdWnfQsjo9o3zWdbxDyIRCtCMrrge--AsKt2G239-LJWfbOGPJJtwxFreZxdKBdCYr74fX5P_mSmhi0IX58ejl0dT6m6PBGg0tBGYuMSw7Xm6lYXpIVK8_EyW8am1YolJEhlC2Vql3_evcUWE_pBS_x81V1zsTitJK1s9U7TqvsFVuXkG1hAz35Xuo2fcwlyQQCd9QTQpNgSycZDSOgvSapjOwOP1ZBwz7SBuLQSqa9lukV-5G8_gL6Takk"><img src="https://mermaid.ink/img/pako:eNplUUFOwzAQ_Iq1J5BaHhBVSEAvHJAQrTjtxThbYuTYkb2mQlX_ju3ESRAnz45ndkb2BZRrCRo4GXdWnfQsjo9o3zWdbxDyIRCtCMrrge--AsKt2G239-LJWfbOGPJJtwxFreZxdKBdCYr74fX5P_mSmhi0IX58ejl0dT6m6PBGg0tBGYuMSw7Xm6lYXpIVK8_EyW8am1YolJEhlC2Vql3_evcUWE_pBS_x81V1zsTitJK1s9U7TqvsFVuXkG1hAz35Xuo2fcwlyQQCd9QTQpNgSycZDSOgvSapjOwOP1ZBwz7SBuLQSqa9lukV-5G8_gL6Takk?type=png" alt="example" /></a></p>
-
-<h2 id="challenges-and-success">Challenges and Success</h2>
-
-<p>Before being introduced to the MVC, my DOM elements doesn’t separate from my data model functions. With a prior frame of thought, I had to refactor many of the codes to fit with the MVC pattern. For example, I wrote a function in the controller file using DOM elements. What I should have done is write a function in the View file to call a controller function that returns value to manipulate DOM elements.
-Another challenge is to be comfortable with having many small files. Having a small amount of code in many files created a clear structure that makes it easier to navigate. This also minimized the chance of accidentally changing other codes unintentionally.
-My win for this implementation is I have a better sense of focusing on the purpose of the function and concept of single responsibility.</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[Understanding MVC]]></summary></entry></feed>
+<p>The next step is to write user story, creating React architecture and backend server and database. My intend is to build this application in public. Stay tune for more post!</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[Thai Word Game Phase I]]></summary></entry></feed>
