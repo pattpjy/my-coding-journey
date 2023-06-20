@@ -8,7 +8,7 @@ banner_image: asset/blog-patterns.png
 <img class="blog-banner" src="/asset/blog-patterns.png" alt="blog-patterns" />
 In this blog post, we will explore two essential architectural patterns used in the development of the Thai Word Game: the Repository Pattern and the Container/Presentation Pattern. These patterns provide structure, organization, and maintainability to our project, enabling us to separate concerns and promote code reuse. By implementing these patterns, we can create a scalable and maintainable application with clear separation between data access, logic, and user interface components.
 
-###Understanding the Repository Pattern:
+### Understanding the Repository Pattern:
 
 The Repository Pattern is a design pattern that provides an abstraction layer between the application and the data layer. It helps in managing data access and provides a consistent interface for interacting with data regardless of the underlying data structure. This is how I implemented a Word Data Repository using TypeScript and async/await:
 
@@ -106,7 +106,7 @@ By testing the repository layer and mocking data, we can ensure that the data ac
 
 The Container/Presentation Pattern, also known as the Smart vs. Dumb components or the Container vs. Presentational components, is a pattern that separates the concerns of data management and UI rendering in a component-based architecture. Container components (smart components) handle the logic, data fetching, and state management, while presentation components (dumb components) focus on rendering the UI based on the provided props.
 
-####Container components:
+#### Container components:
 
 - Manage the state and data fetching.
 - Implement callbacks and event handling.
