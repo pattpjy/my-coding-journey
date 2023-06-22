@@ -55,22 +55,25 @@ a,
   width: 100%;
 }
 
-.right-banner {
+/* .right-banner {
   width: 60%;
-}
+} */
 
 .left-banner {
-  background-color: rgba(253, 255, 255, 0.8);
-  text-align: end;
-  padding: 2em;
-  width: 40%;
+  margin: auto;
+  width: 90%;
 }
 
 .typing-container {
-  width: 100%;
+  width: 50%;
+  padding: 15px;
+  background-color: rgba(253, 255, 255, 0.8);
+  height: 250px;
+  border-radius: 10px;
   text-align: right;
   display: flex;
-  justify-content: right;
+  flex-direction: column;
+  justify-content: space-between;
   color: #fdc600;
   font-size: 2rem;
   text-shadow: #4f5060 1px 1px;
@@ -307,6 +310,8 @@ button:focus-visible {
   margin: 0.5em;
   color: white;
 }
+
+/* ------- blog area ------- */
 .blog-card {
   border: 2px whitesmoke solid;
   background-color: lightgrey;
@@ -314,16 +319,31 @@ button:focus-visible {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+
+  cursor: pointer;
 }
 
 .blog-card:hover {
-  background-color: darkgrey;
+  background: linear-gradient(
+    to right bottom,
+    rgba(54, 54, 54, 0.32) 50%,
+    rgba(2, 96, 35, 0.43)
+  );
+  transition: outline-color 0.5s;
 }
+
 .blog-img {
   margin: 1em;
   max-width: 30em;
 }
+.blog-content {
+  margin: auto;
+  width: 90%;
+}
 
+/* ------- end ------- */
+
+/* ------- project area ------- */
 #proj {
   background-color: lightcyan;
   background-image: url("../asset/virginia-lackinger-JV0y2YgXJcY-unsplash.jpg");
@@ -389,14 +409,12 @@ button:focus-visible {
 .proj6 {
   background-image: url("../asset/gitWatch.png");
 }
+
+/* ------- end ------- */
+
 .h2-light {
   color: rgba(253, 255, 255, 1);
   text-shadow: gray 2px 3px;
-}
-
-.blog-content {
-  margin: auto;
-  width: 90%;
 }
 
 .fa-solid.fa-burger {
@@ -438,11 +456,9 @@ button:focus-visible {
     display: block;
   }
 
-  .left-banner {
-    width: 100%;
-  }
-  .right-banner {
-    display: none;
+  .typing-container {
+    margin: auto;
+    width: 90%;
   }
   .cards-group {
     margin: 0;

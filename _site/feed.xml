@@ -1,4 +1,242 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-16T10:20:31-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Coding Journey Blog</title><author><name>Patt Sookmark</name></author><entry><title type="html">Simplify Backend Development with Express TypeScript Boilerplate!</title><link href="http://localhost:4000/2023/06/08/Thaiwordgame-pattern.html" rel="alternate" type="text/html" title="Simplify Backend Development with Express TypeScript Boilerplate!" /><published>2023-06-08T00:00:00-06:00</published><updated>2023-06-08T00:00:00-06:00</updated><id>http://localhost:4000/2023/06/08/Thaiwordgame-pattern</id><content type="html" xml:base="http://localhost:4000/2023/06/08/Thaiwordgame-pattern.html"><![CDATA[]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Simplify Backend Development with Express TypeScript Boilerplate!</title><link href="http://localhost:4000/2023/06/07/express-template.html" rel="alternate" type="text/html" title="Simplify Backend Development with Express TypeScript Boilerplate!" /><published>2023-06-07T00:00:00-06:00</published><updated>2023-06-07T00:00:00-06:00</updated><id>http://localhost:4000/2023/06/07/express-template</id><content type="html" xml:base="http://localhost:4000/2023/06/07/express-template.html"><![CDATA[<p><img class="blog-banner" src="/asset/blog-express-template.png" alt="blog-express-template" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-22T09:55:07-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Coding Journey Blog</title><author><name>Patt Sookmark</name></author><entry><title type="html">Building a Thai Word Game: Implementing the Repository Pattern and Container/Presentation Pattern</title><link href="http://localhost:4000/2023/06/08/Thaiwordgame-pattern.html" rel="alternate" type="text/html" title="Building a Thai Word Game: Implementing the Repository Pattern and Container/Presentation Pattern" /><published>2023-06-08T00:00:00-06:00</published><updated>2023-06-08T00:00:00-06:00</updated><id>http://localhost:4000/2023/06/08/Thaiwordgame-pattern</id><content type="html" xml:base="http://localhost:4000/2023/06/08/Thaiwordgame-pattern.html"><![CDATA[<p><img class="blog-banner" src="/asset/blog-patterns.png" alt="blog-patterns" />
+In this blog post, we will explore two essential architectural patterns used in the development of the Thai Word Game: the Repository Pattern and the Container/Presentation Pattern. These patterns provide structure, organization, and maintainability to our project, enabling us to separate concerns and promote code reuse. By implementing these patterns, we can create a scalable and maintainable application with clear separation between data access, logic, and user interface components.</p>
+
+<h3 id="understanding-the-repository-pattern">Understanding the Repository Pattern:</h3>
+
+<p>The Repository Pattern is a design pattern that provides an abstraction layer between the application and the data layer. It helps in managing data access and provides a consistent interface for interacting with data regardless of the underlying data structure. This is how I implemented a Word Data Repository using TypeScript and async/await:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// types/WordData.ts
+interface WordData {
+  id: number;
+  img_url: string;
+  audio_url: string;
+  word: string;
+  categories: string;
+}
+
+export default WordData;
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// repositories/WordDataRepository.ts
+import { getAllWords } from "../apiCall/apiCall";
+import WordData from "../types/WordData";
+
+class WordDataRepository {
+  public async getAll(): Promise&lt;WordData[]&gt; {
+    try {
+      const data = await getAllWords();
+      return data;
+    } catch (error) {
+      throw new Error("Failed to fetch word data.");
+    }
+  }
+}
+
+export default WordDataRepository;
+
+</code></pre></div></div>
+
+<p>In the above example, we define the <code class="language-plaintext highlighter-rouge">WordData</code> interface in the <code class="language-plaintext highlighter-rouge">types/WordData.ts</code> file. This interface represents the structure of a single word data object.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">WordDataRepository</code> class in the <code class="language-plaintext highlighter-rouge">repositories/WordDataRepository.ts</code> file encapsulates the logic for fetching word data. The <code class="language-plaintext highlighter-rouge">getAll</code> method makes an async call to the <code class="language-plaintext highlighter-rouge">getAllWords</code> function from the <code class="language-plaintext highlighter-rouge">apiCall</code> module. It handles the asynchronous nature of the operation using the <code class="language-plaintext highlighter-rouge">async/await</code> syntax and returns a promise that resolves to an array of <code class="language-plaintext highlighter-rouge">WordData</code> objects.</p>
+
+<h4 id="testing-worddatarepository">Testing WordDataRepository</h4>
+
+<p>To test the repository layer, you can create mock data or use a test-specific data source. By mocking the data, you can simulate different scenarios and verify that the repository behaves as expected. Here’s an example of a unit test for the <code class="language-plaintext highlighter-rouge">getAll</code> method:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import WordDataRepository from "../repositories/WordDataRepository";
+
+describe("WordDataRepository", () =&gt; {
+  it("should fetch all word data", async () =&gt; {
+    // Mock the data retrieval function
+    const mockGetAllWords = jest.fn().mockResolvedValue([
+      {
+        id: 1,
+        img_url: "example.com/image1.jpg",
+        audio_url: "example.com/audio1.mp3",
+        word: "Hello",
+        categories: "Greeting",
+      },
+      {
+        id: 2,
+        img_url: "example.com/image2.jpg",
+        audio_url: "example.com/audio2.mp3",
+        word: "Food",
+        categories: "Category1",
+      },
+    ]);
+
+    // Create an instance of the repository with the mock function
+    const wordDataRepository = new WordDataRepository(mockGetAllWords);
+
+    // Call the getAll method
+    const result = await wordDataRepository.getAll();
+
+    // Assert that the mock function was called and returned the expected data
+    expect(mockGetAllWords).toHaveBeenCalled();
+    expect(result).toHaveLength(2);
+    expect(result[0].word).toBe("Hello");
+    expect(result[1].categories).toBe("Category1");
+  });
+});
+
+</code></pre></div></div>
+
+<p>In this test example, we use Jest as the testing framework. We create a mock function <code class="language-plaintext highlighter-rouge">mockGetAllWords</code> that returns a predefined array of word data objects. We then instantiate the <code class="language-plaintext highlighter-rouge">WordDataRepository</code> with this mock function and call the <code class="language-plaintext highlighter-rouge">getAll</code> method. Finally, we assert that the mock function was called and that the returned data matches our expectations.</p>
+
+<p>By testing the repository layer and mocking data, we can ensure that the data access logic is functioning correctly and independently from the actual data source.</p>
+
+<h4 id="benefit-of-using-repository-pattern">Benefit of using Repository Pattern</h4>
+
+<ul>
+  <li>Separation of concerns: The repository encapsulates the data access logic, allowing the rest of the application to focus on business logic.</li>
+  <li>Testability: The repository can be easily tested by mocking the data access layer, ensuring reliable and isolated unit tests.</li>
+</ul>
+
+<h3 id="understanding-the-containerpresentation-pattern">Understanding The Container/Presentation Pattern:</h3>
+
+<p>The Container/Presentation Pattern, also known as the Smart vs. Dumb components or the Container vs. Presentational components, is a pattern that separates the concerns of data management and UI rendering in a component-based architecture. Container components (smart components) handle the logic, data fetching, and state management, while presentation components (dumb components) focus on rendering the UI based on the provided props.</p>
+
+<h4 id="container-components">Container components:</h4>
+
+<ul>
+  <li>Manage the state and data fetching.</li>
+  <li>Implement callbacks and event handling.</li>
+  <li>Pass down data and callbacks as props to the presentation components.</li>
+  <li>Should have minimal or no UI rendering logic.
+####Presentation components:</li>
+  <li>Receive data and callbacks as props.</li>
+  <li>Render the UI based on the provided props.</li>
+  <li>Should be reusable and agnostic of the data source or state management.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// containers/WordBtnContainer.tsx
+import { useState, useEffect } from "react";
+import { WordData } from "../types";
+import { getWordById } from "../apiCall/apiCall";
+import WordBtn from "../components/WordBtn";
+
+interface WordBtnContainerProps {
+  id: number;
+}
+
+const WordBtnContainer: React.FC&lt;WordBtnContainerProps&gt; = ({ id }) =&gt; {
+  const [wordData, setWordData] = useState&lt;WordData | null&gt;(null);
+
+  useEffect(() =&gt; {
+    const fetchWordData = async () =&gt; {
+      try {
+        const data = await getWordById(id);
+        setWordData(data);
+      } catch (error) {
+        // Handle error
+      }
+    };
+
+    fetchWordData();
+  }, [id]);
+
+  return &lt;WordBtn wordData={wordData} /&gt;;
+};
+
+export default WordBtnContainer;
+
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// components/WordBtn.tsx
+import React from "react";
+import { WordData } from "../types";
+
+interface WordBtnProps {
+  wordData: WordData | null;
+}
+
+const WordBtn: React.FC&lt;WordBtnProps&gt; = ({ wordData }) =&gt; {
+  if (!wordData) {
+    return &lt;div&gt;Loading...&lt;/div&gt;;
+  }
+
+  return (
+    &lt;div&gt;
+      &lt;img src={wordData.img_url} alt={wordData.word} /&gt;
+      &lt;span&gt;{wordData.word}&lt;/span&gt;
+    &lt;/div&gt;
+  );
+};
+
+export default WordBtn;
+
+</code></pre></div></div>
+
+<p>In this code, we have separated the logic and rendering concerns. The <code class="language-plaintext highlighter-rouge">WordBtnContainer</code> is responsible for fetching the word data and managing the state using <code class="language-plaintext highlighter-rouge">useState</code> and <code class="language-plaintext highlighter-rouge">useEffect</code> hooks. It passes the fetched <code class="language-plaintext highlighter-rouge">wordData</code> as a prop to the <code class="language-plaintext highlighter-rouge">WordBtn</code> presentation component.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">WordBtn</code> component receives the <code class="language-plaintext highlighter-rouge">wordData</code> prop and renders the UI based on the provided data. It handles the case when the data is still loading by displaying a loading message.</p>
+
+<h4 id="benefit-of-using-containerpresentation-pattern">Benefit of using Container/Presentation Pattern</h4>
+
+<ul>
+  <li>Separation of concerns: The Container/Presentation Pattern allows you to separate the data management logic from the UI rendering, making the code more maintainable and testable.</li>
+  <li>Reusability: Presentation components can be easily reused across multiple container components or in different parts of the application since they are agnostic of the data source or state management.</li>
+  <li>Testing components in isolation:
+With the Container/Presentation Pattern, you can test the container and presentation components independently.
+    <ul>
+      <li>Container components: You can write unit tests to verify the logic, data fetching, and state management. Mock the dependencies and test the expected behavior when props or state change.</li>
+      <li>Presentation components: Since presentation components focus solely on rendering UI based on props, you can write snapshot tests or component render tests to verify the rendered output for different scenarios.</li>
+      <li>By testing components in isolation, you ensure that each component behaves correctly and can be easily maintained or modified without affecting other parts of the application.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Following the Container/Presentation Pattern brings clear separation of concerns, improves code organization, and promotes reusability. It also allows for easier testing and maintenance of the components.</p>
+
+<p>Here’s an example directory structure that incorporates the Repository Pattern and Container/Presentation Pattern:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├── src
+│   ├── apiCall
+│   │   └── apiCall.ts            # API call functions
+│   ├── components
+│   │   ├── containers            # Container components
+│   │   │   ├── NavBarContainer.tsx
+│   │   │   └── WordBtnContainer.tsx
+│   │   └── presentation          # Presentation components
+│   │       ├── NavBar.tsx
+│   │       └── WordBtn.tsx
+│   ├── repository
+│   │   └── wordRepo.ts           # WordDataRepository class
+│   ├── types
+│   │   └── WordData.ts           # Type definition for WordData
+│   ├── App.tsx                   # Main application component
+│   ├── index.tsx                 # Entry point of the application
+│   └── ...                       # Other application files and folders
+├── public
+│   ├── index.html                # HTML template
+│   └── ...                       # Other static files
+├── package.json                  # Project dependencies and scripts
+├── tsconfig.json                 # TypeScript configuration
+└── ...                           # Other configuration files
+</code></pre></div></div>
+
+<p>Explanation:</p>
+
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">src</code> folder contains the main source code of your application.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">apiCall</code> folder holds the API call functions responsible for fetching data from the server.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">components</code> folder is divided into <code class="language-plaintext highlighter-rouge">containers</code> and <code class="language-plaintext highlighter-rouge">presentation</code> sub-folders.
+    <ul>
+      <li>The <code class="language-plaintext highlighter-rouge">containers</code> folder contains container components that handle logic and data management.</li>
+      <li>The <code class="language-plaintext highlighter-rouge">presentation</code> folder contains presentation components that focus on rendering UI elements.</li>
+    </ul>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">repository</code> folder contains the <code class="language-plaintext highlighter-rouge">wordRepo.ts</code> file, which implements the WordDataRepository class responsible for data access and manipulation.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">types</code> folder holds the <code class="language-plaintext highlighter-rouge">WordData.ts</code> file, defining the type for WordData objects.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">App.tsx</code> file represents the main application component that brings together other components.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">index.tsx</code> file serves as the entry point of your application.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">public</code> folder contains static files, such as the HTML template (<code class="language-plaintext highlighter-rouge">index.html</code>).</li>
+  <li>Other files and folders can be present based on your specific application needs and additional configuration files.</li>
+</ul>
+
+<p>By implementing the Repository Pattern and Container/Presentation Pattern, we’ve achieved a robust and maintainable architecture for the Thai Word Game project. The Repository Pattern separates data access logic from the rest of the application, while the Container/Presentation Pattern promotes separation of concerns between data management and UI components. Together, these patterns enhance code organization, reusability, and testability. Adopting these patterns in your own projects can lead to cleaner, more scalable, and maintainable code bases.</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[In this blog post, we will explore two essential architectural patterns used in the development of the Thai Word Game: the Repository Pattern and the Container/Presentation Pattern. These patterns provide structure, organization, and maintainability to our project, enabling us to separate concerns and promote code reuse. By implementing these patterns, we can create a scalable and maintainable application with clear separation between data access, logic, and user interface components.]]></summary></entry><entry><title type="html">Simplify Backend Development with Express TypeScript Boilerplate!</title><link href="http://localhost:4000/2023/06/07/express-template.html" rel="alternate" type="text/html" title="Simplify Backend Development with Express TypeScript Boilerplate!" /><published>2023-06-07T00:00:00-06:00</published><updated>2023-06-07T00:00:00-06:00</updated><id>http://localhost:4000/2023/06/07/express-template</id><content type="html" xml:base="http://localhost:4000/2023/06/07/express-template.html"><![CDATA[<p><img class="blog-banner" src="/asset/blog-express-template.png" alt="blog-express-template" /></p>
 
 <p>As a front-end developer venturing into the world of backend development, I understand the challenges of setting up a new server every time you want to test a new idea. That’s why I’m excited to share my solution: Express TypeScript Boilerplate, a game-changing template that simplifies the process of building Express servers using TypeScript.</p>
 
