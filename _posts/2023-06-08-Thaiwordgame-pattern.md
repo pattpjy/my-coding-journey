@@ -1,6 +1,7 @@
 ---
 title: "Building a Thai Word Game: Implementing the Repository Pattern and Container/Presentation Pattern"
 layout: post
+tag-name: thaiwordgame
 author: "Patt Sookmark"
 banner_image: asset/blog-patterns.png
 ---

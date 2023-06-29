@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-22T09:55:07-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Coding Journey Blog</title><author><name>Patt Sookmark</name></author><entry><title type="html">Building a Thai Word Game: Implementing the Repository Pattern and Container/Presentation Pattern</title><link href="http://localhost:4000/2023/06/08/Thaiwordgame-pattern.html" rel="alternate" type="text/html" title="Building a Thai Word Game: Implementing the Repository Pattern and Container/Presentation Pattern" /><published>2023-06-08T00:00:00-06:00</published><updated>2023-06-08T00:00:00-06:00</updated><id>http://localhost:4000/2023/06/08/Thaiwordgame-pattern</id><content type="html" xml:base="http://localhost:4000/2023/06/08/Thaiwordgame-pattern.html"><![CDATA[<p><img class="blog-banner" src="/asset/blog-patterns.png" alt="blog-patterns" />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-29T16:27:16-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Coding Journey Blog</title><author><name>Patt Sookmark</name></author><entry><title type="html">Revamping the Thai Word Game App: Lessons in UX/UI and Design Pattern</title><link href="http://localhost:4000/2023/06/29/ThaiwordGameRestructure.html" rel="alternate" type="text/html" title="Revamping the Thai Word Game App: Lessons in UX/UI and Design Pattern" /><published>2023-06-29T00:00:00-06:00</published><updated>2023-06-29T00:00:00-06:00</updated><id>http://localhost:4000/2023/06/29/ThaiwordGameRestructure</id><content type="html" xml:base="http://localhost:4000/2023/06/29/ThaiwordGameRestructure.html"><![CDATA[<p><img class="blog-banner" src="/asset/Revamp.png" alt="blog-patterns" /></p>
+
+<p>Hello, fellow devs! It’s time for an update on the progress of our Thai word game app. After taking a comprehensive UX/UI course, I realized that our app needed a significant overhaul to provide a better user experience. In this blog post, I’ll share the changes we made to the app, specifically focusing on revamping our containers and adopting a more user-centric approach.</p>
+
+<ol>
+  <li>The Impact of UX/UI Knowledge:
+The UX/UI course provided valuable insights into user behavior and design principles. The initial code is now proof of concept that was lacking in terms of usability and visual appeal. Armed with this new knowledge, I set out to enhance the user experience and make the app more engaging and intuitive. During my UX/UI course, I learned the crucial role of creating a visually appealing and organized user interface. I realized that a well-designed layout enhances user engagement and improves overall usability.</li>
+  <li>Rethinking Design Pattern:
+Previously, our containers held the application logic, which posed challenges when it come to managing different views and their associated components. After applying UX/UI principles, I realized that a container for each view (landing page, game view, parent mode view, settings view) would allow better organization and control over specific view-related
+logic.</li>
+  <li>
+    <p>Utilizing Layout components patterns: I decided to embrace the concept of component-based layouts. Instead of relying solely on containers for logic and presentation, I shifted my approach creating separate layout components for each view in the app. This acted as my container view and it allowed me to define the structure of the application in a more granular and reusable manner.</p>
+  </li>
+  <li>Enhanced User Experience:
+The user-centric approach transformed our app into a more enjoyable and intuitive experience. I redesigned the landing page to provide a visually appealing and informative introduction. The game view underwent significant improvements to make learning Thai words more interactive and engaging. Parent mode and settings views were revamped to offer intuitive controls and customization options.</li>
+  <li>Lessons Learned:
+Throughout this process, I learned valuable lessons that will shape our future development endeavors. We realized the importance of considering user needs, conducting user testing, and iterating on design and functionality. The UX/UI course empowered us to think holistically about the user journey and prioritize their satisfaction and engagement. By adopting a component-based layout approach, I experienced several benefits. Firstly, it improved the maintainability of the codebase as each layout component focused on a specific view and its associated structure. Secondly, it enabled greater reusability, as the layout components could be utilized across different parts of the application. Finally, it provided a more intuitive and organized development process, allowing for easier navigation and understanding of the codebase.</li>
+</ol>
+
+<p>As developers, it’s essential to continuously learn and adapt to new concepts and principles that enhance our craft. Embracing component-based layouts and layout components has undoubtedly transformed my approach to building user interfaces. I look forward to incorporating these concepts into future projects and further refining the Thai Word Game app based on user feedback and evolving UX/UI best practices.</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Journey into UX/UI process of Language Learning App: Building a Thai Word Game</title><link href="http://localhost:4000/2023/06/27/ThaiWordGameUxui.html" rel="alternate" type="text/html" title="Journey into UX/UI process of Language Learning App: Building a Thai Word Game" /><published>2023-06-27T00:00:00-06:00</published><updated>2023-06-27T00:00:00-06:00</updated><id>http://localhost:4000/2023/06/27/ThaiWordGameUxui</id><content type="html" xml:base="http://localhost:4000/2023/06/27/ThaiWordGameUxui.html"><![CDATA[<p><img class="blog-banner" src="/asset/blog-patterns.png" alt="blog-patterns" />
+In this blog post, we’ll dive into the exciting journey of creating a language learning app designed specifically for toddlers. Our goal is to teach young children basic Thai words while providing an engaging and fun experience for both the kids and their parents. Let’s embark on this adventure and explore the UX/UI process behind the development of our game app.
+<img class="screenshot" src="/asset/UX/Screenshot 2023-06-25 at 10.11.07 AM.png" alt="UX Process" /></p>
+
+<ol>
+  <li>
+    <p>Define Goal and Target Audience:
+Purpose: To establish a clear vision and direction for the app development process. 1. Our mission is clear: to teach toddlers daily use Thai words. By connecting children with their parent’s native language, we aim to promote cultural understanding and strengthen family bonds. Our primary target audience includes young children and their parents who are eager to explore language learning together.</p>
+  </li>
+  <li>
+    <p>User Research and Creating User Personas:
+Purpose: To gain insights into user preferences, needs, and motivations. Conduct user research by interviewing parents and observing their interactions with toddlers. Create user personas based on the gathered insights to better understand the needs and preferences of our target audience. From these insights, we developed two user personas: - Patt the Parent: - Age: 32 - Location: Denver, Colorado - Occupation: Working from home mom - Motivation: Patt realizes the importance of her native language, Thai, and wants her child to learn it to connect with her side of the family. - Maddie the Toddler: - Age: 4 - Location: Denver, Colorado - Motivation: Maddie’s parent introduces him to a new language learning app designed for toddlers. He wants to have fun exploring new words and gradually develop his understanding and speaking skills in the Thai language.
+<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2c40af29-b336-48f1-8039-3e99daa6a7d5/Screenshot_2023-06-25_at_10.09.25_AM.png" alt="Screenshot 2023-06-25 at 10.09.25 AM.png" /></p>
+  </li>
+  <li>
+    <p>User Journey:
+Purpose: To understand the flow and key touch points of user interactions with the app.
+Goal:
+<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/52c73e55-a7cb-4687-91e1-bc695163ddc9/Screenshot_2023-06-25_at_10.10.38_AM.png" alt="Screenshot 2023-06-25 at 10.10.38 AM.png" /></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Patt, the Parent:
+    - Trigger: Patt realizes the importance of her native language and wants her child to learn it.
+    - Goal: Find a reliable and engaging solution to help her child learn basic Thai words and phrases.
+    - Maddie, the Energetic Toddler:
+        - Trigger: Maddie's parent introduces him to the language learning app.
+        - Goal: Engage with the app, have fun exploring new words, and develop understanding and speaking skills in Thai.
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Page Flow:
+Purpose: To design an intuitive and user-friendly navigation flow within the app. Map out the page flow for all user journeys, ensuring easy accessibility to key features and content on each screen.
+<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a2aefc61-9bd3-4dbb-9483-f2d781506c17/Screenshot_2023-06-25_at_10.11.18_AM.png" alt="Screenshot 2023-06-25 at 10.11.18 AM.png" /></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. To ensure a smooth and intuitive user experience, we mapped out the page flow for all user journeys. We identified key functionalities and content for each screen, making sure to prioritize simplicity and interactivity. Our aim is to create an app that is easy for both parents and toddlers to navigate.
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Wireframes:
+Purpose: To visualize the app’s structure, layout, and interactions.
+Goal: Create wireframes based on user flows, adopting a mobile-first design approach. Consider user actions and preferences while designing screens to facilitate a seamless learning experience.
+<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5c4e1efa-de42-4c0c-bd9d-26b3427f4c1a/Screenshot_2023-06-25_at_10.11.40_AM.png" alt="Screenshot 2023-06-25 at 10.11.40 AM.png" /></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Based on the user flows and considering a mobile-first design approach, we created wireframes for our app's screens. These wireframes outline the layout, structure, and basic interactions of each screen, providing a visual representation of our app's design. By focusing on a clean and intuitive interface, we aim to create an enjoyable learning experience for toddlers.
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>By defining the app’s goal and target audience, conducting user research, creating user personas, and understanding the user journey, we gained valuable insights that shaped our design decisions. Mapping out the page flow and creating wireframes allowed us to visualize the app’s structure and ensure intuitive navigation.</p>
+
+<p>Next is find inspiration and create hi fidelity prototype.</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[In this blog post, we’ll dive into the exciting journey of creating a language learning app designed specifically for toddlers. Our goal is to teach young children basic Thai words while providing an engaging and fun experience for both the kids and their parents. Let’s embark on this adventure and explore the UX/UI process behind the development of our game app.]]></summary></entry><entry><title type="html">Building a Thai Word Game: Implementing the Repository Pattern and Container/Presentation Pattern</title><link href="http://localhost:4000/2023/06/08/Thaiwordgame-pattern.html" rel="alternate" type="text/html" title="Building a Thai Word Game: Implementing the Repository Pattern and Container/Presentation Pattern" /><published>2023-06-08T00:00:00-06:00</published><updated>2023-06-08T00:00:00-06:00</updated><id>http://localhost:4000/2023/06/08/Thaiwordgame-pattern</id><content type="html" xml:base="http://localhost:4000/2023/06/08/Thaiwordgame-pattern.html"><![CDATA[<p><img class="blog-banner" src="/asset/blog-patterns.png" alt="blog-patterns" />
 In this blog post, we will explore two essential architectural patterns used in the development of the Thai Word Game: the Repository Pattern and the Container/Presentation Pattern. These patterns provide structure, organization, and maintainability to our project, enabling us to separate concerns and promote code reuse. By implementing these patterns, we can create a scalable and maintainable application with clear separation between data access, logic, and user interface components.</p>
 
 <h3 id="understanding-the-repository-pattern">Understanding the Repository Pattern:</h3>
@@ -493,46 +561,4 @@ I have now completed Phase I of the project and will be moving on to Phase II, w
 
 <p>In conclusion, both GraphQL and REST have their own advantages and disadvantages, and the choice between the two depends on the specific requirements of the project. My experience of using GitHub’s GraphQL API was quite positive, and it was interesting to see the data available from GitHub. Overall, this project helped me broaden my knowledge and experience of working with different APIs, which will certainly come in handy in my future development projects.</p>
 
-<p>Link to <a href="https://github.com/pattpjy/try_graphql">GitHub</a> repo</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[GraphQL vs Rest I recently worked on a small project that involved consuming GitHub’s GraphQL API to display specific users’ public repositories. This project was a great opportunity for me to learn about GraphQL and how it differs from REST API. In this reflection blog, I will share my experience of using GraphQL API and the challenges I faced during the project.]]></summary></entry><entry><title type="html">Projects Details</title><link href="http://localhost:4000/2023/04/20/Projects.html" rel="alternate" type="text/html" title="Projects Details" /><published>2023-04-20T00:00:00-06:00</published><updated>2023-04-20T00:00:00-06:00</updated><id>http://localhost:4000/2023/04/20/Projects</id><content type="html" xml:base="http://localhost:4000/2023/04/20/Projects.html"><![CDATA[<h2 id="projects-journal-and-reflection">Projects Journal and reflection</h2>
-
-<h3 id="cookahead">CookAhead</h3>
-
-<p>A single page application that consumes Restful API. It was built with React and React router while utilizing Reach hook pattern. This app also used parser library to parse the nested HTML tag into React element. The application design with mobile first mindset and use media query to manage css for different screen size. Cypress is used to perform e2e testing.
-<a href="http://cook-ahead.vercel.app">Live Site</a> <a href="https://github.com/pattpjy/cookAhead">Github</a></p>
-
-<h3 id="fitlit">FitLit</h3>
-
-<p>We created a fitness tracking application using vanilla javascript. We used a local server and incorporated fetch request to GET and POST data. Error handling was added to both fetch GET and POST requests to catch errors that may occur from either request. Features added allows users to see all data displayed in a visually pleasing manner using charts from chart.js. We utilized dayjs to format and standardize dates. We utilized recursion to construct a weeks worth of data if there are gaps in the data’s date. We added a helper function file to house functions that are use multiple times throughout the project to keep our code DRY.
-<a href="https://github.com/pattpjy/FitLit">Github</a></p>
-
-<h3 id="playpal">PlayPal</h3>
-
-<p>Full stack application using PERN Stack
-This is an on-going project!
-<a href="https://play-pals.vercel.app">Live Site</a> <a href="https://github.com/ElBrewster/PlayPal">Github</a></p>
-
-<h3 id="closet-collection">Closet Collection</h3>
-
-<p>Full stack application with a collaboration of frontend and backend team to create closet organization application. This application has been nominate among 10 teams to participate in final cohort competition
-<a href="http://closet-manager-fe.vercel.app">Live Site</a> <a href="https://github.com/pattpjy/closet-manager-fe-Copy">Github</a></p>
-
-<h3 id="news-reader">News Reader</h3>
-
-<p>A single page application with no-route evolved to a multi-route using React router 6 with the purpose of solidify understanding of useLocation and useParem hook.</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[Projects Journal and reflection]]></summary></entry><entry><title type="html">Code In Public - Thai Word Game</title><link href="http://localhost:4000/2023/03/21/ThaiWebGame.html" rel="alternate" type="text/html" title="Code In Public - Thai Word Game" /><published>2023-03-21T00:00:00-06:00</published><updated>2023-03-21T00:00:00-06:00</updated><id>http://localhost:4000/2023/03/21/ThaiWebGame</id><content type="html" xml:base="http://localhost:4000/2023/03/21/ThaiWebGame.html"><![CDATA[<h1 id="thai-word-game-phase-i">Thai Word Game Phase I</h1>
-
-<p>My first language is Thai, and I want to create a simple webapp word game to play with my four years old. I watched my daughter played with a stuffed animal that say random words when she press a button. She’d kept pressing the button and repeating the words over and over. I though it would be fun to create a similar UI web application that my daughter can simply click a button and it would play words in Thai.</p>
-
-<h4 id="task-1-ui-wire-frame">Task 1 UI wire frame</h4>
-
-<p><a href="https://excalidraw.com/#json=SOM85H-29YGUNFU6atZI6,AfqFty9PlsO5-V41baM6qA">UI Wire Frame</a></p>
-
-<p><img class="blog-img" src="../../../asset/ThInitWireFrame.png" /></p>
-
-<p>Because it will be for a small child, the image and buttons would be fairly large. The layout will be simple with minimal color contrast and easy to understand images.</p>
-
-<h4 id="task-2-breaking-work-down--by-color-blocks">Task 2 Breaking work down : by color blocks</h4>
-
-<p>I am very excited to see this app in action that led me to break task down in the way that I can deliver value quickly. To be able to deliver the most basic functionality, I need to create the component in the red area first. The red box include the UI components and the backend server with single table to support the minimum required data.<br />
-<img class="blog-img" src="../../../asset/ThWorkBreakDown.png" /></p>
-
-<p>The next step is to write user story, creating React architecture and backend server and database. My intend is to build this application in public. Stay tune for more post!</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[Thai Word Game Phase I]]></summary></entry></feed>
+<p>Link to <a href="https://github.com/pattpjy/try_graphql">GitHub</a> repo</p>]]></content><author><name>Patt Sookmark</name></author><summary type="html"><![CDATA[GraphQL vs Rest I recently worked on a small project that involved consuming GitHub’s GraphQL API to display specific users’ public repositories. This project was a great opportunity for me to learn about GraphQL and how it differs from REST API. In this reflection blog, I will share my experience of using GraphQL API and the challenges I faced during the project.]]></summary></entry></feed>

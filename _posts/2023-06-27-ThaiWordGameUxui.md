@@ -1,7 +1,7 @@
 ---
-title: "Journey into UX/UI process of Language Learning App: Building a Thai Word Game
-"
+title: "Journey into UX/UI process of Language Learning App: Building a Thai Word Game"
 layout: post
+tag-name: thaiwordgame
 author: "Patt Sookmark"
 banner_image: asset/UXUIProcess.png
 ---
