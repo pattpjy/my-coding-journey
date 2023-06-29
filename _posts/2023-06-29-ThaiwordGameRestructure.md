@@ -3,6 +3,7 @@ title: "Revamping the Thai Word Game App: Lessons in UX/UI and Design Pattern"
 "
 layout: post
 author: "Patt Sookmark"
+tag-name: thai-word-game
 banner_image: asset/Revamp.png
 ---
 
