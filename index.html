@@ -39,6 +39,9 @@ layout: default
   </section>
   <section id="blog">
     <h2>MY BLOGS</h2>
+    {% for tag in site.tags %}
+    <h3>{{ tag[0] }}</h3>
+  {% endfor %}
     <ul>
       {% for post in site.posts %}
       <li class="blog-card">
