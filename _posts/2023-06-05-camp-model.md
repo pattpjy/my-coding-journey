@@ -1,6 +1,8 @@
 ---
 title: "🔍 Improving Productivity and Motivation in Your Job Search: My Journey Through the CAMPS Model 🔑"
 layout: post
+tags:
+  - personalgrowth
 author: "Patt Sookmark"
 banner_image: asset/blog-camps-model.png
 ---

@@ -1,6 +1,9 @@
 ---
 title: "Simplify Backend Development with Express TypeScript Boilerplate!"
 layout: post
+tags:
+  - backend
+  - template
 author: "Patt Sookmark"
 banner_image: asset/blog-express-template.png
 ---
