@@ -3,7 +3,7 @@ title: "Journey into UX/UI process of Language Learning App: Building a Thai Wor
 layout: post
 tag-name: thaiwordgame
 author: "Patt Sookmark"
-banner_image: asset/UXUIProcess.png
+banner_image: asset/blog-patterns.png
 ---
 
 <img class="blog-banner" src="/asset/blog-patterns.png" alt="blog-patterns" />
