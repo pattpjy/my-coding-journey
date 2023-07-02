@@ -10,7 +10,7 @@ i {
 }
 .highlight {
   background-color: #4f5060;
-  color: whitesmoke;
+  color: #f5f5f5;
   padding: 0.5em;
 }
 .blog-banner {
@@ -205,7 +205,7 @@ button {
 }
 
 button:hover {
-  border: #fdc600 1px solid;
+  border: #fdc600 2px solid;
 }
 
 button:focus,
@@ -312,6 +312,40 @@ button:focus-visible {
 }
 
 /* ------- blog area ------- */
+.tagBtn {
+  margin: 2em;
+  align-items: center;
+  appearance: none;
+  background-color: #f5f5f5;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform, opacity;
+  z-index: 0;
+}
+
 .blog-card {
   border: 2px whitesmoke solid;
   background-color: lightgrey;

@@ -3,7 +3,6 @@ title: "Journey into UX/UI process of Language Learning App: Building a Thai Wor
 layout: post
 tags:
   - thaiwordgame
-  - fullstack
 author: "Patt Sookmark"
 banner_image: asset/blog-patterns.png
 ---

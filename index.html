@@ -39,9 +39,11 @@ layout: default
   </section>
   <section id="blog">
     <h2>MY BLOGS</h2>
-    {% for tag in site.tags %}
-    <h3>{{ tag[0] }}</h3>
-  {% endfor %}
+    <button class="tagBtn" onclick="window.location.href='/tags/thaiwordgame/'">Thai Word Game</button>
+    <button class="tagBtn" onclick="window.location.href='/tags/personalgrowth/'">Personal Growth</button>
+    <button class="tagBtn" onclick="window.location.href='/tags/backend/'">Back End</button>
+    <button class="tagBtn" onclick="window.location.href='/tags/uxui/'">UX/UI</button>
+
     <ul>
       {% for post in site.posts %}
       <li class="blog-card">

@@ -4,7 +4,6 @@ layout: post
 author: "Patt Sookmark"
 tags:
   - thaiwordgame
-  - fullstack
 banner_image: asset/Revamp.png
 ---
 
