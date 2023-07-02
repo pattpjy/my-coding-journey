@@ -3,15 +3,10 @@ title: Code In Public - Thai Word Game II
 layout: post
 tags:
   - thaiwordgame
-  - fullstack
 banner_image: https://images.unsplash.com/photo-1611996575749-79a3a250f948?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80
 ---
 
- <h1>{{ page.title }}</h1>
-# >>Reflection<<
-
-## Start the project by using Next.JS
-
+<img class="blog-banner" src="https://images.unsplash.com/photo-1611996575749-79a3a250f948?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="blog-patterns" />
 Next.js is a popular React framework that makes it easy for developers to build server-side rendered web applications. In this blog, I’ll discuss how I use Next.JS in my word game application.
 
 ## Why Next.js?

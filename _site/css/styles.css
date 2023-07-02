@@ -246,12 +246,12 @@ button:focus-visible {
 .cards-group {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin: 1em;
   padding: 2em;
-  background-color: rgba(253, 255, 255, 0.2);
+  background-color: rgba(253, 255, 255, 0.9);
+  align-items: stretch;
 }
 
 .tech {
@@ -410,7 +410,11 @@ button:focus-visible {
   height: 200px;
   margin: 0 10px 10px 10px;
   background-repeat: no-repeat;
-  border: 5px solid rgba(169, 169, 169);
+  /* border: 5px solid rgba(169, 169, 169); */
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-sizing: border-box;
   background-position: center;
   background-size: cover;
   color: transparent;
@@ -501,9 +505,7 @@ button:focus-visible {
     margin: auto;
     width: 90%;
   }
-  .cards-group {
-    margin: 0;
-  }
+
   .blog-img {
     margin: 0.5em;
     max-width: 10em;
