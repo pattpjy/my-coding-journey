@@ -1,6 +1,8 @@
 ---
 title: A Beginner's Guide to Understanding Node Modules in Node.js
 layout: post
+tags:
+  - nodejs
 banner_image: asset/blog-node-module.png
 ---
 

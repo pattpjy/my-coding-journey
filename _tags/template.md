@@ -1,4 +1,4 @@
 ---
 layout: tags
-tags: thaiwordgame
+tags: template
 ---

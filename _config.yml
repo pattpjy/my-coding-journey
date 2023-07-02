@@ -1,2 +1,6 @@
 title: My Coding Journey Blog
 author: Patt Sookmark
+collections:
+  tags:
+    output: true
+    permalink: tags/:path/
