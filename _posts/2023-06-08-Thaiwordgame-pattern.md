@@ -3,8 +3,6 @@ title: "Building a Thai Word Game: Implementing the Repository Pattern and Conta
 layout: post
 tags:
   - thaiwordgame
-  - fullstack
-  - designpattern
 author: "Patt Sookmark"
 banner_image: asset/blog-patterns.png
 ---

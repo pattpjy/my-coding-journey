@@ -2,6 +2,7 @@ body {
   font-family: "Varela Round", sans-serif;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 i {
@@ -295,6 +296,12 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 0 0 10px;
+  font-size: 40px;
+}
+
+.fa-brands.fa-linkedin-in.fa-xl.yellow {
+  color: #fdc600;
 }
 
 .fa-linkedin-infa-brands.fa-linkedin-in.fa-xl {
