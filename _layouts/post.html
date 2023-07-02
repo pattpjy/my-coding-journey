@@ -3,4 +3,7 @@ layout: default
 ---
 
 {% include navbar.html %}
-<div class="blog-content">{{ content }}</div>
+<div class="blog-content">
+  <div>{% for tag in page.tags %} {{ tag }} {% endfor %}</div>
+  {{ content }}
+</div>
