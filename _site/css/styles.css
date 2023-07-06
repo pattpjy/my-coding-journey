@@ -30,7 +30,9 @@ a,
 .a-blog:hover {
   color: #fdc600;
 }
-
+img {
+  width: -webkit-fill-available;
+}
 .nav-bar {
   display: flex;
   flex-wrap: wrap;
@@ -506,12 +508,11 @@ button:focus-visible {
     width: 90%;
   }
   .UXUI-IMG {
-    width: -webkit-fill-available;
+    width: 100%;
   }
   .blog-img {
     margin: 0.5em;
     max-width: 10em;
-    width: -webkit-fill-available;
   }
   li.blog-card {
     display: flex;

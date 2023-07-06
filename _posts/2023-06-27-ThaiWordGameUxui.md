@@ -1,15 +1,15 @@
 ---
-title: "Journey into UX/UI process of Language Learning App: Building a Thai Word Game"
+title: "Journey into UX/UI process of Building a Thai Word Game"
 layout: post
 tags:
   - thaiwordgame
 author: "Patt Sookmark"
-banner_image: asset/blog-patterns.png
+banner_image: asset/blog-game-uxui.png
 ---
 
-<img class="blog-banner" src="/asset/blog-patterns.png" alt="blog-patterns" />
+<img class="blog-banner" src="/asset/blog-game-uxui.png" alt="game-uxui" />
 In this blog post, we'll dive into the exciting journey of creating a language learning app designed specifically for toddlers. Our goal is to teach young children basic Thai words while providing an engaging and fun experience for both the kids and their parents. Let's embark on this adventure and explore the UX/UI process behind the development of our game app.
-<img class="UXUI-IMG" src="/asset/UX/Screenshot 2023-07-06 at 2.41.37 PM.png" alt="UX Process" />
+<img class="UXUI-IMG" styles="width 100%" src="/asset/UX/Screenshot 2023-07-06 at 2.41.37 PM.png" alt="UX Process" />
 
 1.  Define Goal and Target Audience:
     Purpose: To establish a clear vision and direction for the app development process. 1. Our mission is clear: to teach toddlers daily use Thai words. By connecting children with their parent's native language, we aim to promote cultural understanding and strengthen family bonds. Our primary target audience includes young children and their parents who are eager to explore language learning together.
@@ -40,4 +40,4 @@ In this blog post, we'll dive into the exciting journey of creating a language l
 
 By defining the app's goal and target audience, conducting user research, creating user personas, and understanding the user journey, we gained valuable insights that shaped our design decisions. Mapping out the page flow and creating wireframes allowed us to visualize the app's structure and ensure intuitive navigation.
 
-Next is find inspiration and create hi fidelity prototype.
+Next is find inspiration and create high- fidelity prototype.
