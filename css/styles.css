@@ -505,10 +505,13 @@ button:focus-visible {
     margin: auto;
     width: 90%;
   }
-
+  .UXUI-IMG {
+    width: -webkit-fill-available;
+  }
   .blog-img {
     margin: 0.5em;
     max-width: 10em;
+    width: -webkit-fill-available;
   }
   li.blog-card {
     display: flex;

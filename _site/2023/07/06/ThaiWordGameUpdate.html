@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio Presentation</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Varela%20Round"
+    />
+  </head>
+  <body>
+    
+<div class="nav-bar">
+  <a class="linkedin" href="https://www.linkedin.com/in/pattsookmark/"> <i class="fa-brands fa-linkedin-in fa-beat-fade" style="--fa-animation-duration: 2s;"></i></a>
+  <div class="header">
+    <ul class="nav-list" id="nav-list">
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#about"> About </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#blog"> Blog </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="#proj"> Proj </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="#tech"> Tech </a>
+    </ul>
+    <i class="fa-solid fa-burger" id="burger" onclick="openBurger()"></i>
+    <i class="fa-solid fa-circle-xmark" id="xmark"onclick="closeBurger()"></i>
+  </div>
+</div>
+
+<div class="blog-content">
+  <div> thaiwordgame </div>
+  <p><img class="blog-banner" src="/asset/blog-progressupdate.png" alt="blog-patterns" /></p>
+
+<h2 id="lets-recap">Let’s RECAP!</h2>
+
+<p>Motivation:</p>
+
+<p>The Thai Word Game app was born out of a personal motivation to create an interactive and engaging web app that would help my daughter learn daily Thai words and phrases while fostering a connection with her Thai heritage and family in Thailand. As a parent, I wanted to provide her with a fun and educational experience to facilitate language learning and strengthen our bond and cultural identity.</p>
+
+<p>Technical Details:</p>
+
+<p>Language and Framework:</p>
+
+<p>I chose JavaScript as the primary language for the app’s front-end and back-end development. The UI was built with React and TypeScript, while Express.js powered the back-end. For database operations, I utilized the Knex query builder and initially employed SQLite for the development environment, with plans to transition to PostgreSQL for the production environment. User authentication will be implemented to ensure privacy and create personalized experiences tailored to each child’s learning journey.</p>
+
+<p>User Experience Design:</p>
+
+<p>To create a delightful experience for my daughter and other young learners, I followed the Google UX/UI process. I began by defining a problem statement, creating user personas, and developing wireframes to visualize the app’s interface. This process allowed me to iterate and refine the design based on the needs of children and parents.</p>
+
+<p>Content Creation:</p>
+
+<p>Drawing on extensive research, I curated a comprehensive database of commonly used Thai words and phrases suitable for young learners. Audio recordings accompanied each word to provide accurate pronunciation guidance, while visual representations were created to aid in word recognition. Recognizing that children often respond better to their parents’ voices, I use my voice to add a personal touch to the learning experience.</p>
+
+<p>Gamification:</p>
+
+<p>I incorporated gamification elements into the app to make language learning engaging and motivating. Children could track their progress and word count, earning rewards and unlocking achievements as they advanced their language skills. These features encouraged a sense of accomplishment and motivated continuous learning.</p>
+
+<h2 id="progression">Progression:</h2>
+
+<p>From the initial concept to the final product, the project followed a clear progression:</p>
+
+<ol>
+  <li>
+    <p>Planning and Ideation: The project began with a strong desire to create an app to facilitate language learning for my daughter. I defined the project’s objectives, identified the target audience, and determined the core features to support their learning journey. Wireframes and low-fidelity prototypes were created to visualize the user interface and establish the app’s structure.</p>
+  </li>
+  <li>
+    <p>Development: The development process involved building various components and views, integrating audio and visual content, and implementing gamification features. I followed an iterative approach, regularly testing and incorporating user feedback to refine the app’s functionality and user experience.</p>
+  </li>
+</ol>
+
+<p>Here’s a series of blog posts detailed behind-the-scenes of the development process, filled with challenges, triumphs, and everything in between!</p>
+
+<ol>
+  <li>
+    <p><a href="https://sookmark.com/2023/03/21/ThaiWebGame.html">The beginning</a></p>
+  </li>
+  <li>
+    <p><a href="https://sookmark.com/2023/05/02/ThaiWebGame2.html">Breaking down work</a></p>
+  </li>
+  <li>
+    <p><a href="https://sookmark.com/2023/05/30/AWS-IAM.html">Setting up audio storage on AWS</a></p>
+  </li>
+  <li>
+    <p><a href="https://sookmark.com/2023/06/08/Thaiwordgame-pattern.html">Utilizing Pattern</a></p>
+  </li>
+  <li>
+    <p><a href="https://sookmark.com/2023/06/29/ThaiwordGameRestructure.html">Restructure my container and components</a></p>
+  </li>
+</ol>
+
+</div>
+
+  </body>
+  <script
+    src="https://kit.fontawesome.com/103e31ca68.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
