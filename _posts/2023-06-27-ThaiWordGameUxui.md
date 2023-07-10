@@ -57,8 +57,8 @@ In this blog post, I'll dive into the exciting journey of creating a language-le
     I want a clear visualization of the app's structure, layout, and interactions. This process helps make planning the react containers and components more straightforward, and another reason is that I jump between projects and want to return to this game and know exactly where things are and what I need to do.
     I create wireframes based on user flows, adopting a mobile-first design approach while considering user actions and preferences while designing screens to facilitate a seamless learning experience.
 
-        <img class="UXUI-IMG" src="/asset/UX/Screenshot 2023-07-06 at 3.04.32 PM.png" alt="UX Process" />
+  <img class="UXUI-IMG" src="/asset/UX/Screenshot 2023-07-06 at 3.04.32 PM.png" alt="UX Process" />
 
 I gained valuable insights that shaped our design decisions by defining the app's goal and target audience, conducting user research, creating user personas, and understanding the user journey. Mapping out the page flow and creating wireframes allowed us to visualize the app's structure and ensure intuitive navigation.
 
-In the next blog, I will share my process of finding inspirational images and color themes to create the high-fidelity prototype.
+In the next blog, I will share my process of finding inspirational images and color themes to create the high-fidelity prototype. Then I'll perform usability testing next. This is an iterative process, and I'm excited to see what comes next.
