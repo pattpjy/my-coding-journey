@@ -9,7 +9,7 @@ banner_image: asset/blog-game-uxui.png
 
 <img class="blog-banner" src="/asset/blog-game-uxui.png" alt="game-uxui" />
 
-In this blog post, I'll dive into the exciting journey of creating a language-learning app designed specifically for My daughter. My bigger goal is to create an application that teaches young children essential Thai words while providing an engaging and fun experience for them and their parents. Let's explore the UX/UI process behind developing My game app with a particular user journey, My daughter, and My self.
+In this blog post, I'll dive into the exciting journey of creating a language-learning app designed specifically for My daughter. My bigger goal is to create an application that teaches young children essential Thai words while providing an engaging and fun experience for them and their parents. Let's explore the UX/UI process behind developing the application with a particular user journey, my daughter, and myself.
 
 <img class="UXUI-IMG" styles="width 100%" src="/asset/UX/Screenshot 2023-07-06 at 2.41.37 PM.png" alt="UX Process" />
 
