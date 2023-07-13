@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio Presentation</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Varela%20Round"
+    />
+  </head>
+  <body>
+    
+<div class="nav-bar">
+  <a class="linkedin" href="https://www.linkedin.com/in/pattsookmark/"> <i class="fa-brands fa-linkedin-in fa-beat-fade" style="--fa-animation-duration: 2s;"></i></a>
+  <div class="header">
+    <ul class="nav-list" id="nav-list">
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#about"> About </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#blog"> Blog </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#proj"> Proj </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#tech"> Tech </a>
+    </ul>
+    <i class="fa-solid fa-burger" id="burger" onclick="openBurger()"></i>
+    <i class="fa-solid fa-circle-xmark" id="xmark"onclick="closeBurger()"></i>
+  </div>
+</div>
+
+<div class="blog-content">
+  <div> frontend </div>
+  <p><img class="blog-banner" src="/asset/blog-banner/blog-readme.png" alt="blog-readme" /></p>
+
+<p>As I developed the readme generator web app, I stumbled upon using a console command further than console.log. The console command plays a large role in debugging, testing, and executing the copy-paste feature. In this blog, I want to explore the console, its capabilities, and how to make the most of it.</p>
+
+<h2 id="what-is-the-console">What is the Console?</h2>
+
+<p>A console is a developer tool built into modern web browsers that provides a command-line interface for interacting with web pages and executing JavaScript code. It allows developers to log information, inspect and manipulate the Document Object Model (DOM), and diagnose errors.</p>
+
+<h2 id="accessing-the-console">Accessing the Console:</h2>
+
+<p>To access the console, open the web browser’s developer tools. Typically, you can do this by right-clicking on a web page, selecting “Inspect” or “Inspect Element,” and then navigating to the “Console” tab.</p>
+
+<h2 id="logging-and-outputting-information">Logging and Outputting Information:</h2>
+
+<p>Console commands are invaluable for debugging and displaying information during development. The most basic console command is <code class="language-plaintext highlighter-rouge">console.log()</code>, which outputs a message to the console. However, there are many other useful functions, such as <code class="language-plaintext highlighter-rouge">console.warn()</code>, <code class="language-plaintext highlighter-rouge">console.error()</code>, and <code class="language-plaintext highlighter-rouge">console.info()</code>, which provide different levels of severity for your messages.</p>
+
+<h2 id="inspecting-and-manipulating-the-dom">Inspecting and Manipulating the DOM:</h2>
+
+<p>The console is a powerful tool for inspecting and manipulating the DOM of a web page. You can use <code class="language-plaintext highlighter-rouge">console.dir()</code> to display an interactive list of the properties and methods of a DOM element. Additionally, <code class="language-plaintext highlighter-rouge">console.clear()</code> allows you to clear the console, providing a clean slate for debugging.</p>
+
+<h2 id="timing-and-performance-measurement">Timing and Performance Measurement:</h2>
+
+<p>Understanding the performance of your code is crucial for optimizing web applications. Console commands like <code class="language-plaintext highlighter-rouge">console.time()</code> and <code class="language-plaintext highlighter-rouge">console.timeEnd()</code> can be used to measure the execution time of a specific code block. You can optimize your code and enhance the user experience by identifying bottlenecks.</p>
+
+<h2 id="debugging-and-error-handling">Debugging and Error Handling:</h2>
+
+<p>Console commands offer powerful debugging capabilities. For example, <code class="language-plaintext highlighter-rouge">console.assert()</code> can test assumptions about your code and display an error message if the assertion fails. Additionally, <code class="language-plaintext highlighter-rouge">console.trace()</code> provides a stack trace, allowing you to trace the execution path of your code and identify the source of errors.</p>
+
+<h2 id="using-console-helpers">Using Console Helpers:</h2>
+
+<p>Most modern browsers provide additional helpers in the console that make development tasks easier. For instance, autocomplete functionality can save time by suggesting available properties and methods as you type. Taking advantage of these features can streamline your development workflow.</p>
+
+<h2 id="advanced-console-techniques">Advanced Console Techniques:</h2>
+
+<p>Beyond the basics, the console offers several advanced techniques. You can use the console’s <code class="language-plaintext highlighter-rouge">$()</code> function to select DOM elements, just like jQuery. Additionally, the <code class="language-plaintext highlighter-rouge">console.table()</code> function allows you to display arrays and objects in a tabular format, making complex data structures easier to read.</p>
+
+<p><a href="https://codepen.io/pattpjy/pen/ZEmryzV">Codepen example</a></p>
+
+<script async="" src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<p>The console is a developer’s best friend, providing a range of powerful features to aid debugging, testing, and optimizing code. So, next time you’re working on a web project, take notice of the console - try its capabilities and utilize its potential to enhance your coding journey.</p>
+
+<p>Happy coding!</p>
+
+</div>
+
+  </body>
+  <script
+    src="https://kit.fontawesome.com/103e31ca68.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="/index.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-CZHXH91YBW"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-CZHXH91YBW");
+  </script>
+</html>
