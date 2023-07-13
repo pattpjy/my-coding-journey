@@ -4,10 +4,10 @@ layout: post
 author: "Patt Sookmark"
 tags:
   - thaiwordgame
-banner_image: asset/Revamp.png
+banner_image: asset/blog-banner/blog-Revamp.png
 ---
 
-<img class="blog-banner" src="/asset/Revamp.png" alt="blog-patterns" />
+<img class="blog-banner" src="/asset/blog-banner/blog-Revamp.png" alt="blog-patterns" />
 
 Hello, fellow devs! It's time for an update on the progress of our Thai word game app. After taking a comprehensive UX/UI course, I realized that our app needed a significant overhaul to provide a better user experience. In this blog post, I'll share the changes we made to the app, specifically focusing on revamping our containers and adopting a more user-centric approach.
 

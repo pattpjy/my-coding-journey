@@ -4,10 +4,10 @@ layout: post
 tags:
   - personalgrowth
 author: "Patt Sookmark"
-banner_image: asset/blog-camps-model.png
+banner_image: asset/blog-banner/blog-camps-model.png
 ---
 
-<img class="blog-banner" src="/asset/blog-camps-model.png" alt="camps-model-banner" />
+<img class="blog-banner" src="/asset/blog-banner/blog-camps-model.png" alt="camps-model-banner" />
 
 A job search can be exciting yet daunting. 😮 But fear not! 🌟 I've discovered a game-changing approach to keep productivity high and motivation soaring during my own job search journey. 🚀 Let's explore the transformative power of the CAMPS model—Certainty, Autonomy, Mastery, Purpose, and Social Inclusion. Get ready to be inspired and equipped with the tools you need to succeed!
 

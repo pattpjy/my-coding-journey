@@ -4,10 +4,10 @@ layout: post
 author: "Patt Sookmark"
 tags:
   - personalgrowth
-banner_image: asset/blog-prioritize.png
+banner_image: asset/blog-banner/blog-prioritize.png
 ---
 
-<img class="blog-banner" src="/asset/blog-prioritize.png" alt="blog-prioritize" />
+<img class="blog-banner" src="/asset/blog-banner/blog-prioritize.png" alt="blog-prioritize" />
 
 Introduction:
 As someone who has experienced the challenges of juggling multiple responsibilities - from being a business owner to navigating a coding boot camp while being a dedicated mom - I understand firsthand the feeling of being overwhelmed. However, I've found effective strategies that have helped me avoid feeling overpowered by chaos and stay focused. In this post, I'd like to share the system I've used to prioritize tasks and optimize productivity.

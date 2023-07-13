@@ -4,10 +4,10 @@ layout: post
 tags:
   - backend
 author: "Patt Sookmark"
-banner_image: asset/blog-express-template.png
+banner_image: asset/blog-banner/blog-express-template.png
 ---
 
-<img class="blog-banner" src="/asset/blog-express-template.png" alt="blog-express-template" />
+<img class="blog-banner" src="/asset/blog-banner/blog-express-template.png" alt="blog-express-template" />
 
 As a front-end developer venturing into the world of backend development, I understand the challenges of setting up a new server every time you want to test a new idea. That's why I'm excited to share my solution: Express TypeScript Boilerplate, a game-changing template that simplifies the process of building Express servers using TypeScript.
 

@@ -4,10 +4,10 @@ layout: post
 author: "Patt Sookmark"
 tags:
   - thaiwordgame
-banner_image: asset/blog-progressupdate.png
+banner_image: asset/blog-banner/blog-progressupdate.png
 ---
 
-<img class="blog-banner" src="/asset/blog-progressupdate.png" alt="blog-patterns" />
+<img class="blog-banner" src="/asset/blog-banner/blog-progressupdate.png" alt="blog-patterns" />
 
 ## Let's RECAP!
 

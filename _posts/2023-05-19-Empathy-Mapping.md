@@ -4,10 +4,10 @@ layout: post
 author: "Patt Sookmark"
 tags:
   - UXUI
-banner_image: asset/blog-empathy-mapping.png
+banner_image: asset/blog-banner/blog-empathy-mapping.png
 ---
 
-<img class="blog-banner" src="/asset/blog-empathy-mapping.png" alt="Empathy Mapping Banner">
+<img class="blog-banner" src="/asset/blog-banner/blog-empathy-mapping.png" alt="Empathy Mapping Banner">
 You know what's cool? Empathy mapping. And guess what? It's not just for UX designers—it's also a game-changer for UI developers like you. Let me tell you why:
 
 - **User-Centered Design** : Empathy mapping helps you design interfaces that users will adore. By understanding their needs, frustrations, and goals, you can create UIs that make their hearts skip a beat. Who doesn't want users to fall head over heels for their UI?

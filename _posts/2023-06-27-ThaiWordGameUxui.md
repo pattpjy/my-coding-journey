@@ -4,10 +4,10 @@ layout: post
 tags:
   - thaiwordgame
 author: "Patt Sookmark"
-banner_image: asset/blog-game-uxui.png
+banner_image: asset/blog-banner/blog-game-uxui.png
 ---
 
-<img class="blog-banner" src="/asset/blog-game-uxui.png" alt="game-uxui" />
+<img class="blog-banner" src="/asset/blog-banner/blog-game-uxui.png" alt="game-uxui" />
 
 In this blog post, I'll dive into the exciting journey of creating a language-learning app designed specifically for My daughter. My bigger goal is to create an application that teaches young children essential Thai words while providing an engaging and fun experience for them and their parents. Let's explore the UX/UI process behind developing the application with a particular user journey, my daughter, and myself.
 

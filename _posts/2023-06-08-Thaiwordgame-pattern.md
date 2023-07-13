@@ -4,10 +4,10 @@ layout: post
 tags:
   - thaiwordgame
 author: "Patt Sookmark"
-banner_image: asset/blog-patterns.png
+banner_image: asset/blog-banner/blog-patterns.png
 ---
 
-<img class="blog-banner" src="/asset/blog-patterns.png" alt="blog-patterns" />
+<img class="blog-banner" src="/asset/blog-banner/blog-patterns.png" alt="blog-patterns" />
 In this blog post, we will explore two essential architectural patterns used in the development of the Thai Word Game: the Repository Pattern and the Container/Presentation Pattern. These patterns provide structure, organization, and maintainability to our project, enabling us to separate concerns and promote code reuse. By implementing these patterns, we can create a scalable and maintainable application with clear separation between data access, logic, and user interface components.
 
 ### Understanding the Repository Pattern:
