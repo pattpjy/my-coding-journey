@@ -4,12 +4,12 @@ layout: post
 author: "Patt Sookmark"
 tags:
   - frontend
-banner_image: asset/blog-banner/blog-readme.png
+banner_image: asset/blog-banner/blog-console.png
 ---
 
-<img class="blog-banner" src="/asset/blog-banner/blog-readme.png" alt="blog-readme" />
+<img class="blog-banner" src="/asset/blog-banner/blog-console.png" alt="blog-console" />
 
-As I developed the readme generator web app, I stumbled upon using a console command further than console.log. The console command plays a large role in debugging, testing, and executing the copy-paste feature. In this blog, I want to explore the console, its capabilities, and how to make the most of it.
+As I developed the readme generator web app [gitReadmeMd](https://pattpjy.github.io/gitReadmeMd/), I stumbled upon using a console command further than console.log. The console command plays a large role in debugging, testing, and executing the copy-paste feature. In this blog, I want to explore the console, its capabilities, and how to make the most of it.
 
 ## What is the Console?
 
@@ -49,5 +49,5 @@ Beyond the basics, the console offers several advanced techniques. You can use t
 
 The console is a developer's best friend, providing a range of powerful features to aid debugging, testing, and optimizing code. So, next time you're working on a web project, take notice of the console - try its capabilities and utilize its potential to enhance your coding journey.
 
-more to read from [dev.to}(https://dev.to/devsmitra/javascript-console-methods-a-cheat-sheet-for-developers-44mc)
+more to read from [dev.to](https://dev.to/devsmitra/javascript-console-methods-a-cheat-sheet-for-developers-44mc)
 Happy coding!
