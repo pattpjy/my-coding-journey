@@ -357,11 +357,7 @@ button:focus-visible {
 }
 
 .blog-card:hover {
-  background: linear-gradient(
-    to right bottom,
-    rgba(54, 54, 54, 0.32) 50%,
-    rgba(2, 96, 35, 0.43)
-  );
+  background-color: darkgray;
   transition: outline-color 0.5s;
 }
 
