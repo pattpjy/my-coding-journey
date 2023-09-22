@@ -4,7 +4,7 @@ layout: post
 author: "Patt Sookmark"
 tags:
   - personalgrowth
-banner_image: asset/blog-banner/blog-console.png
+banner_image: asset/blog-banner/blog-python.png
 ---
 
 <img class="blog-banner" src="/asset/blog-banner/blog-python.png" alt="blog-console" />

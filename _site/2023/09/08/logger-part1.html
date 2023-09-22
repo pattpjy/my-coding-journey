@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Portfolio Presentation</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Varela%20Round"
+    />
+  </head>
+  <body>
+    
+<div class="nav-bar">
+  <a class="linkedin" href="https://www.linkedin.com/in/pattsookmark/"> <i class="fa-brands fa-linkedin-in fa-beat-fade" style="--fa-animation-duration: 2s;"></i></a>
+  <div class="header">
+    <ul class="nav-list" id="nav-list">
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#about"> About </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#blog"> Blog </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#proj"> Proj </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#tech"> Tech </a>
+    </ul>
+    <i class="fa-solid fa-burger" id="burger" onclick="openBurger()"></i>
+    <i class="fa-solid fa-circle-xmark" id="xmark"onclick="closeBurger()"></i>
+  </div>
+</div>
+
+<div class="blog-content">
+  <div> backend </div>
+  <p><img class="blog-banner" src="/asset/blog-banner/blog-logger1.png" alt="blog-logger" /></p>
+
+<p>A logger is a component or library used to facilitate the recording and management of log messages within an application. It is designed explicitly for logging purposes and provides various features and capabilities not found in the standard console.log function. Here’s how a logger differs from console.log:</p>
+
+<h2 id="logger">Logger:</h2>
+
+<ol>
+  <li>
+    <p>Customization: Loggers allow you to customize various aspects of logging, such as log levels, log message formatting, and log destinations (e.g., files, databases, external services). You have fine-grained control over how log data is handled.</p>
+  </li>
+  <li>
+    <p>Log Levels: Loggers typically support different log levels, including but not limited to error, warn, info, debug, and trace. Each log level corresponds to a specific severity of the log message, enabling you to filter and control the verbosity of logs.</p>
+  </li>
+  <li>
+    <p>Asynchronous Logging: Many logger libraries support asynchronous logging, which can enhance application performance by offloading the logging process to a separate thread or process.</p>
+  </li>
+  <li>
+    <p>Log Rotation: Some loggers offer log rotation capabilities, ensuring that log files don’t grow indefinitely and consume excessive disk space.</p>
+  </li>
+  <li>
+    <p>Timestamps and Metadata: Loggers simultaneously send log messages to multiple destinations (such as the source of the log entry) with each log message. This information can be invaluable for debugging and analysis.</p>
+  </li>
+  <li>
+    <p>Multiple Transports: Loggers can send log messages to multiple destinations simultaneously. For instance, you can log errors to a file for long-term storage and log them to the console for real-time monitoring.</p>
+  </li>
+  <li>
+    <p>Pluggable Architecture: Many logger libraries provide a pluggable architecture, allowing you to extend their functionality with custom log handlers or transports.</p>
+  </li>
+</ol>
+
+<h2 id="consolelog-standard-javascript-function"><code class="language-plaintext highlighter-rouge">console.log</code> (Standard JavaScript Function):</h2>
+
+<ol>
+  <li>
+    <p>Simplicity: console.log is a built-in JavaScript function that is readily available in all JavaScript environments. It is simple to use and requires no additional setup or configuration.</p>
+  </li>
+  <li>
+    <p>Quick Debugging: It is useful for quick debugging and ad-hoc logging during development when you need to inspect variables or trace the flow of your code.</p>
+  </li>
+  <li>
+    <p>Limited Features: console.log is relatively basic and lacks many advanced features found in dedicated logging libraries. It does not provide log levels, log rotation, or extensive customization options.</p>
+  </li>
+  <li>
+    <p>Inflexibility: You can’t easily redirect console.log output to different destinations or adjust the log levels without modifying your code. It’s not as suitable for managing production-grade logs.</p>
+  </li>
+  <li>
+    <p>Performance Impact: Excessive use of console.log in production environments can impact performance, especially in web browsers, due to synchronous output operations.</p>
+  </li>
+</ol>
+
+<p>Choosing a dedicated logger and console.log should align with your project’s requirements and scalability. If your application is small, simple, and primarily used for development or debugging, console.log may be sufficient. However, a dedicated logger like Winston or your own custom logger provides more control, flexibility, and features for larger or production-grade applications for managing and analyzing logs. The trade-off is the added complexity of configuration and dependencies.</p>
+
+<h2 id="building-custom-logging-system-in-nodejs">Building Custom Logging System in Node.js</h2>
+
+<p>I started using a logging system outside of the boot camp projects. I can output data to the console without setting breakpoints everywhere with a logger. When I run the code in the browser, setting breakpoints is more complicated. It also helps diagnose problems sooner, and I can get ahead of them.</p>
+
+<p>There are some requirements to keep in mind when choosing a logger framework or building your own:</p>
+
+<p>Logging should not interfere with the regular operation of your app.</p>
+
+<p>You should be able to attach log destinations easily.</p>
+
+<p>You should be able to log at different levels (trace, debug, info, warning, error).</p>
+
+<p>You should be able to log at different levels in different areas of the app.</p>
+
+<p>When rolling your own logger, you reduce dependencies within your code. If a downstream dependency makes a breaking change, it breaks your app. A logger should not break things. Writing your own reduces the size of the transpiled code, which means your app loads faster. This is because the logger code is straightforward.</p>
+
+<p>In the next post, I’ll share my logger setup. Happy Coding!</p>
+
+<p>#NodeJS #TechTip #Debugging #SoftwareDevelopment #Javascript</p>
+
+</div>
+
+  </body>
+  <script
+    src="https://kit.fontawesome.com/103e31ca68.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="/index.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-CZHXH91YBW"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-CZHXH91YBW");
+  </script>
+</html>
+ 
