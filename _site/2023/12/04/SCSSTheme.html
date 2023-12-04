@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Portfolio Presentation</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Varela%20Round"
+    />
+  </head>
+  <body>
+    
+<div class="nav-bar">
+  <a alt="linkedin" class="linkedin" href="https://www.linkedin.com/in/pattsookmark/"> <i class="fa-brands fa-linkedin-in fa-beat-fade" style="--fa-animation-duration: 2s;"></i></a>
+  <div class="header">
+    <ul class="nav-list" id="nav-list">
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#about"> About </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#blog"> Blog </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#proj"> Proj </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#tech"> Tech </a>
+    </ul>
+    <i class="fa-solid fa-burger" id="burger" onclick="openBurger()"></i>
+    <i class="fa-solid fa-circle-xmark" id="xmark"onclick="closeBurger()"></i>
+  </div>
+</div>
+
+<div class="blog-content">
+  <div> frontend </div>
+  <p><img class="blog-banner" src="/asset/blog-banner/blog-scsstheme.png" alt="blog-banner-scsstheme" /></p>
+
+<p>Welcome, guys. This blog is my reference for creating custom themes for React projects. Consider this a quick and handy guide, complete with an example theme file, for those moments when I need a quick refresher or find myself blanking on the specifics.
+This blog features a straightforward example of a theme file. It’s a convenient resource to ensure I always catch up when defining colors, styles, and other crucial design elements in my React applications. Let’s dive in and explore the basics of creating a custom theme that aligns with your design vision.</p>
+
+<h1 id="creating-custom-themes-in-react-with-scss-and-css-modules">Creating Custom Themes in React with SCSS and CSS Modules</h1>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>Before we begin, make sure you have the following prerequisites:</p>
+
+<ul>
+  <li>A React application set up.</li>
+  <li>Basic knowledge of React, SCSS, and CSS Modules.</li>
+</ul>
+
+<h2 id="step-1-setting-up-your-project">Step 1: Setting Up Your Project</h2>
+
+<p>If you haven’t already, create a React project using Create React App or your preferred setup. Install the necessary dependencies:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install </span>node-sass
+</code></pre></div></div>
+
+<h2 id="step-2-creating-a-scss-theme-file">Step 2: Creating a SCSS Theme File</h2>
+
+<p>In your project, create an SCSS file (e.g., <code class="language-plaintext highlighter-rouge">theme. scss</code>) where you’ll define your custom theme. This is where you’ll set color variables and other style rules.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// theme.scss</span>
+
+<span class="nv">$primaryColor</span><span class="p">:</span> <span class="mh">#3498db</span><span class="p">;</span>
+<span class="nv">$secondaryColor</span><span class="p">:</span> <span class="mh">#2ecc71</span><span class="p">;</span>
+<span class="c1">// Define other variables and styles here</span>
+</code></pre></div></div>
+
+<h2 id="step-3-creating-component-specific-styles-with-css-modules">Step 3: Creating Component-Specific Styles with CSS Modules</h2>
+
+<p>Create a React component (e.g., <code class="language-plaintext highlighter-rouge">Button.js</code>) and a corresponding CSS Module file (e.g., <code class="language-plaintext highlighter-rouge">Button.module.scss</code>). Use the <code class="language-plaintext highlighter-rouge">:local</code> selector in the module file to define local styles and reference the theme variables.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Button.js</span>
+
+<span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">styles</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Button.module.scss</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nf">Button</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">&lt;</span><span class="nt">button</span> <span class="na">className</span><span class="p">=</span><span class="si">{</span><span class="nx">styles</span><span class="p">.</span><span class="nx">button</span><span class="si">}</span><span class="p">&gt;</span>Click me<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;;</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">Button</span><span class="p">;</span>
+</code></pre></div></div>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Button.module.scss</span>
+
+<span class="k">@import</span> <span class="s1">'theme'</span><span class="p">;</span>
+
+<span class="nd">:local</span> <span class="p">{</span>
+  <span class="nc">.button</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$primaryColor</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">15px</span><span class="p">;</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+    <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+
+    <span class="k">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$secondaryColor</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="step-4-importing-the-scss-theme">Step 4: Importing the SCSS Theme</h2>
+
+<p>Import your theme file into your main SCSS file (e.g., <code class="language-plaintext highlighter-rouge">App.scss</code>) and use the variables to create a cohesive look and feel for your entire application.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// App.scss</span>
+
+<span class="k">@import</span> <span class="s1">'theme'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s1">'./Button.module.scss'</span><span class="p">;</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s1">'Arial'</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$secondaryColor</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Additional global styles and theme application</span>
+</code></pre></div></div>
+
+<h2 id="step-5-applying-the-custom-theme">Step 5: Applying the Custom Theme</h2>
+
+<p>Ensure that your main SCSS file (<code class="language-plaintext highlighter-rouge">App.scss</code>) is imported into your React application entry point (e.g., <code class="language-plaintext highlighter-rouge">index.js</code> or <code class="language-plaintext highlighter-rouge">App.js</code>) to apply the custom theme globally.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// index.js</span>
+
+<span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">ReactDOM</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-dom</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="dl">'</span><span class="s1">./App.scss</span><span class="dl">'</span><span class="p">;</span> <span class="c1">// Import your main SCSS file</span>
+<span class="k">import</span> <span class="nx">App</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./App</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="nx">ReactDOM</span><span class="p">.</span><span class="nf">render</span><span class="p">(</span>
+  <span class="p">&lt;</span><span class="nc">React</span><span class="p">.</span><span class="nc">StrictMode</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nc">App</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nc">React</span><span class="p">.</span><span class="nc">StrictMode</span><span class="p">&gt;,</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">root</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<p>Now, your React components can utilize the custom theme defined in the <code class="language-plaintext highlighter-rouge">theme.scss</code> file, and the styles are scoped locally using CSS Modules.</p>
+
+<p>Here’s a initial setup for a basic theme file in SCSS:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// theme.scss</span>
+
+<span class="c1">// Color Palette</span>
+<span class="nv">$primaryColor</span><span class="p">:</span> <span class="mh">#3498db</span><span class="p">;</span>
+<span class="nv">$secondaryColor</span><span class="p">:</span> <span class="mh">#2ecc71</span><span class="p">;</span>
+<span class="nv">$accentColor</span><span class="p">:</span> <span class="mh">#e74c3c</span><span class="p">;</span>
+<span class="nv">$textColor</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
+<span class="nv">$backgroundColor</span><span class="p">:</span> <span class="mh">#f8f8f8</span><span class="p">;</span>
+
+<span class="c1">// Typography</span>
+<span class="nv">$baseFontSize</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+<span class="nv">$headingFontFamily</span><span class="p">:</span> <span class="s1">'Helvetica'</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="nv">$bodyFontFamily</span><span class="p">:</span> <span class="s1">'Arial'</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+
+<span class="c1">// Spacing</span>
+<span class="nv">$baseSpacing</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+<span class="nv">$containerMaxWidth</span><span class="p">:</span> <span class="m">1200px</span><span class="p">;</span>
+
+<span class="c1">// Button Styles</span>
+<span class="nv">$buttonPadding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">15px</span><span class="p">;</span>
+<span class="nv">$buttonBorderRadius</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+<span class="nv">$buttonPrimaryBackground</span><span class="p">:</span> <span class="nv">$primaryColor</span><span class="p">;</span>
+<span class="nv">$buttonPrimaryColor</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+<span class="nv">$buttonSecondaryBackground</span><span class="p">:</span> <span class="nv">$secondaryColor</span><span class="p">;</span>
+<span class="nv">$buttonSecondaryColor</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+
+<span class="c1">// Input Styles</span>
+<span class="nv">$inputPadding</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+<span class="nv">$inputBorderWidth</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span>
+<span class="nv">$inputBorderColor</span><span class="p">:</span> <span class="mh">#ddd</span><span class="p">;</span>
+<span class="nv">$inputBorderRadius</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
+
+<span class="c1">// Other Styles</span>
+<span class="nv">$boxShadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">2px</span> <span class="m">4px</span> <span class="nf">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="mi">.1</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>This example included variables for colors, typography, spacing, and basic styles for buttons and inputs. You can customize these variables based on your design preferences. This setup provides a solid foundation for theming and can be expanded as needed for more complex projects.</p>
+
+<p>To use these variables in your components, import the theme file and reference the variables in your styles:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Example usage in a component</span>
+
+<span class="k">@import</span> <span class="s1">'theme'</span><span class="p">;</span>
+
+<span class="nc">.button</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$buttonPrimaryBackground</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nv">$buttonPrimaryColor</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="nv">$buttonPadding</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$buttonBorderRadius</span><span class="p">;</span>
+  <span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+
+  <span class="k">&amp;</span><span class="nd">:hover</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="nv">$buttonSecondaryBackground</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nc">.input</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="nv">$inputPadding</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="nv">$inputBorderWidth</span> <span class="nb">solid</span> <span class="nv">$inputBorderColor</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="nv">$inputBorderRadius</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>This structure lets you maintain a consistent and easily modifiable theme across your application. As your project grows, you can extend the theme file with additional variables for specific styles or components.
+Creating custom themes in a React application using SCSS and CSS Modules provides a robust and modular way to manage styles. By centralizing theme variables in a dedicated SCSS file and using CSS Modules for component-specific styling, you can achieve consistency and maintainability in your styling approach. Experiment with different variables and styles to create a custom theme that aligns with your application’s design vision.</p>
+
+</div>
+
+  </body>
+  <script
+    src="https://kit.fontawesome.com/103e31ca68.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="/index.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-CZHXH91YBW"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-CZHXH91YBW");
+  </script>
+</html>
+ 

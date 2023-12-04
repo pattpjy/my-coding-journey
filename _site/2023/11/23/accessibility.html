@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Portfolio Presentation</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Varela%20Round"
+    />
+  </head>
+  <body>
+    
+<div class="nav-bar">
+  <a alt="linkedin" class="linkedin" href="https://www.linkedin.com/in/pattsookmark/"> <i class="fa-brands fa-linkedin-in fa-beat-fade" style="--fa-animation-duration: 2s;"></i></a>
+  <div class="header">
+    <ul class="nav-list" id="nav-list">
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#about"> About </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#blog"> Blog </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#proj"> Proj </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#tech"> Tech </a>
+    </ul>
+    <i class="fa-solid fa-burger" id="burger" onclick="openBurger()"></i>
+    <i class="fa-solid fa-circle-xmark" id="xmark"onclick="closeBurger()"></i>
+  </div>
+</div>
+
+<div class="blog-content">
+  <div> frontend </div>
+  <p><img class="blog-banner" src="/asset/blog-banner/blog-accessibility.png" alt="blog-logger" /></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>In today’s digital landscape, crafting websites that cater to diverse users is not just good practice; it’s a cornerstone of responsible web design. An inclusive website ensures that people of all abilities, backgrounds, and preferences can seamlessly access and engage with your content. This blog post will explain fundamental principles and best practices for designing an inclusive and accessible website.</p>
+
+<h2 id="web-design-accessibility-course-insights">Web Design Accessibility Course Insights</h2>
+
+<p>from this course » <a href="https://www.udemy.com/course/web-accessibility/">Udemy</a></p>
+
+<h3 id="tools-for-accessibility-testing">Tools for Accessibility Testing</h3>
+
+<p>Creating accessible websites starts with identifying and addressing potential issues efficiently. Utilizing specialized tools can significantly expedite this process. Here are some highly recommended tools:</p>
+
+<h4 id="lighthouse">Lighthouse:</h4>
+
+<p>Integrated into the Chrome web browser, Lighthouse offers an accessibility report alongside performance and SEO insights.</p>
+
+<h4 id="voiceover">VoiceOver:</h4>
+
+<p>A built-in screen reader for Mac and iOS devices. Activate it using Cmd + F5 to assess your website’s accessibility.</p>
+
+<h4 id="windows-screen-readers">Windows Screen Readers:</h4>
+
+<p>Options like JAWS (with an evaluation version), NVDA (free), and Narrator (built into newer Windows versions) cater to Windows users.</p>
+
+<h4 id="wave-web-accessibility-evaluation-tool">WAVE Web Accessibility Evaluation Tool:</h4>
+
+<p>A browser-based tool that evaluates a website’s accessibility, providing a detailed report. Access it at WAVE.</p>
+
+<h4 id="w3c-validator">W3C Validator:</h4>
+
+<p>The W3C Markup Validation Service ensures HTML validity, critical for correct interpretation by screen readers and browsers.</p>
+
+<h3 id="understanding-disabilities">Understanding Disabilities</h3>
+
+<p>Designing for inclusivity requires a deep understanding of potential user limitations. Consider the following key aspects:</p>
+
+<ul>
+  <li><strong>Sight</strong>: Varies from 20/20 vision to complete blindness, including considerations for color blindness.</li>
+  <li><strong>Hearing</strong>: Acknowledge potential exclusions for users who are deaf or have limited hearing.</li>
+  <li><strong>Motor</strong>: Users with limited motor functions may struggle with precise mouse control; hence, ensuring functional keyboard navigation is crucial.</li>
+  <li><strong>Cognitive</strong>: Design with clarity and simplicity, recognizing that some users may have learning difficulties, memory problems, autism, or other conditions.</li>
+</ul>
+
+<h3 id="inclusive-design-best-practices">Inclusive Design Best Practices</h3>
+
+<h4 id="semantic-html-and-heading-structure">Semantic HTML and Heading Structure</h4>
+
+<p>Utilize semantic HTML elements such as <code class="language-plaintext highlighter-rouge">&lt;header&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;main&gt;</code>, and <code class="language-plaintext highlighter-rouge">&lt;footer&gt;</code> for a clear content structure.
+Implement descriptive and hierarchical headings (<code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h2&gt;</code>, etc.) to aid screen readers in interpreting content hierarchy.</p>
+
+<h4 id="voiceover-friendly-design">VoiceOver-Friendly Design</h4>
+
+<p>Provide descriptive alt text for images.
+Ensure smooth and logical keyboard navigation.
+Implement focus styles to enhance the visibility of interactive elements.</p>
+
+<h4 id="aria-tips-and-best-practices">ARIA Tips and Best Practices</h4>
+
+<p>Leverage ARIA roles to define the type of user interface element.
+Implement ARIA landmarks for improved navigation.
+Announce dynamic content changes with ARIA live regions.
+Ensure keyboard accessibility for elements with ARIA roles.</p>
+
+<h4 id="inclusive-design-strategies">Inclusive Design Strategies</h4>
+
+<p>Understand your audience and involve diverse stakeholders in the design process.
+Prioritize accessibility from the initial design phase.
+Provide multiple means of representation, including text, images, audio, and video.
+Support flexible input methods, such as keyboard, mouse, touch, and voice.</p>
+
+<h4 id="user-testing-and-continuous-improvement">User Testing and Continuous Improvement</h4>
+
+<p>Conduct regular user testing, especially with individuals of varying abilities.
+Act on user feedback and iteratively improve your design to ensure ongoing accessibility enhancements.</p>
+
+<h4 id="most-common-issues">Most Common Issues</h4>
+
+<p>To address potential challenges, be vigilant about:
+Heading hierarchy
+Insufficient color contrast
+Focus issues on modals and interactive elements
+Form inputs without labels
+Buttons placed too closely to others
+Lack of captions on video content</p>
+
+<h4 id="other-references">Other references:</h4>
+
+<p>Semantic HTML example
+<img src="/asset/semanticHTMLExample.png" alt="semantic html example" />
+<a href="https://medium.com/@ericapantojacs/semantic-html-cheat-sheet-9194768368bb">Semantic HTML Cheat Sheet</a></p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Designing for accessibility is not merely a legal obligation but a commitment to creating a digital space that welcomes everyone. By embracing the principles of semantic HTML, VoiceOver-friendly design, ARIA best practices, and inclusive design strategies, you’re on the path to building websites that offer a seamless experience for users of all abilities. Remember, accessibility is an ongoing commitment that enhances the user-friendliness of your platform. Happy designing!</p>
+
+</div>
+
+  </body>
+  <script
+    src="https://kit.fontawesome.com/103e31ca68.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="/index.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-CZHXH91YBW"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-CZHXH91YBW");
+  </script>
+</html>
+ 
