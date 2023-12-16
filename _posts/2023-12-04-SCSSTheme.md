@@ -12,8 +12,6 @@ banner_image: asset/blog-banner/blog-scsstheme.png
 Welcome, guys. This blog is my reference for creating custom themes for React projects. Consider this a quick and handy guide, complete with an example theme file, for those moments when I need a quick refresher or find myself blanking on the specifics.
 This blog features a straightforward example of a theme file. It's a convenient resource to ensure I always catch up when defining colors, styles, and other crucial design elements in my React applications. Let's dive in and explore the basics of creating a custom theme that aligns with your design vision.
 
-# Creating Custom Themes in React with SCSS and CSS Modules
-
 ## Prerequisites
 
 Before we begin, make sure you have the following prerequisites:
