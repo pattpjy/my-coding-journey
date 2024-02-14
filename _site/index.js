@@ -1,14 +1,14 @@
 // import MicroModal from "micromodal";
 
-const typingElement = document.querySelector(".typing-text");
-const typeArray = ["Patt", "a developer", "a creator", "a mom"];
+const typingElement = document.querySelector('.typing-text');
+const typeArray = ['Patt', 'a developer', 'a creator', 'a mom'];
 
-const navList = document.querySelector("#nav-list");
-const navListLi = document.querySelector("body > div.nav-bar > div > ul > li");
-const burger = document.querySelector("#burger");
-const closeBTN = document.querySelector("#xmark");
-const modal = document.querySelector("#modal");
-const showProj = document.querySelector(".proj-card");
+const navList = document.querySelector('#nav-list');
+const navListLi = document.querySelector('body > div.nav-bar > div > ul > li');
+const burger = document.querySelector('#burger');
+const closeBTN = document.querySelector('#xmark');
+const modal = document.querySelector('#modal');
+const showProj = document.querySelector('.proj-card');
 
 let index = 0,
   isAdding = true,
@@ -61,16 +61,16 @@ function playAnim() {
 }
 
 function openBurger() {
-  navList.classList.add("nav-list-extend");
-  burger.classList.add("burger-hide");
-  closeBTN.classList.add("xmark-hide");
+  navList.classList.add('nav-list-extend');
+  burger.classList.add('burger-hide');
+  closeBTN.classList.add('xmark-hide');
   navListLi.style.margin = 0;
 }
 
 function closeBurger() {
-  burger.classList.remove("burger-hide");
-  closeBTN.classList.remove("xmark-hide");
-  navList.classList.remove("nav-list-extend");
+  burger.classList.remove('burger-hide');
+  closeBTN.classList.remove('xmark-hide');
+  navList.classList.remove('nav-list-extend');
 }
 
 // Start typing text
@@ -79,3 +79,13 @@ playAnim();
 MicroModal.init({
   disableScroll: true,
 });
+
+function openProject(para) {
+  const projectsBox = document.getElementById(para);
+
+  projectsBox.style.display =
+    projectsBox.style.display === 'none' ? 'block' : 'none';
+
+  // projectsBox.style.opacity = projectsBox.style.opacity === 0 ? 1 : 0;
+  console.log('click project', projectsBox);
+}

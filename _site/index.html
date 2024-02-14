@@ -4,9 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Portfolio Presentation</title>
-
+    <title>
+      JS Software Developer | Whipping Up Innovative Solutions for Delight User
+      Experiences
+    </title>
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Varela%20Round"
@@ -15,7 +23,7 @@
   <body>
     
 <div class="nav-bar">
-  <a alt="linkedin" class="linkedin" href="https://www.linkedin.com/in/pattsookmark/"> <i class="fa-brands fa-linkedin-in fa-beat-fade" style="--fa-animation-duration: 2s;"></i></a>
+  
   <div class="header">
     <ul class="nav-list" id="nav-list">
       <li>
@@ -38,22 +46,50 @@
         <span></span><span></span><span></span><span></span>
         <a class="nav-link" href="/#tech"> Tech </a>
     </ul>
+    <a alt="linkedin" class="linkedin" href="https://www.linkedin.com/in/pattsookmark/"> <i class="fa-brands fa-linkedin-in fa-beat-fade" style="--fa-animation-duration: 2s;"></i></a>
     <i class="fa-solid fa-burger" id="burger" onclick="openBurger()"></i>
     <i class="fa-solid fa-circle-xmark" id="xmark"onclick="closeBurger()"></i>
   </div>
 </div>
 
 <div class="banner">
+  <div id="tsparticles" class="tsparticles"></div>
   <div class="left-banner">
     <div class="typing-container">
       <h2>Hello, I am <span class="typing-text"> a developer!</span></h2>
-      <a onclick="window.location.href='/#proj'">More</a>
+      <!-- <a onclick="window.location.href='/#proj'">Learn more about me</a> -->
     </div>
-    
   </div>
-  <div class="right-banner"></div>
 </div>
 <div class="group-sections">
+  <section id="proj">
+    <a href="">
+      <h2 class="h2-light">Back</h2>
+    </a>
+    <h2 class="h2-fadein-title">Skills in Motion: Explore My Web Applications</h2>
+    <div class="proj-display">
+      <section class="proj-container">  
+        <div class="proj-lang" id="ReactJS">
+        <p>Closet Collection - React Typescript</p>
+        <p>PlayPal - React Typescript</p>
+      </div>
+      <div class="proj-lang" id="NodeExpress">
+        <p>Express Server SQlite Database Template - Node Express</p>
+      </div>
+      <div class="proj-lang" id="VuePython">
+        <p>Budget Planner - Vue with Local Storage</p>
+      </div></section>
+    
+      <section class="language-container"> 
+        <div class="language" onclick="openProject('ReactJS')">REACT TYPESCRIPT
+      </div>
+      <div class="language" onclick="openProject('NodeExpress')">NODE EXPRESS
+      </div>
+      <div class="language" onclick="openProject('VuePython')">VUE PYTHON
+      </div></section>
+     
+    </div>   
+  </section>
   <section id="about">
     <h2>ABOUT ME</h2>
     <br />
@@ -83,6 +119,22 @@ After a decade in finance and audit, I pursued my dream of owning a catering bus
     <button class="tagBtn" onclick="window.location.href='/tags/frontend/'">Front End</button>
     <button class="tagBtn" onclick="window.location.href='/tags/uxui/'">UX/UI</button>
     <ul>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="Creating custom themes for React project part II"
+          src="asset/blog-banner/blog-scsstheme2.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="Creating custom themes for React project part II" class="a-blog" href="/2023/12/16/SCSSTheme2.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>Creating custom themes for React project part II
+            </h2>
+          </a>
+        </div>
+      </li>
       
       <li class="blog-card">
         <img
@@ -422,109 +474,7 @@ After a decade in finance and audit, I pursued my dream of owning a catering bus
       
     </ul>
   </section>
-  <section id="proj">
-    <a href="">
-      <h2 class="h2-light">PROJECTS</h2>
-    </a>
-    <div class="cards-group">
-      <div class="proj1"><a class="modal-btn" data-micromodal-trigger="modal-1" href="javascript:;">Closet Collection</a> </div>
-      <div class="micromodal" id="modal-1" aria-hidden="true">
-        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-          <div
-            class="micromodal__container"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="modal-1-title"
-          >
-            <button aria-label="Close modal" data-micromodal-close>X</button>
-            <p>Closet Collection is your ultimate solution to organize your wardrobe. With this app, you can easily manage your clothing collection, take photos of your clothing items, create custom lists for trips or general organization, and categorize your wardrobe by color, season, and clothing type for easy filtering. You can add notes to your clothing items, such as if you have lent an item to a friend or if it is at the dry cleaners. In addition, you can create personalized lists for events or trips, and add items to the list as packing reminders. Finally, if you ever need to make changes, you can easily delete items from your closet or from a list. Say goodbye to cluttered closets and disorganized trips, and say hello to the perfect wardrobe management tool with Closet Collection.</p>
-          </div>
-        </div>
-      </div>
-      <div class="proj2"><a class="modal-btn" data-micromodal-trigger="modal-2" href="javascript:;">FitLit</a></div>
-      <div class="micromodal" id="modal-2" aria-hidden="true">
-        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-          <div
-            class="micromodal__container"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="modal-2-title"
-          >
-            <button aria-label="Close modal" data-micromodal-close>X</button>
-            <p>FitLit is a fitness tracking application that allows users to keep track of their sleep, hydration, and activity data. The application uses a local server and fetch requests to GET and POST data. Error handling has been added to both requests to catch any errors that may occur.
-
-              The application features data visualization using charts from chart.js, presenting all data in a visually pleasing manner. Dayjs has been used to format and standardize dates. Users can add new data for the current day, and once submitted, the charts will update and populate with the latest data. Recursion has been utilized to construct a weeks worth of data if there are gaps in the data' date.
-              
-              A helper function file has been added to house functions that are used multiple times throughout the project, keeping the code DRY. The application also features a calendar that allows users to manipulate dates and view a wide variety of information from different dates. Users can view their personal information inside an information section.</p>
-            <p>Tech Used: Vanilla JS, Mocha, Chai, Git, GitHub, CSS, DayJS, ChartJS</p>
-          </div>
-        </div>
-      </div>
-      <div class="proj3"><a class="modal-btn" data-micromodal-trigger="modal-3" href="javascript:;">PlayPal</a> </div>
-      <div class="micromodal" id="modal-3" aria-hidden="true">
-        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-          <div
-            class="micromodal__container"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="modal-3-title"
-          >
-            <button aria-label="Close modal" data-micromodal-close>X</button>
-            <p>PlayPal is an innovative mobile application designed to assist first-time mothers who are seeking ideas for safe, enjoyable, and stimulating activities for their children. This app provides a list of activities that can be filtered according to the location of the activity, whether it is an indoor or outdoor activity, and the gross and fine motor skills that the activity promotes.</p>
-            <p> PlayPal’s UI is built using React and React Router with styling done using Module CSS. The backend service is created using Express and Postgres. We use Docker to create the Postgres database and write queries to the database using Knex. TablePlus is used to interact with the data in the database. The backend is deployed using Heroku and the frontend UI is deployed using Vercel.</p>
-            <p>Tech Used: React, React Router, selectJS Library, Cypress, Git, GitHub, Vercel, Postgres, ExpressJS, NodeJS, Docker</p>
-          </div>
-        </div>
-      </div>
-      <div class="proj4"><a class="modal-btn" data-micromodal-trigger="modal-4" href="javascript:;">Cook Ahead</a> </div>
-      <div class="micromodal" id="modal-4" aria-hidden="true">
-        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-          <div
-            class="micromodal__container"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="modal-4-title"
-          >
-            <button aria-label="Close modal" data-micromodal-close>X</button>
-            <p>Coming up with meals ideas and making decisions for the family meal plans is hard. Cook Ahead is a meal planning application built with React and React Router. It allows users to generate a list of meal ideas and manage the meal plan by adding and deleting ideas. The application is tested using Cypress for end-to-end testing, and version control is managed with Git and GitHub. Postman is used to test API calls, and the application is deployed with Vercel.It features a responsive layout design with the use of media queries, ensuring optimal user experience across various devices.</p>
-            <p>Tech Used: React, React Router, HTML Tag Parser Library, Cypress, Git, GitHub, Vercel, CSS</p>
-          </div>
-        </div>
-      </div>
-      <div class="proj5"><a class="modal-btn" data-micromodal-trigger="modal-5" href="javascript:;">News Reader</a> </div>
-      <div class="micromodal" id="modal-5" aria-hidden="true">
-        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-          <div
-            class="micromodal__container"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="modal-5-title"
-          >
-            <button aria-label="Close modal" data-micromodal-close>X</button>
-            <p>News Reader is an application that pulls articles from the New York Times API Top Stories API. This application allows users to stay up-to-date with the latest news and events by providing access to top stories from the New York Times.
-              News Reader leverages various design patterns, including the Repository pattern, Container and Presentational Components pattern, and Hook pattern. The app is built using Create React App with Vite and is deployed on Vercel.
-            </p>
-            <p>Tech Used: React, React Router, DayJS, Git, GitHub, Vercel, Postman , CSS</p>
-          </div>
-        </div>
-      </div>
-      <div class="proj6"><a class="modal-btn" data-micromodal-trigger="modal-6" href="javascript:;">GitWatch</a> </div>
-      <div class="micromodal" id="modal-6" aria-hidden="true">
-        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
-          <div
-            class="micromodal__container"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="modal-6-title"
-          >
-            <button aria-label="Close modal" data-micromodal-close>X</button>
-            <p>Git watch is a web app that uses GitHub's GraphQL API to display specific users' public repositories.  This project was an opportunity to learn about GraphQL and how it differs from REST API.</p>
-            <p>Tech Used: React, GraphQL, Git, GitHub, Styled Components</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
   <section id="tech">
     <h2>TECH I KNOW</h2>
@@ -568,6 +518,73 @@ After a decade in finance and audit, I pursued my dream of owning a catering bus
     </div>
   </section>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+<script type="text/javascript">
+  // All options can be found here: https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html
+  // The slim version doesn't have the following plugins:
+  // Absorbers, Emitters, PolygonMask, Interactivity Trail
+  const options = {
+    fullScreen: {
+      enable: false,
+    },
+    background: {
+      color: { value: '#ea86c0'}, // the canvas background color
+     image: "url('./asset/firework-bg.jpg')",
+     position:'center',
+     repeat: 'no-repeat',
+    size: 'cover',
+    },
+
+    backgroundMask: {
+    composite: 'destination-out',
+    cover: { color: { value: { r: 0, g: 0, b: 0 } }, opacity: 0.95 },
+    enable: true,
+  },
+    interactivity: {
+      events: {
+        onClick: {
+          // this handles the mouse click event
+          enable: true,
+          mode: 'push', // this adds particles
+          parallax: { enable: false, force: 2, smooth: 10 }
+        },
+        onHover: {
+          // this handles the mouse hover event
+          enable: true,
+          mode: 'repulse', // this make particles move away from the mouse
+        },
+      },
+      modes: {
+        push: {
+          quantity: 6, // number of particles to add
+        },
+        repulse: {
+          distance: 100, // the distance of the particles from the mouse
+        },
+      },
+    },
+    particles: {
+      links: {
+        enable: false, // this enables links between particles
+        opacity: 0.3,
+        distance: 200,
+      },
+      move: {
+        enable: true, // this makes particles move
+        speed: { min: 1, max: 3 }, // this is the speed of the particles
+      },
+      opacity: {
+        value: { min: 0.3, max: 0.7 }, // this sets the opacity of the particles
+      },
+      size: {
+        value: { min: 1, max: 50 }, // this sets the size of the particles
+      },
+    },
+  };
+
+  // tsParticles.load has two parameters, the first one is the id of the container, the second one is an object with the options
+  tsParticles.load('tsparticles', options);
+</script>
 <script src="https://unpkg.com/micromodal/dist/micromodal.min.js""></script>
 
 
@@ -577,19 +594,5 @@ After a decade in finance and audit, I pursued my dream of owning a catering bus
     crossorigin="anonymous"
   ></script>
   <script src="/index.js"></script>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-CZHXH91YBW"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-CZHXH91YBW");
-  </script>
 </html>
  

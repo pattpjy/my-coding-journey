@@ -1,5 +1,5 @@
 body {
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -36,7 +36,7 @@ img {
 .nav-bar {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgba(65, 113, 11, 0.9);
+  background-color: rgba(8, 5, 40, 0.9);
   flex-direction: row;
   justify-content: space-between;
   position: sticky;
@@ -50,47 +50,114 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-image: url("../asset/bailey.jpg");
   background-size: cover;
   object-fit: cover;
   background-attachment: fixed;
-  height: 50em;
+  height: 45em;
   width: 100%;
 }
-
-/* .right-banner {
-  width: 60%;
-} */
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 .left-banner {
-  margin: auto;
-  width: 90%;
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 10;
 }
 
 .typing-container {
   width: 50%;
   padding: 15px;
-  background-color: rgba(253, 255, 255, 0.8);
+  background-color: rgba(253, 255, 255, 0.5);
   height: 250px;
   border-radius: 10px;
   text-align: right;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #fdc600;
+  color: rgba(8, 5, 40, 0.9);
   font-size: 2rem;
   text-shadow: #4f5060 1px 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .typing-text {
-  color: #fdc600;
+  color: rgba(8, 5, 40, 0.9);
   text-shadow: #4f5060 1px 1px;
 }
 
 .typing-text::after {
-  content: "|";
+  content: '|';
   animation: blink 1s step-end infinite;
 }
+
+/* ------- new project area ------- */
+@keyframes scrollFadeIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.h2-fadein-title {
+  font-size: 72px;
+  color: #fdffff;
+  animation: scrollFadeIn 1.5s ease-in-out;
+  text-shadow: #4f5060 1px 1px;
+}
+.language-container {
+  display: flex;
+  width: 55%;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.language {
+  font-family: 'Share Tech', sans-serif;
+  padding: 2rem;
+  width: 180px;
+  height: 460px;
+  margin: 0 2rem 0 2rem;
+  font-size: 64px;
+  animation: scrollFadeIn 3s ease-in-out;
+  background-color: #fdffff;
+  writing-mode: vertical-lr;
+}
+.language:hover {
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(255, 217, 0, 0.673) 0 0 12px 5px;
+  color: rgba(0, 0, 0, 0.75);
+}
+.proj-container {
+  width: 45%;
+}
+.proj-lang {
+  height: 460px;
+  width: 400px;
+  background-color: #fdffff;
+  margin-left: 4rem;
+  display: none;
+}
+.proj-display {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/* ------- END new project area ------- */
 
 .group-sections {
   background-color: #fdffff;
@@ -375,7 +442,7 @@ button:focus-visible {
 /* ------- project area ------- */
 #proj {
   background-color: lightcyan;
-  background-image: url("../asset/virginia-lackinger-JV0y2YgXJcY-unsplash.jpg");
+  background-image: url('../asset/watercolor_texture_with_gold_glitters_background.jpg');
   background-size: cover;
   object-fit: cover;
 }
@@ -424,22 +491,22 @@ button:focus-visible {
 }
 
 .proj1 {
-  background-image: url("../asset/closet-collection.png");
+  background-image: url('../asset/closet-collection.png');
 }
 .proj2 {
-  background-image: url("../asset/fitLit.png");
+  background-image: url('../asset/fitLit.png');
 }
 .proj3 {
-  background-image: url("../asset/playpal.png");
+  background-image: url('../asset/playpal.png');
 }
 .proj4 {
-  background-image: url("../asset/cookAhead.png");
+  background-image: url('../asset/cookAhead.png');
 }
 .proj5 {
-  background-image: url("../asset/news_reader.png");
+  background-image: url('../asset/news_reader.png');
 }
 .proj6 {
-  background-image: url("../asset/gitWatch.png");
+  background-image: url('../asset/gitWatch.png');
 }
 
 /* ------- end ------- */
@@ -551,11 +618,11 @@ button:focus-visible {
   border-radius: 4px;
 }
 
-.micromodal[aria-hidden="false"] .micromodal__overlay {
+.micromodal[aria-hidden='false'] .micromodal__overlay {
   animation: microModalFadeIn 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
 
-.micromodal[aria-hidden="false"] .micromodal__container {
+.micromodal[aria-hidden='false'] .micromodal__container {
   animation: microModalSlideIn 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
 

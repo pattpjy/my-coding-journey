@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      JS Software Developer | Whipping Up Innovative Solutions for Delight User
+      Experiences
+    </title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Varela%20Round"
+    />
+  </head>
+  <body>
+    
+<div class="nav-bar">
+  
+  <div class="header">
+    <ul class="nav-list" id="nav-list">
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#about"> About </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#blog"> Blog </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#proj"> Proj </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#tech"> Tech </a>
+    </ul>
+    <a alt="linkedin" class="linkedin" href="https://www.linkedin.com/in/pattsookmark/"> <i class="fa-brands fa-linkedin-in fa-beat-fade" style="--fa-animation-duration: 2s;"></i></a>
+    <i class="fa-solid fa-burger" id="burger" onclick="openBurger()"></i>
+    <i class="fa-solid fa-circle-xmark" id="xmark"onclick="closeBurger()"></i>
+  </div>
+</div>
+
+<div class="blog-content">
+  <div> frontend </div>
+  <p><img class="blog-banner" src="/asset/blog-banner/blog-scsstheme2.png" alt="blog-banner-scsstheme-part2" /></p>
+
+<h3 id="introduction">Introduction:</h3>
+
+<p>In my previous <a href="https://sookmark.com/2023/12/04/SCSSTheme.html">blog</a>, I talked about the advantages of using a theme to enhance coding efficiency, maintainability, and ease of customization. This blog explores additional techniques that have proven invaluable in React styling.</p>
+
+<h3 id="the-anatomy-of-a-theme">The Anatomy of a Theme</h3>
+
+<h4 id="introducing-variable-maps-for-comprehensive-theming-in-react">Introducing Variable Maps for Comprehensive Theming in React</h4>
+
+<p>Let’s revisit the concept of variable mapping within themes. Variable maps in SCSS offer a robust solution to encapsulate multiple styling attributes within a single variable. This approach enhances organization and readability and provides a scalable and flexible foundation for theming in your React projects.</p>
+
+<p>In the earlier blog, I showcased the use of styling variables to store singular values like colors or font sizes. However, the need for a more structured and versatile approach becomes apparent as applications grow in complexity. Variable maps allow us to group related styling properties, creating a coherent and easily manageable theme for various components. Instead of scattering these properties across the codebase, we can encapsulate them in a single variable map, significantly improving organization:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// _variables.scss</span>
+
+<span class="nv">$text-theme</span><span class="p">:</span> <span class="p">(</span>
+  <span class="n">font-family</span><span class="o">:</span> <span class="s1">'Arial, sans-serif'</span><span class="o">,</span>
+  <span class="n">font-size</span><span class="o">:</span> <span class="m">16px</span><span class="o">,</span>
+  <span class="n">color</span><span class="o">:</span> <span class="mh">#333</span><span class="o">,</span>
+  <span class="n">line-height</span><span class="o">:</span> <span class="m">1</span><span class="mi">.5</span><span class="o">,</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<h4 id="flexibility-and-extensibility">Flexibility and Extensibility</h4>
+
+<p>By grouping related properties, we can create a unified source of truth for a specific design aspect. Variable maps provide flexibility and extensibility. Let’s extend our theme concept to include heading styles:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// _variables.scss</span>
+
+<span class="nv">$heading-theme</span><span class="p">:</span> <span class="p">(</span>
+  <span class="n">font-size</span><span class="o">:</span> <span class="p">(</span>
+    <span class="n">h1</span><span class="o">:</span> <span class="m">2em</span><span class="o">,</span>
+    <span class="n">h2</span><span class="o">:</span> <span class="m">1</span><span class="mi">.8em</span><span class="o">,</span>
+    <span class="n">h3</span><span class="o">:</span> <span class="m">1</span><span class="mi">.6em</span><span class="o">,</span>
+  <span class="p">)</span><span class="o">,</span>
+  <span class="n">color</span><span class="o">:</span> <span class="mh">#1a1a1a</span><span class="o">,</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<p>This enhances readability and makes it effortless to introduce new attributes or modify existing ones. Need to adjust heading sizes or add a new heading level? Simply update the variable map, and the changes will propagate seamlessly throughout the project.</p>
+
+<h4 id="examples-text-heading-and-box-themes">Examples: Text, Heading, and Box Themes</h4>
+
+<p>Let’s bring it all together with examples. In the main SCSS file:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// styles.scss</span>
+
+<span class="k">@import</span> <span class="s1">'variables'</span><span class="p">;</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="c1">// Apply the entire text theme</span>
+  <span class="k">@each</span> <span class="nv">$property</span><span class="o">,</span> <span class="nv">$value</span> <span class="n">in</span> <span class="nv">$text-theme</span> <span class="p">{</span>
+    <span class="si">#{</span><span class="nv">$property</span><span class="si">}</span><span class="nd">:</span> <span class="err">$</span><span class="nt">value</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nt">h1</span><span class="o">,</span>
+<span class="nt">h2</span><span class="o">,</span>
+<span class="nt">h3</span> <span class="p">{</span>
+  <span class="c1">// Apply the entire heading theme</span>
+  <span class="k">@each</span> <span class="nv">$property</span><span class="o">,</span> <span class="nv">$value</span> <span class="n">in</span> <span class="nv">$heading-theme</span> <span class="p">{</span>
+    <span class="si">#{</span><span class="nv">$property</span><span class="si">}</span><span class="nd">:</span> <span class="err">$</span><span class="nt">value</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nc">.example-box</span> <span class="p">{</span>
+  <span class="c1">// Apply the entire box theme</span>
+  <span class="k">@each</span> <span class="nv">$property</span><span class="o">,</span> <span class="nv">$value</span> <span class="n">in</span> <span class="nv">$box-theme</span> <span class="p">{</span>
+    <span class="si">#{</span><span class="nv">$property</span><span class="si">}</span><span class="nd">:</span> <span class="err">$</span><span class="nt">value</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>We maintain a clean and concise code structure by referencing the entire theme variable. The flexibility to update and extend these themes makes them invaluable tools for creating maintainable React applications.</p>
+
+<h4 id="applying-themes-to-components">Applying Themes to Components</h4>
+
+<p>Now that we understand the power of theme variables encapsulating multiple attributes, let’s explore how to directly apply these themes to React components.</p>
+
+<p>Let’s create a reusable React component, such as a <code class="language-plaintext highlighter-rouge">Card</code>. Instead of scattering styling properties within the component’s styles, we can directly apply a comprehensive theme variable to achieve a unified and visually coherent design.</p>
+
+<p>Here, I am defining a <code class="language-plaintext highlighter-rouge">card-theme</code> variable that includes attributes like border, background color, padding, and any other styling specifics:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// _variables.scss</span>
+
+<span class="nv">$card-theme</span><span class="p">:</span> <span class="p">(</span>
+  <span class="n">border</span><span class="o">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="mh">#ccc</span><span class="o">,</span>
+  <span class="n">background-color</span><span class="o">:</span> <span class="mh">#f5f5f5</span><span class="o">,</span>
+  <span class="n">padding</span><span class="o">:</span> <span class="m">15px</span><span class="o">,</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<p>Now, in your component styles, directly apply the entire <code class="language-plaintext highlighter-rouge">card-theme</code> to create a visually consistent <code class="language-plaintext highlighter-rouge">Card</code> component:</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Card.js</span>
+
+<span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="dl">'</span><span class="s1">./styles.scss</span><span class="dl">'</span><span class="p">;</span> <span class="c1">// Import your main styles that reference variables</span>
+
+<span class="kd">const</span> <span class="nx">Card</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nf">return </span><span class="p">(</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="p">=</span><span class="s">'card'</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Title<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Card content goes here...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">);</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<p>In your main SCSS file (<code class="language-plaintext highlighter-rouge">styles.scss</code>), apply the entire theme to the <code class="language-plaintext highlighter-rouge">card</code> class:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// styles.scss</span>
+
+<span class="k">@import</span> <span class="s1">'variables'</span><span class="p">;</span>
+
+<span class="nc">.card</span> <span class="p">{</span>
+  <span class="c1">// Apply the entire card theme</span>
+  <span class="k">@each</span> <span class="nv">$property</span><span class="o">,</span> <span class="nv">$value</span> <span class="n">in</span> <span class="nv">$card-theme</span> <span class="p">{</span>
+    <span class="si">#{</span><span class="nv">$property</span><span class="si">}</span><span class="nd">:</span> <span class="err">$</span><span class="nt">value</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Additional styling specific to the card component can go here</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="theming-customization">Theming Customization</h4>
+
+<p>Beyond global changes, dynamic theming also allows for component-specific customization. Suppose you have a particular card that requires a different background color. Rather than creating an entirely new theme variable, you can override specific attributes for that instance:</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// styles.scss</span>
+
+<span class="nc">.card.special-card</span> <span class="p">{</span>
+  <span class="k">@each</span> <span class="nv">$property</span><span class="o">,</span> <span class="nv">$value</span> <span class="n">in</span> <span class="nv">$card-theme</span> <span class="p">{</span>
+    <span class="si">#{</span><span class="nv">$property</span><span class="si">}</span><span class="nd">:</span> <span class="err">$</span><span class="nt">value</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="mh">#ffcc00</span><span class="p">;</span> <span class="c1">// Custom background color for a special card</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Directly applying theme variables to React components streamlines the styling process and fosters a design system that is both cohesive and adaptable. From a development perspective, the dynamic nature of theming simplifies the maintenance process. Changes are centralized, reducing the risk of oversights, and the codebase remains agile, adapting swiftly to design iterations. By leveraging the power of theming customization, you’ll enhance the user experience and streamline your development workflow.</p>
+
+</div>
+
+  </body>
+  <script
+    src="https://kit.fontawesome.com/103e31ca68.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="/index.js"></script>
+</html>
+ 

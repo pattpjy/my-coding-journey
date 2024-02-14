@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>
+      JS Software Developer | Whipping Up Innovative Solutions for Delight User
+      Experiences
+    </title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Varela%20Round"
+    />
+  </head>
+  <body>
+    
+<div class="nav-bar">
+  
+  <div class="header">
+    <ul class="nav-list" id="nav-list">
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#about"> About </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#blog"> Blog </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#proj"> Proj </a>
+      </li>
+      <li>
+        <span></span><span></span><span></span><span></span>
+        <a class="nav-link" href="/#tech"> Tech </a>
+    </ul>
+    <a alt="linkedin" class="linkedin" href="https://www.linkedin.com/in/pattsookmark/"> <i class="fa-brands fa-linkedin-in fa-beat-fade" style="--fa-animation-duration: 2s;"></i></a>
+    <i class="fa-solid fa-burger" id="burger" onclick="openBurger()"></i>
+    <i class="fa-solid fa-circle-xmark" id="xmark"onclick="closeBurger()"></i>
+  </div>
+</div>
+
+<div class="banner">
+  <div id="tsparticles" class="tsparticles"></div>
+  <div class="left-banner">
+    <div class="typing-container">
+      <h2>Hello, I am <span class="typing-text"> a developer!</span></h2>
+      <a onclick="window.location.href='/#proj'">More</a>
+    </div>
+  </div>
+  <!-- <div class="right-banner"></div> -->
+</div>
+<div class="group-sections">
+  <section id="proj">
+    <a href="">
+      <h2 class="h2-light">PROJECTS</h2>
+    </a>
+    <div class="cards-group">
+      <div class="proj1"><a class="modal-btn" data-micromodal-trigger="modal-1" href="javascript:;">Closet Collection</a> </div>
+      <div class="micromodal" id="modal-1" aria-hidden="true">
+        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="micromodal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-1-title"
+          >
+            <button aria-label="Close modal" data-micromodal-close>X</button>
+            <p>Closet Collection is your ultimate solution to organize your wardrobe. With this app, you can easily manage your clothing collection, take photos of your clothing items, create custom lists for trips or general organization, and categorize your wardrobe by color, season, and clothing type for easy filtering. You can add notes to your clothing items, such as if you have lent an item to a friend or if it is at the dry cleaners. In addition, you can create personalized lists for events or trips, and add items to the list as packing reminders. Finally, if you ever need to make changes, you can easily delete items from your closet or from a list. Say goodbye to cluttered closets and disorganized trips, and say hello to the perfect wardrobe management tool with Closet Collection.</p>
+          </div>
+        </div>
+      </div>
+      <div class="proj2"><a class="modal-btn" data-micromodal-trigger="modal-2" href="javascript:;">FitLit</a></div>
+      <div class="micromodal" id="modal-2" aria-hidden="true">
+        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="micromodal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-2-title"
+          >
+            <button aria-label="Close modal" data-micromodal-close>X</button>
+            <p>FitLit is a fitness tracking application that allows users to keep track of their sleep, hydration, and activity data. The application uses a local server and fetch requests to GET and POST data. Error handling has been added to both requests to catch any errors that may occur.
+
+              The application features data visualization using charts from chart.js, presenting all data in a visually pleasing manner. Dayjs has been used to format and standardize dates. Users can add new data for the current day, and once submitted, the charts will update and populate with the latest data. Recursion has been utilized to construct a weeks worth of data if there are gaps in the data' date.
+              
+              A helper function file has been added to house functions that are used multiple times throughout the project, keeping the code DRY. The application also features a calendar that allows users to manipulate dates and view a wide variety of information from different dates. Users can view their personal information inside an information section.</p>
+            <p>Tech Used: Vanilla JS, Mocha, Chai, Git, GitHub, CSS, DayJS, ChartJS</p>
+          </div>
+        </div>
+      </div>
+      <div class="proj3"><a class="modal-btn" data-micromodal-trigger="modal-3" href="javascript:;">PlayPal</a> </div>
+      <div class="micromodal" id="modal-3" aria-hidden="true">
+        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="micromodal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-3-title"
+          >
+            <button aria-label="Close modal" data-micromodal-close>X</button>
+            <p>PlayPal is an innovative mobile application designed to assist first-time mothers who are seeking ideas for safe, enjoyable, and stimulating activities for their children. This app provides a list of activities that can be filtered according to the location of the activity, whether it is an indoor or outdoor activity, and the gross and fine motor skills that the activity promotes.</p>
+            <p> PlayPal’s UI is built using React and React Router with styling done using Module CSS. The backend service is created using Express and Postgres. We use Docker to create the Postgres database and write queries to the database using Knex. TablePlus is used to interact with the data in the database. The backend is deployed using Heroku and the frontend UI is deployed using Vercel.</p>
+            <p>Tech Used: React, React Router, selectJS Library, Cypress, Git, GitHub, Vercel, Postgres, ExpressJS, NodeJS, Docker</p>
+          </div>
+        </div>
+      </div>
+      <div class="proj4"><a class="modal-btn" data-micromodal-trigger="modal-4" href="javascript:;">Cook Ahead</a> </div>
+      <div class="micromodal" id="modal-4" aria-hidden="true">
+        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="micromodal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-4-title"
+          >
+            <button aria-label="Close modal" data-micromodal-close>X</button>
+            <p>Coming up with meals ideas and making decisions for the family meal plans is hard. Cook Ahead is a meal planning application built with React and React Router. It allows users to generate a list of meal ideas and manage the meal plan by adding and deleting ideas. The application is tested using Cypress for end-to-end testing, and version control is managed with Git and GitHub. Postman is used to test API calls, and the application is deployed with Vercel.It features a responsive layout design with the use of media queries, ensuring optimal user experience across various devices.</p>
+            <p>Tech Used: React, React Router, HTML Tag Parser Library, Cypress, Git, GitHub, Vercel, CSS</p>
+          </div>
+        </div>
+      </div>
+      <div class="proj5"><a class="modal-btn" data-micromodal-trigger="modal-5" href="javascript:;">News Reader</a> </div>
+      <div class="micromodal" id="modal-5" aria-hidden="true">
+        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="micromodal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-5-title"
+          >
+            <button aria-label="Close modal" data-micromodal-close>X</button>
+            <p>News Reader is an application that pulls articles from the New York Times API Top Stories API. This application allows users to stay up-to-date with the latest news and events by providing access to top stories from the New York Times.
+              News Reader leverages various design patterns, including the Repository pattern, Container and Presentational Components pattern, and Hook pattern. The app is built using Create React App with Vite and is deployed on Vercel.
+            </p>
+            <p>Tech Used: React, React Router, DayJS, Git, GitHub, Vercel, Postman , CSS</p>
+          </div>
+        </div>
+      </div>
+      <div class="proj6"><a class="modal-btn" data-micromodal-trigger="modal-6" href="javascript:;">GitWatch</a> </div>
+      <div class="micromodal" id="modal-6" aria-hidden="true">
+        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="micromodal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-6-title"
+          >
+            <button aria-label="Close modal" data-micromodal-close>X</button>
+            <p>Git watch is a web app that uses GitHub's GraphQL API to display specific users' public repositories.  This project was an opportunity to learn about GraphQL and how it differs from REST API.</p>
+            <p>Tech Used: React, GraphQL, Git, GitHub, Styled Components</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="about">
+    <h2>ABOUT ME</h2>
+    <br />
+    <div class="about-container">
+      <img class="about-img" src="asset/MD and Me.jpeg" alt="Image of me"/>
+      <div class="about-me">
+        <h2>My name is Patt Sookmark</h2>
+        <p>🔥 "From 0-1, to web design fun, making the internet a more awesome place for everyone" 🔥
+          <br />
+          <br />
+After a decade in finance and audit, I pursued my dream of owning a catering business. Although it shut down in 2020, the experience ignited my passion for leveraging technology to overcome challenges faced by small businesses. As a software engineer, I strive to develop innovative solutions that empower small businesses to achieve success in a competitive market.
+
+          <br />
+          In my next role, I seek to be part of an autonomous team built on trust, where open communication and constructive feedback are valued. A collaborative and supportive environment that fosters creativity and drives continuous improvement. Working alongside talented individuals who share a common goal is essential to me. I am particularly interested in joining companies in the food tech or education tech industries, as I highly value their potential to create value and enhance performance for small businesses. 
+          <br />
+          <a alt="linkedin" href="https://www.linkedin.com/in/pattsookmark/"> <i class="fa-brands fa-linkedin-in fa-xl yellow"></i></a>
+          <a alt="github" href="https://github.com/pattpjy"><i class="fa-brands fa-github-alt fa-xl yellow" ></i></a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="blog">
+    <h2>MY BLOGS</h2>
+    <button class="tagBtn" onclick="window.location.href='/tags/thaiwordgame/'">Thai Word Game</button>
+    <button class="tagBtn" onclick="window.location.href='/tags/personalgrowth/'">Personal Growth</button>
+    <button class="tagBtn" onclick="window.location.href='/tags/backend/'">Back End</button>
+    <button class="tagBtn" onclick="window.location.href='/tags/frontend/'">Front End</button>
+    <button class="tagBtn" onclick="window.location.href='/tags/uxui/'">UX/UI</button>
+    <ul>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="Creating custom themes for React project part II"
+          src="asset/blog-banner/blog-scsstheme2.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="Creating custom themes for React project part II" class="a-blog" href="/2023/12/16/SCSSTheme2.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>Creating custom themes for React project part II
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="Set Up Theme with SCSS"
+          src="asset/blog-banner/blog-scsstheme.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="Set Up Theme with SCSS" class="a-blog" href="/2023/12/04/SCSSTheme.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>Set Up Theme with SCSS
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="Web Design Accessibility"
+          src="asset/blog-banner/blog-accessibility.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="Web Design Accessibility" class="a-blog" href="/2023/11/23/accessibility.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>Web Design Accessibility
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="The Power of Logging: Why You Need More Than console.log in Node.js"
+          src="asset/blog-banner/blog-logger1.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="The Power of Logging: Why You Need More Than console.log in Node.js" class="a-blog" href="/2023/09/08/logger-part1.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>The Power of Logging: Why You Need More Than console.log in Node.js
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="Transitioning from JavaScript to Python"
+          src="asset/blog-banner/blog-python.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="Transitioning from JavaScript to Python" class="a-blog" href="/2023/09/08/getting-start-python.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>Transitioning from JavaScript to Python
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="A Guide to Utilizing Javascript Console Commands and Functions"
+          src="asset/blog-banner/blog-console.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="A Guide to Utilizing Javascript Console Commands and Functions" class="a-blog" href="/2023/07/14/consolecmd.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>A Guide to Utilizing Javascript Console Commands and Functions
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="My Journey of Simplifying README - a Markdown Readme Generator."
+          src="asset/blog-banner/blog-readme.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="My Journey of Simplifying README - a Markdown Readme Generator." class="a-blog" href="/2023/07/13/readmegenerator.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>My Journey of Simplifying README - a Markdown Readme Generator.
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="Thai Word Game PROGRESS UPDATE 1"
+          src="asset/blog-banner/blog-progressupdate.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="Thai Word Game PROGRESS UPDATE 1" class="a-blog" href="/2023/07/06/ThaiWordGameUpdate.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>Thai Word Game PROGRESS UPDATE 1
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="Prioritize When Feeling Overwhelmed: Strategies to Stay on Track"
+          src="asset/blog-banner/blog-prioritize.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="Prioritize When Feeling Overwhelmed: Strategies to Stay on Track" class="a-blog" href="/2023/07/06/prioritize-strategies.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>Prioritize When Feeling Overwhelmed: Strategies to Stay on Track
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="Revamping the Thai Word Game App: Lessons in UX/UI and Design Pattern"
+          src="asset/blog-banner/blog-Revamp.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="Revamping the Thai Word Game App: Lessons in UX/UI and Design Pattern" class="a-blog" href="/2023/06/29/ThaiwordGameRestructure.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>Revamping the Thai Word Game App: Lessons in UX/UI and Design Pattern
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="Journey into UX/UI process of Building a Thai Word Game"
+          src="asset/blog-banner/blog-game-uxui.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="Journey into UX/UI process of Building a Thai Word Game" class="a-blog" href="/2023/06/27/ThaiWordGameUxui.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>Journey into UX/UI process of Building a Thai Word Game
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="Building a Thai Word Game: Implementing the Repository Pattern and Container/Presentation Pattern"
+          src="asset/blog-banner/blog-patterns.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="Building a Thai Word Game: Implementing the Repository Pattern and Container/Presentation Pattern" class="a-blog" href="/2023/06/08/Thaiwordgame-pattern.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>Building a Thai Word Game: Implementing the Repository Pattern and Container/Presentation Pattern
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="Simplify Backend Development with Express TypeScript Boilerplate!"
+          src="asset/blog-banner/blog-express-template.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="Simplify Backend Development with Express TypeScript Boilerplate!" class="a-blog" href="/2023/06/07/express-template.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>Simplify Backend Development with Express TypeScript Boilerplate!
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="🔍 Improving Productivity and Motivation in Your Job Search: My Journey Through the CAMPS Model 🔑"
+          src="asset/blog-banner/blog-camps-model.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="🔍 Improving Productivity and Motivation in Your Job Search: My Journey Through the CAMPS Model 🔑" class="a-blog" href="/2023/06/05/camp-model.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>🔍 Improving Productivity and Motivation in Your Job Search: My Journey Through the CAMPS Model 🔑
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="My AWS and IAM Journey: Safeguarding My Word Game App's Audio Files in S3"
+          src="asset/blog-banner/blog-AWS-IAM.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="My AWS and IAM Journey: Safeguarding My Word Game App's Audio Files in S3" class="a-blog" href="/2023/05/30/AWS-IAM.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>My AWS and IAM Journey: Safeguarding My Word Game App's Audio Files in S3
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="Understand the Power of Empathy Mapping: Designing Interfaces Users Will Love"
+          src="asset/blog-banner/blog-empathy-mapping.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="Understand the Power of Empathy Mapping: Designing Interfaces Users Will Love" class="a-blog" href="/2023/05/19/Empathy-Mapping.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>Understand the Power of Empathy Mapping: Designing Interfaces Users Will Love
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="A Beginner's Guide to Understanding Node Modules in Node.js"
+          src="asset/blog-banner/blog-node-module.png"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="A Beginner's Guide to Understanding Node Modules in Node.js" class="a-blog" href="/2023/05/11/NodeModule.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>A Beginner's Guide to Understanding Node Modules in Node.js
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="Code In Public - Thai Word Game II"
+          src="https://images.unsplash.com/photo-1611996575749-79a3a250f948?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="Code In Public - Thai Word Game II" class="a-blog" href="/2023/05/02/ThaiWebGame2.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>Code In Public - Thai Word Game II
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="GraphQL vs Rest"
+          src="https://images.unsplash.com/photo-1646617747563-4f080bddf282?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="GraphQL vs Rest" class="a-blog" href="/2023/04/26/GraphQL-vs-Rest.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>GraphQL vs Rest
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="Code In Public - Thai Word Game"
+          src="https://images.unsplash.com/photo-1611996575749-79a3a250f948?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="Code In Public - Thai Word Game" class="a-blog" href="/2023/03/21/ThaiWebGame.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>Code In Public - Thai Word Game
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="1st Full Stack Webapp with PERN Stack"
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="1st Full Stack Webapp with PERN Stack" class="a-blog" href="/2023/03/16/Pern_Stack.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>1st Full Stack Webapp with PERN Stack
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+      <li class="blog-card">
+        <img
+          class="blog-img"
+          alt="MVC MVP"
+          src="https://images.unsplash.com/photo-1570215171323-4ec328f3f5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+          style="width: 250px"
+        />
+        <div>
+          <a alt="MVC MVP" class="a-blog" href="/2023/03/10/MVC_MVP.html">
+            <h2>
+              <span><i class="fa-duotone fa-bread-slice"></i></span>MVC MVP
+            </h2>
+          </a>
+        </div>
+      </li>
+      
+    </ul>
+  </section>
+  
+
+  <section id="tech">
+    <h2>TECH I KNOW</h2>
+    <div class="tech">
+      <ul class="rectangle">
+        <div class="circle">
+          <i class="fa-regular fa-rectangle-code"></i>
+        </div>
+        <h3>FRONT END</h3>
+        <li>JAVASCRIPT</li>
+        <li>REACT</li>
+        <li>TYPESCRIPT</li>
+        <li>CSS, STYLED COMPONENTS</li>
+        <li>MUI, PRIMEREACT</li>
+        <li>MOCHA, CHAI</li>
+        <li>CYPRESS</li>
+   
+      </ul>
+      <ul class="rectangle">
+        <div class="circle">
+          <i class="fa-solid fa-pen-nib"></i>
+        </div>
+        <h3>DESIGN TOOLS</h3>
+        <li>ILLUSTRATOR</li>
+        <li>CANVA</li>
+        <li>MIRO</li>
+        <li>FIGMA</li>
+      </ul>
+      <ul class="rectangle">
+        <div class="circle">
+          <i class="fa-solid fa-database"></i>
+        </div>
+        <h3>BACK END</h3>
+        <li>EXPRESS</li>
+        <li>POSTGRES</li>
+        <li>PYTHON</li>
+        <li>AWS IAM</li>
+        <li>DOCKER</li>
+        <li>S3 BUCKET</li>
+      </ul>
+    </div>
+  </section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+<script type="text/javascript">
+  // All options can be found here: https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html
+  // The slim version doesn't have the following plugins:
+  // Absorbers, Emitters, PolygonMask, Interactivity Trail
+  const options = {
+    fullScreen: {
+      enable: false,
+    },
+    background: {
+      color: { value: '#ea86c0'}, // the canvas background color
+     image: "url('https://media.istockphoto.com/id/538331290/photo/panorama-view-of-bangkok.jpg?s=1024x1024&w=is&k=20&c=pBdSslZ1FrlfsxmaRUBCA3nMoDDHP8-bCkNnALxTu-g=')",
+     repeat: 'no-repeat',
+    size: 'cover',
+    },
+
+    backgroundMask: {
+    composite: 'destination-out',
+    cover: { color: { value: { r: 0, g: 0, b: 0 } }, opacity: 0.95 },
+    enable: true,
+  },
+    interactivity: {
+      events: {
+        onClick: {
+          // this handles the mouse click event
+          enable: true,
+          mode: 'push', // this adds particles
+          parallax: { enable: false, force: 2, smooth: 10 }
+        },
+        onHover: {
+          // this handles the mouse hover event
+          enable: true,
+          mode: 'repulse', // this make particles move away from the mouse
+        },
+      },
+      modes: {
+        push: {
+          quantity: 6, // number of particles to add
+        },
+        repulse: {
+          distance: 100, // the distance of the particles from the mouse
+        },
+      },
+    },
+    particles: {
+      links: {
+        enable: false, // this enables links between particles
+        opacity: 0.3,
+        distance: 200,
+      },
+      move: {
+        enable: true, // this makes particles move
+        speed: { min: 1, max: 3 }, // this is the speed of the particles
+      },
+      opacity: {
+        value: { min: 0.3, max: 0.7 }, // this sets the opacity of the particles
+      },
+      size: {
+        value: { min: 1, max: 40 }, // this sets the size of the particles
+      },
+    },
+  };
+
+  // tsParticles.load has two parameters, the first one is the id of the container, the second one is an object with the options
+  tsParticles.load('tsparticles', options);
+</script>
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js""></script>
+
+
+  </body>
+  <script
+    src="https://kit.fontawesome.com/103e31ca68.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="/index.js"></script>
+</html>
+ 
