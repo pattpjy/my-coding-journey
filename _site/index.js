@@ -1,7 +1,7 @@
 // import MicroModal from "micromodal";
 
 const typingElement = document.querySelector('.typing-text');
-const typeArray = ['Patt', 'a developer', 'a creator', 'a mom'];
+const typeArray = ['Hello!', '你好', '안녕하세요', 'Hola', 'สวัสดี', 'ສະບາຍດີ'];
 
 const navList = document.querySelector('#nav-list');
 const navListLi = document.querySelector('body > div.nav-bar > div > ul > li');
@@ -76,16 +76,50 @@ function closeBurger() {
 // Start typing text
 playAnim();
 
-MicroModal.init({
-  disableScroll: true,
-});
-
 function openProject(para) {
   const projectsBox = document.getElementById(para);
 
   projectsBox.style.display =
-    projectsBox.style.display === 'none' ? 'block' : 'none';
-
-  // projectsBox.style.opacity = projectsBox.style.opacity === 0 ? 1 : 0;
-  console.log('click project', projectsBox);
+    projectsBox.style.display === 'none' || projectsBox.style.display === ''
+      ? 'block'
+      : 'none';
 }
+
+function loader() {
+  setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  const loader = document.getElementById('loader');
+  const content = document.getElementById('content');
+  loader.style.display = 'none';
+  content.style.display = 'block';
+}
+
+// Function to check if the element is in the viewport
+function isInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+// Function to handle scroll events and add/remove the 'animate' class
+function handleScroll() {
+  var targetElement = document.getElementById('targetElement');
+
+  if (isInViewport(targetElement)) {
+    // Add the 'animate' class when the element is in the viewport
+    targetElement.classList.add('animate');
+  } else {
+    // Remove the 'animate' class when the element is not in the viewport
+    targetElement.classList.remove('animate');
+  }
+}
+
+// Listen for scroll events
+window.addEventListener('scroll', handleScroll);
+
+// Initial check in case the element is already in the viewport on page load
+handleScroll();

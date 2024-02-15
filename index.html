@@ -3,137 +3,168 @@ layout: default
 ---
 
 {% include navbar.html %}
-<div class="banner">
-  <div id="tsparticles" class="tsparticles"></div>
-  <div class="left-banner">
-    <div class="typing-container">
-      <h2>Hello, I am <span class="typing-text"> a developer!</span></h2>
-      <!-- <a onclick="window.location.href='/#proj'">Learn more about me</a> -->
+
+
+  <div class="banner">
+    <div id="tsparticles" class="tsparticles"></div>
+    <div class="left-banner">
+      <div class="typing-container">
+        <span class="typing-text"> </span>
+        <h2>I am Patt Sookmark</h2>
+        <!-- <a onclick="window.location.href='/#proj'">Learn more about me</a> -->
+      </div>
     </div>
   </div>
-</div>
-<div class="group-sections">
-  <section id="proj">
-    <a href="">
-      <h2 class="h2-light">Back</h2>
-    </a>
-    <h2 class="h2-fadein-title">Skills in Motion: Explore My Web Applications</h2>
-    <div class="proj-display">
-      <section class="proj-container">  
-        <div class="proj-lang" id="ReactJS">
-        <p>Closet Collection - React Typescript</p>
-        <p>PlayPal - React Typescript</p>
-      </div>
-      <div class="proj-lang" id="NodeExpress">
-        <p>Express Server SQlite Database Template - Node Express</p>
-      </div>
-      <div class="proj-lang" id="VuePython">
-        <p>Budget Planner - Vue with Local Storage</p>
-      </div></section>
+  <div class="group-sections">
+  <!-- Projects Section-->
+    <section id="proj">
+      <a href="">
+        <h2 class="h2-light"><i class="fa-sharp fa-solid fa-chevrons-up"></i></h2>
+      </a>
+      <h2 class="h2-fadein-title">Skills in Motion: Explore My Web Applications</h2>
+      <div class="proj-display">
+        <section class="proj-container">  
+          <div class="proj-lang" id="ReactJS">
+          <h3>Projects:</h3>
+          <a href="https://closet-manager-fe.vercel.app/"><p>Closet Collection - React JS Typescript JS</p></a>
+          <a href="https://play-pals.vercel.app/"><p>PlayPal - React JS Typescript JS</p></a>
+        </div>
+        <div class="proj-lang" id="NodeExpress">
+          <h3>Projects:</h3>
+          <a href="https://github.com/pattpjy/express-ts-sqlite-template"><p>Express Server SQlite Database Template - Node/Express JS</p></a>
+        </div>
+        <div class="proj-lang" id="VuePython">
+          <h3>Projects:</h3>
+          <a href="https://pattpjy.github.io/Expense-Tracker/"><p>Budget Planner - Vue JS with Local Storage</p></a>
+        </div></section>
+      
+        <section class="language-container"> 
+          <div class="language" onclick="openProject('ReactJS')">REACT TYPESCRIPT
+         </div>
+        
+        <div class="language" onclick="openProject('NodeExpress')">NODE EXPRESS
+        </div>
+        <div class="language" onclick="openProject('VuePython')">VUE PYTHON
+        </div></section>
+      
+      </div>   
+    </section>
+
+    <!-- Blog Section-->
     
-      <section class="language-container"> 
-        <div class="language" onclick="openProject('ReactJS')">REACT TYPESCRIPT
+    <section id="blog">
+      <a href="">
+        <h2 class="h2-light"><i class="fa-sharp fa-solid fa-chevrons-up"></i></h2>
+      </a>
+      <div class="blog-title-container">    
+        <div class="animated-element" id="targetElement"><h2 class="blog-title-bg">"Every problem is a gift; without problems, we would not grow." - Tony Robbins</h2></div>
+        <div class="buttons-container">
+          <button class="tagBtn" onclick="window.location.href='/tags/thaiwordgame/'">Thai Word Game</button>
+          <button class="tagBtn" onclick="window.location.href='/tags/personalgrowth/'">Personal Growth</button>
+          <button class="tagBtn" onclick="window.location.href='/tags/backend/'">Back End</button>
+          <button class="tagBtn" onclick="window.location.href='/tags/frontend/'">Front End</button>
+          <button class="tagBtn" onclick="window.location.href='/tags/uxui/'">UX/UI</button></div>
       </div>
-      <div class="language" onclick="openProject('NodeExpress')">NODE EXPRESS
+  <section class="blog-list-container">
+    <ul class="ul-blog-container">
+    {% for post in site.posts %}
+    <li class="blog-card">
+      <img
+        class="blog-img"
+        alt="{{post.title }}"
+        src="{{post.banner_image }}"
+        style="width: 250px"
+      />
+      <!-- <div>
+        <a alt="{{post.title }}" class="a-blog" href="{{post.url | prepend: site.baseurl }}">
+          <h2>
+            {{
+            post.title }}
+          </h2>
+        </a>
+      </div> -->
+    </li>
+    {% endfor %}
+  </ul></section>
+      
+    </section>
+    <!-- About me Section-->
+    <section id="about" class="about">
+      <a href="">
+        <h2 class="h2-light"><i class="fa-sharp fa-solid fa-chevrons-up"></i></h2>
+      </a>
+      <h2 class="about-me-title">Crafting Digital Experience: Transforming Ideas into Code</h2>
+      <div class="circle-img"> 
+        <img class="about-img" src="asset/hiking.jpg" alt='Hiking'>
+        <img class="about-img" src="asset/cooking.jpg" alt='cooking'>
+        <img class="about-img" src="asset/bbq.jpg" alt='bbq'>
       </div>
-      <div class="language" onclick="openProject('VuePython')">VUE PYTHON
-      </div></section>
-     
-    </div>   
-  </section>
-  <section id="about">
-    <h2>ABOUT ME</h2>
-    <br />
-    <div class="about-container">
-      <img class="about-img" src="asset/MD and Me.jpeg" alt="Image of me"/>
-      <div class="about-me">
-        <h2>My name is Patt Sookmark</h2>
-        <p>🔥 "From 0-1, to web design fun, making the internet a more awesome place for everyone" 🔥
-          <br />
-          <br />
-After a decade in finance and audit, I pursued my dream of owning a catering business. Although it shut down in 2020, the experience ignited my passion for leveraging technology to overcome challenges faced by small businesses. As a software engineer, I strive to develop innovative solutions that empower small businesses to achieve success in a competitive market.
+      <div class="about-container">   
+        <h3 class="about-me-catch"> 🔥 "From 0-1, to web design fun, making the internet a more awesome place for everyone" 🔥</h3>
+        <div class="about-me">
+          <h2>My name is Patt Sookmark</h2>
+          I'm a seasoned Full-stack Front-end Software Engineer passionate about creating engaging and intuitive user experiences. With React JS -TypeScript JS and Node JS expertise, and more, I deliver fast, mobile-first, responsive web applications.
+            <br />
+            After a decade in finance and audit, where I honed my skills in financial entrepreneurship and industrial economics, I pursued my dream of owning a catering business. Although it closed in 2020, the experience fueled my commitment to leveraging technology for small businesses.
+            <br />
+  In my software engineering journey, I contribute to story mapping and collaborate with backend teams, defining API contracts for a startup. Currently an intern, I receive mentorship and code reviews, gaining valuable insights into best practices.
+  <br />
+  My side project involves building a word game app to teach my daughter, Thais. This not only strengthens my UX/UI design skills but also delves into backend development using databases and AWS S3.
+  <br />
+  With a diverse educational background, including a Master's degree in Accounting and IT Audit, an MBA in Financial Entrepreneurship, and a BA in Industrial Economics, I bring a wealth of knowledge to my work. As the former owner of Tapestry Catering, I prioritized exceptional customer experiences, creating a streamlined kitchen operations app and expanding to 3 brand identities.
+  <br />
+  As an Internal Auditor, I provided valuable insights through financial, operational, and IT audits. In my role as a linguistic software tester, I ensured seamless language switching on mobile devices, resolving localization and user experience issues through cross-functional collaboration. I am passionate about developing innovative solutions that empower small businesses to thrive in a competitive market.
+            <br />
+            <a alt="linkedin" href="https://www.linkedin.com/in/pattsookmark/"> <i class="fa-brands fa-linkedin-in fa-xl yellow"></i></a>
+            <a alt="github" href="https://github.com/pattpjy"><i class="fa-brands fa-github-alt fa-xl yellow" ></i></a>
+          </p>
+        </div>
+      </div>
+    </section>
 
-          <br />
-          In my next role, I seek to be part of an autonomous team built on trust, where open communication and constructive feedback are valued. A collaborative and supportive environment that fosters creativity and drives continuous improvement. Working alongside talented individuals who share a common goal is essential to me. I am particularly interested in joining companies in the food tech or education tech industries, as I highly value their potential to create value and enhance performance for small businesses. 
-          <br />
-          <a alt="linkedin" href="https://www.linkedin.com/in/pattsookmark/"> <i class="fa-brands fa-linkedin-in fa-xl yellow"></i></a>
-          <a alt="github" href="https://github.com/pattpjy"><i class="fa-brands fa-github-alt fa-xl yellow" ></i></a>
-        </p>
+    <section id="tech">
+      <h2>TECH I KNOW</h2>
+      <div class="tech">
+        <ul class="rectangle">
+          <div class="circle">
+            <i class="fa-regular fa-rectangle-code"></i>
+          </div>
+          <h3>FRONT END</h3>
+          <li>JAVASCRIPT</li>
+          <li>REACT</li>
+          <li>TYPESCRIPT</li>
+          <li>CSS, STYLED COMPONENTS</li>
+          <li>MUI, PRIMEREACT</li>
+          <li>MOCHA, CHAI</li>
+          <li>CYPRESS</li>
+    
+        </ul>
+        <ul class="rectangle">
+          <div class="circle">
+            <i class="fa-solid fa-pen-nib"></i>
+          </div>
+          <h3>DESIGN TOOLS</h3>
+          <li>ILLUSTRATOR</li>
+          <li>CANVA</li>
+          <li>MIRO</li>
+          <li>FIGMA</li>
+        </ul>
+        <ul class="rectangle">
+          <div class="circle">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <h3>BACK END</h3>
+          <li>EXPRESS</li>
+          <li>POSTGRES</li>
+          <li>PYTHON</li>
+          <li>AWS IAM</li>
+          <li>DOCKER</li>
+          <li>S3 BUCKET</li>
+        </ul>
       </div>
-    </div>
-  </section>
-  <section id="blog">
-    <h2>MY BLOGS</h2>
-    <button class="tagBtn" onclick="window.location.href='/tags/thaiwordgame/'">Thai Word Game</button>
-    <button class="tagBtn" onclick="window.location.href='/tags/personalgrowth/'">Personal Growth</button>
-    <button class="tagBtn" onclick="window.location.href='/tags/backend/'">Back End</button>
-    <button class="tagBtn" onclick="window.location.href='/tags/frontend/'">Front End</button>
-    <button class="tagBtn" onclick="window.location.href='/tags/uxui/'">UX/UI</button>
-    <ul>
-      {% for post in site.posts %}
-      <li class="blog-card">
-        <img
-          class="blog-img"
-          alt="{{post.title }}"
-          src="{{post.banner_image }}"
-          style="width: 250px"
-        />
-        <div>
-          <a alt="{{post.title }}" class="a-blog" href="{{post.url | prepend: site.baseurl }}">
-            <h2>
-              <span><i class="fa-duotone fa-bread-slice"></i></span>{{
-              post.title }}
-            </h2>
-          </a>
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
-  
+    </section>
+  </div>
 
-  <section id="tech">
-    <h2>TECH I KNOW</h2>
-    <div class="tech">
-      <ul class="rectangle">
-        <div class="circle">
-          <i class="fa-regular fa-rectangle-code"></i>
-        </div>
-        <h3>FRONT END</h3>
-        <li>JAVASCRIPT</li>
-        <li>REACT</li>
-        <li>TYPESCRIPT</li>
-        <li>CSS, STYLED COMPONENTS</li>
-        <li>MUI, PRIMEREACT</li>
-        <li>MOCHA, CHAI</li>
-        <li>CYPRESS</li>
-   
-      </ul>
-      <ul class="rectangle">
-        <div class="circle">
-          <i class="fa-solid fa-pen-nib"></i>
-        </div>
-        <h3>DESIGN TOOLS</h3>
-        <li>ILLUSTRATOR</li>
-        <li>CANVA</li>
-        <li>MIRO</li>
-        <li>FIGMA</li>
-      </ul>
-      <ul class="rectangle">
-        <div class="circle">
-          <i class="fa-solid fa-database"></i>
-        </div>
-        <h3>BACK END</h3>
-        <li>EXPRESS</li>
-        <li>POSTGRES</li>
-        <li>PYTHON</li>
-        <li>AWS IAM</li>
-        <li>DOCKER</li>
-        <li>S3 BUCKET</li>
-      </ul>
-    </div>
-  </section>
-</div>
 <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
 <script type="text/javascript">
   // All options can be found here: https://particles.js.org/docs/interfaces/Options_Interfaces_IOptions.IOptions.html
@@ -193,7 +224,7 @@ After a decade in finance and audit, I pursued my dream of owning a catering bus
         value: { min: 0.3, max: 0.7 }, // this sets the opacity of the particles
       },
       size: {
-        value: { min: 1, max: 50 }, // this sets the size of the particles
+        value: { min: 1, max: 120 }, // this sets the size of the particles
       },
     },
   };
