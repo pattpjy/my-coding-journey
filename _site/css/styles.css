@@ -317,7 +317,7 @@ button:focus-visible {
 .about-me-catch {
   font-size: 48px;
   font-family: 'Share Tech', sans-serif;
-  color: rgb(253, 255, 255, 0.8);
+  color: rgb(253, 255, 255, 0.9);
   animation: pulse 3s infinite;
   text-shadow: #4f5060 1px 1px;
 }
@@ -325,8 +325,8 @@ button:focus-visible {
   margin: 1em;
   display: block;
   min-width: 20em;
-  padding: 1em;
-  background-color: rgb(253, 255, 255, 0.3);
+  padding: 1.5em;
+  background-color: rgb(253, 255, 255, 0.7);
 }
 .circle-img {
   display: flex;
@@ -334,13 +334,13 @@ button:focus-visible {
   justify-content: space-around;
 }
 .about-img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   margin: 20px;
   object-fit: cover;
   overflow: hidden;
-  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 4px 4px rgba(255, 255, 255, 0.897);
 }
 
 .about {
@@ -380,6 +380,16 @@ button:focus-visible {
   justify-content: space-evenly;
 }
 
+.tech-title {
+  font-size: 72px;
+  text-align: left;
+  min-width: 10em;
+  padding: 1em;
+  color: rgba(8, 5, 40, 0.9);
+  animation: scrollFadeIn 3s ease-in-out;
+  animation-delay: calc(var(--scroll) * -3s);
+  text-shadow: #4f5060 1px 1px;
+}
 .fa-regular,
 .fa-solid {
   font-size: 40px;
@@ -387,6 +397,7 @@ button:focus-visible {
 
 .rectangle {
   display: block;
+  color: whitesmoke;
   list-style-type: none;
   min-width: 12em;
   background: rgba(8, 5, 40, 0.9);
@@ -404,11 +415,12 @@ button:focus-visible {
   left: 50%;
   margin-left: -45px;
   top: -12%;
-  background: #838828;
+  background: rgba(8, 5, 40, 0.9);
 }
 .rectangle:hover,
 .rectangle:hover .circle {
   background-color: #fdc600;
+  color: #050505;
 }
 
 .linkedin {
@@ -668,9 +680,7 @@ button:focus-visible {
     background-repeat: no-repeat;
     background-position: center;
   }
-  .about-me {
-    margin: 0;
-  }
+
   .about-container {
     display: flex;
     flex-direction: column;
