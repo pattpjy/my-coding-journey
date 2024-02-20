@@ -69,20 +69,14 @@ layout: default
     <ul class="ul-blog-container">
     {% for post in site.posts %}
     <li class="blog-card">
-      <img
-        class="blog-img"
-        alt="{{post.title }}"
-        src="{{post.banner_image }}"
-        style="width: 250px"
-      />
-      <!-- <div>
         <a alt="{{post.title }}" class="a-blog" href="{{post.url | prepend: site.baseurl }}">
-          <h2>
-            {{
-            post.title }}
-          </h2>
+          <img
+          class="blog-img"
+          alt="{{post.title }}"
+          src="{{post.banner_image }}"
+          style="width: 250px"
+         />
         </a>
-      </div> -->
     </li>
     {% endfor %}
   </ul></section>
@@ -135,8 +129,8 @@ I am currently based in the vibrant city of Denver, where I find inspiration for
           </div>
           <h3>FRONT END</h3>
           <li>JAVASCRIPT</li>
-          <li>REACT</li>
-          <li>TYPESCRIPT</li>
+          <li>REACT JS</li>
+          <li>TYPESCRIPT JS</li>
           <li>CSS, STYLED COMPONENTS</li>
           <li>MUI, PRIMEREACT</li>
           <li>MOCHA, CHAI</li>
@@ -152,13 +146,19 @@ I am currently based in the vibrant city of Denver, where I find inspiration for
           <li>CANVA</li>
           <li>MIRO</li>
           <li>FIGMA</li>
+          <br />
+          <h3>OTHER TOOLS</h3>
+          <li>JIRA</li>
+          <li>GIT/GitKRAKEN</li>
+          <li>SCRUM/AGILE</li>
+
         </ul>
         <ul class="rectangle">
           <div class="circle">
             <i class="fa-solid fa-database"></i>
           </div>
           <h3>BACK END</h3>
-          <li>EXPRESS</li>
+          <li>NODE JS/EXPRESS JS</li>
           <li>POSTGRES</li>
           <li>PYTHON</li>
           <li>AWS IAM</li>
@@ -179,7 +179,7 @@ I am currently based in the vibrant city of Denver, where I find inspiration for
       enable: false,
     },
     background: {
-      color: { value: '#ea86c0'}, // the canvas background color
+      color: { value: 'rgba(0, 0, 0, 0)'}, // the canvas background color
      image: "url('./asset/firework-bg.jpg')",
      position:'center',
      repeat: 'no-repeat',

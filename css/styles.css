@@ -5,6 +5,7 @@ body {
   margin: 0;
   --scroll: 0; /* default value */
 }
+
 #loader {
   position: absolute;
   left: 50%;
@@ -13,10 +14,18 @@ body {
   width: 120px;
   height: 120px;
   margin: -76px 0 0 -76px;
+  display: block;
 }
-/* #content {
+#footer,
+#content {
   display: none;
-} */
+}
+.footer {
+  border-top: 1px solid #4f5060;
+  margin: auto;
+  text-align: center;
+}
+
 i {
   margin: 0 1em 0 1em;
   vertical-align: middle;
@@ -188,8 +197,7 @@ img {
 }
 
 #about,
-#proj,
-#tech {
+#proj {
   min-height: fit-content;
   text-align: center;
 }
@@ -402,7 +410,7 @@ button:focus-visible {
   min-width: 12em;
   background: rgba(8, 5, 40, 0.9);
   position: relative;
-  margin: 10em 2em 0 2em;
+  /* margin: 10em 2em 0 2em; */
   padding: 3em;
 }
 

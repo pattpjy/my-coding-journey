@@ -92,8 +92,10 @@ function loader() {
 function showPage() {
   const loader = document.getElementById('loader');
   const content = document.getElementById('content');
+  const footer = document.getElementById('footer');
   loader.style.display = 'none';
   content.style.display = 'block';
+  footer.style.display = 'block';
 }
 
 // Function to check if the element is in the viewport
